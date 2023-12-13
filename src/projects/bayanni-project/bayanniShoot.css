@@ -1,0 +1,304 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+}
+
+.navbar{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 300;
+}
+
+.navigation::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	/* background:  rgb(202 138 4); */
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.navigation:hover::after{
+	width: 100%;
+
+}
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+.bayanni{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.emoji{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.no1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+}
+
+.ta{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 700;
+}
+
+.film1{
+	font-family: 'Poppins', sans-serif; 
+	/* font-style: italic; */
+	font-weight: 300;  
+}
+
+.credit{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.credit-subhead{
+	font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5vw;
+}
+
+.credit-ans{
+	font-weight: 800;
+	font-family: 'Bodoni Moda', serif;
+	font-size: 1.5vw;
+}
+
+.styl-dir{
+	font-family: 'Anton', sans-serif;
+}
+
+.subHead{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.subBody{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.integrate{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+}
+
+.n{
+	font-family: 'Bodoni Moda', serif;
+}
+
+.btn-orange{
+	border-radius: 30vw;
+	border-color: #fff;
+	border-width: 0.05vw;
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+	/* background-color: rgb(224, 155, 18); */
+	padding: 0.7vw 1.5vw;
+}
+
+.btn-orange:hover{
+	background-color: rgb(234 88 12);
+	border-width: 0;
+	color: black;
+	font-weight: 400;
+}
+
+.sd, .cd{
+	font-family: 'Anton', sans-serif;
+}
+
+.bold11{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+	/* writing-mode:vertical-rl ; */
+}
+
+.film{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.heaven-subHead{
+	font-weight: 700;
+}
+
+.subHead-no{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
+}
+
+.next{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.boldAndCon{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.circle{
+	/* position: relative;
+	width: 200px;
+	height: 200px; */
+	border-radius: 50%;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+.text{
+	font-family: 'Bodoni Moda', serif;
+	font-style: normal;
+	font-weight: 800;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
+
+
+
+/* Swiper Animation */
+
+.swiper {
+	width: 100%;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+  }
+
+  .swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 30vw;
+	height: 70vh;
+  }
+
+  .swiper-slide img {
+	display: block;
+  }
+
+
+/* View Projects */
+  .viewProject{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	background-color: rgb(30, 30, 30);
+}
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.backTop{
+	font-weight: 800;
+}

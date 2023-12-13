@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="/src/contact/contact.css">
+</head>
+<body>
+	<section class="pb-[2vw]  bg-black text-white">
+		<div>
+			<div class="inner-cursor z-[1000000]"></div>
+			<div class="outer-cursor z-[1000000]"></div>
+		</div>
+
+		<section0 class="relative overflow-hidden h-screen w-full">
+			<div class="nav-sec-container fixed top-0 left-0 z-20 w-full min-h-[11vh] h-[11vh] bg-blac">
+				<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
+				<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
+					
+					<a href="/public/index.html">
+						<div class="navConnect h-[7vw] w-[6vw] flex items-center">
+							<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+						</div>
+					</a>
+
+					<div class="navConnect text-center text-[1.1vw] leading-[1.2vw]">
+						<div class="stu hb ">HEADB0RN</div>
+						<div class="stu text-[1.6vw] ">STUDIOS</div>
+					</div>
+
+					<div>
+						<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+							MENU
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fixed top-[-150vh] left-0 h-screen w-full z-20" id="menu-wrapper">
+				<div class="absolute top-0 left-0 z-30 h-screen w-full bg-black bg-opacity-[85%] backdrop-blur-sm"></div>
+				<nav class="navbar absolute top-0 left-0 h-screen w-full  z-40 text-white text-[10vw] leading-[10vw] px-[2vw]">
+
+					<div class="h-[42vw] w-[27vw] absolute top-[13vh] left-[-2vw]">
+						<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
+					</div>
+					
+					
+					<div class="absolute top-0  left-0 flex justify-between items-center px-[3vw] cursor-pointer w-full h-[11vh]">
+						<a href="/public/index.html">
+							<div class="navConnect h-[7vw] w-[6vw]">
+								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
+						</a>
+
+						<div>
+							<h1 class="navConnect close-icon text-[1.4vw] leading-[1.4vw] uppercase text-white hover:text-[1.7vw] hover:font-bold" onclick="closeMenu()">Close</h1>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center py-[2vw] h-full mt-[4vw]">
+						<div class="text-center flex flex-col items-center uppercase">
+							<a href="/public/about.html" class="navigation relative" data-text="about">About</a>
+							
+							<a href="/public/service.html" class="navigation relative mt-[3vw]" data-text="services">Services</a>					
+							
+							<a href="/public/contact.html" class="navigation relative mt-[3vw]" data-text="contact">Contact</a>
+						</div>
+					</div>
+				</nav>
+			</div>		
+		</section0>
+
+		
+		<section1>
+			<div class="pb-[3.5vw] pl-[9vw] pt-[11vh]">
+				<div class="relative">
+					<div class="pt-[4vw]">
+						<div class="contact text-[3vw] leading-[3vw] uppercase">
+							<h1>Contacts</h1>
+						</div>
+						
+						<ul class="contact-child text-[1.3vw] leading-[1.3vw] mt-[2.5vw]">
+							<li class="social"><a href="">Email</a></li>
+							<li class="social mt-[0.8vw]"><a href="">Instagram</a></li>
+							<li class="social mt-[0.8vw]"><a href="">Twitter</a></li>
+						</ul>
+					</div>
+
+
+					<div class="min-h-[62vh] h-[62vh] w-[35vw] absolute top-[-8vw] right-[0vw]">
+						<img src="../src/assets/img/ajeboHustlers/img61.png" class="h-full w-full object-cover grayscale" alt=”Image”>
+					</div>
+
+					<!-- <div class="min-h-[51vh] h-[51vh] w-[23vw] absolute top-[-2vw] right-[4vw]">
+						<img src="../src/assets/img/artiste1.png" class="h-full w-full object-cover grayscale" alt=”Image”>
+					</div> -->
+
+
+					<!-- <div class="min-h-[55vh] h-[55vh] w-[18vw] absolute top-[-5vw] right-[3vw]">
+						<img src="../src/assets/img/artiste2.png" class="h-full w-full object-cover grayscale" alt=”Image”>
+					</div> -->
+				</div>
+
+				<div>
+					<div class="flex justify-between items-center">
+						<div>
+							<a href="">
+								<div class="talk text-[20vw] leading-[16vw] uppercase mt-[3vw]">
+									<div>Let's</div>
+									<div>Talk</div> 
+								</div>
+							</a>
+
+							
+								<div class="emoji min-h-[25vh] h-[25vh] w-[14vw] z-[10000000]">
+									<img src="../src/assets/img/emoji.png" class="h-full w-full object-contain grayscale" alt=”Image”>
+								</div>
+							
+						</div>
+						
+						<div>
+							<div class="proposal text-[1.6vw] leading-[1.7vw] w-[25vw] mr-[2vw] uppercase">
+								<div>Got a Proposal or Project you have in mind?</div>
+								<div>Feel free to reach out!</div>
+							</div>
+
+							<div class="h-[2.5vw] w-[2.5vw] mt-[1.2vw]">
+								<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+							</div>
+						</div>
+					</div>
+					
+					<div class="flex justify-between items-center">
+						<div class="hello text-[1.4vw] leading-[1.4vw] mt-[3vw]">
+							<div>Say Hello!</div>
+							<div>
+								<div class="mt-[0.5vw]">Let's Chat - Let's Collaborate</div>
+							</div>
+						</div>
+
+						<a href="/public/bayanniShoot.html">
+							<div class="mr-[3vw]">
+								<div class="viewProject rounded-full h-[11vw] w-[11vw] text-center uppercase flex justify-around items-center text-[1vw] leading-[1vw] animate-bounce hover:animate-none">
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="../src/assets/img/longArrow1.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+
+									<div>
+										<div>View</div>
+										<div>Projects</div>
+									</div>
+
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="../src/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>					
+				</div>
+			</div>
+		</section1>
+
+					<!-- FOOTER -->
+				<footer>
+					<div class="footer px-[2vw] bg-black text-white">
+						<div>
+							<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase pt-[5vw] text-center">
+								HeadB0rn Studios*
+							</div>
+						</div>
+
+						<div class="footer-nav mt-[7vw]">
+							<div class="flex justify-around items-center text-[1.1vw] uppercase">
+								<div>
+									<div>About</div>
+									<div>Stories</div>
+									<div>Services</div>
+									<div>Contact</div>
+								</div>
+
+								<div>
+									<div>Email</div>
+									<div>Instagram</div>
+									<div>Twitter</div>
+								</div>
+							</div>
+
+							<div class="flex justify-end mt-[3vw]">
+								<div class="flex justify-between items-center w-[53vw]">
+									<a href="/public/index.html" data-text="back top">
+										<div class="flex items-center justify-center uppercase">
+											<div class="h-[2vw] w-[2vw] mr-[1vw]">
+												<img src="../src/assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+											</div>
+											<h1 class="backTop text-[1.3vw]">Back Top</h1>
+										</div>
+									</a>
+									<div class="text-right text-[1.1vw] leading-[1.4vw]">
+										<span class='text-[1.2vw]'>©</span>
+										<span>2023 HEADB0RN STUDIOS</span>
+										<div class="uppercase">All Rights Reserved</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="/src/contact/contact.js"></script>
+</body>
+</html>

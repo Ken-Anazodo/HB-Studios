@@ -1,0 +1,392 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	transition: ease 0.4s;
+}
+
+.navbar{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 300;
+}
+
+.navigation::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	/* background:  rgb(202 138 4); */
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.navigation:hover::after{
+	width: 100%;
+
+}
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+
+/* Section1 */
+.about{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+
+.intro-hbs{
+	min-height: 50vh;
+	height: 50vh;
+	width: 17vw;
+}
+
+
+.letter{
+	font-size: 20vw;
+	line-height: 17vw;
+	text-align: center;
+	font-family: 'Libre Bodoni', serif;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+
+/* Section2 */
+.creative-studio{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.cse{
+	font-family: 'Libre Bodoni', serif;
+	font-weight: 700;
+}
+
+.studio1{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+.elevate{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.circle{
+	border-radius: 50%;
+
+}
+
+.text{
+	font-family: 'Bodoni Moda', serif;
+	font-style: normal;
+	font-weight: 800;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
+
+.memorable-brand{
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.craft, .leave{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.a-vision{
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.subHead{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.subBody{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+
+.swiper1 {
+	width: 17vw;
+	height: 24vh;
+	min-height: 24vh;
+  }
+
+.swiper2 {
+	width: 50vw;
+	height: 70vh;
+	min-height: 70vh;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	background: rgb(24 24 27);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active{
+	background: white;
+} 
+
+  .autoplay-progress {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: white;
+  }
+
+  .autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	stroke-width: 4px;
+	stroke: white;
+	fill: none;
+	stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+	stroke-dasharray: 125.6;
+	transform: rotate(-90deg);
+  }
+
+
+
+
+.welcome{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+/* .n{
+	font-family: 'Bodoni Moda', serif;
+} */
+
+.intro{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+.profile{
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif; 
+}
+
+.last-name{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.first-name{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
+}
+
+.position{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 600;
+}
+
+.bio-container, .bio-container1{
+	transition: .4s linear .2s;
+	height: 0;
+	opacity: 0;
+	padding: 0;
+}
+
+.bio-container.active, .bio-container1.active{
+	height: 19.5vh;
+	min-height: 19.5vh;
+	opacity: 100%;
+	padding: 1.3vw 0;
+}
+
+.bio{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 500;
+	transition: .3s ease-in-out;
+}
+
+.callToAction{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.create{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.callToAction1{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 600;
+}
+
+.emoji{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.bio-img1, .bio-img2{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.viewProject{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	background-color: rgb(30, 30, 30);
+}
+
+
+
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.backTop{
+	font-weight: 800;
+}

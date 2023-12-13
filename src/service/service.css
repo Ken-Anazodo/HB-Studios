@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	transition: ease 0.4s;
+}
+
+.navbar{
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 300;
+}
+
+.navigation::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	/* background:  rgb(202 138 4); */
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.navigation:hover::after{
+	width: 100%;
+
+}
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+
+/* Section 1 */
+.discover{
+	font-family: kepler-std-semicondensed-dis, serif;
+	font-style: italic;
+	font-weight: 300;    
+}
+
+.services{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.n{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 700;
+}
+
+.subHead{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.subBody{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+/* Section2 */
+.offerings{
+	font-weight: 600;
+	font-family: 'Anton', sans-serif;
+}
+
+.weOffer{
+	font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+}
+
+.num{
+	font-weight: 400;
+	font-family: 'Anton', sans-serif;
+}
+
+.title{
+	font-weight: 700;
+	font-family: 'Anton', sans-serif;
+}
+
+.readMore{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+.weBelieve{
+	font-weight: 400;
+	font-family: 'Anton', sans-serif;
+}
+
+.aboutService{
+	font-weight: 700;
+	font-family: 'Anton', sans-serif;
+}
+
+.x{
+	font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+}
+
+.service-footers{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+#personalStylePage::-webkit-scrollbar, #groomingPage::-webkit-scrollbar, #personalBrandingPage::-webkit-scrollbar, #colorAnalysisPage::-webkit-scrollbar{
+    display: none;
+}
+
+#personalStylePage, #groomingPage, #personalBrandingPage, #colorAnalysisPage{
+	transition: 0.6s;
+}
+
+
+/* .navigation1::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	background: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.navigation1:hover::after{
+	width: 100%;
+
+} */
+
+.theGoal{
+	font-weight: 800;
+	font-family: 'Anton', sans-serif;
+}
+
+
+
+
+/* Section 3 */
+.circle{
+	border-radius: 50%;
+
+}
+
+.text{
+	font-family: 'Bodoni Moda', serif;
+	font-style: normal;
+	font-weight: 800;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.3em;
+	transform-origin: 0 100px;
+}
+
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.backTop{
+	font-weight: 800;
+}

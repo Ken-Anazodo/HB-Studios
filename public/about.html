@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link href="style.css" rel="stylesheet">
+	<link href="/src/about/about.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<div>
+			<div class="inner-cursor z-[1000000]"></div>
+			<div class="outer-cursor z-[1000000]"></div>
+		</div>
+
+
+		<section class="bg-black text-stone-200 pb-[2vw]">
+			<section0 class="relative overflow-hidden h-screen w-full">
+				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[11vh] bg-blac">
+					<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
+					<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
+						
+						<a href="/public/index.html">
+							<div class="navConnect h-[7vw] w-[6vw] flex items-center">
+								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
+						</a>
+	
+						<div class="navConnect text-center text-[1.1vw] leading-[1.2vw]">
+							<div class="stu hb ">HEADB0RN</div>
+							<div class="stu text-[1.6vw] ">STUDIOS</div>
+						</div>
+	
+						<div>
+							<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+								MENU
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="fixed top-[-150vh] left-0 h-screen w-full z-20" id="menu-wrapper">
+					<div class="absolute top-0 left-0 z-30 h-screen w-full bg-black bg-opacity-[85%] backdrop-blur-sm"></div>
+					<nav class="navbar absolute top-0 left-0 h-screen w-full  z-40 text-white text-[10vw] leading-[10vw] px-[2vw]">
+
+						<div class="h-[42vw] w-[27vw] absolute top-[13vh] left-[-2vw]">
+							<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
+						</div>
+
+						
+						<div class="absolute top-0  left-0 flex justify-between items-center px-[3vw] cursor-pointer w-full h-[11vh]">
+							<a href="/public/index.html">
+								<div class="navConnect h-[7vw] w-[6vw]">
+									<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+								</div>
+							</a>
+	
+							<div>
+								<h1 class="navConnect close-icon text-[1.4vw] leading-[1.4vw] uppercase text-white hover:text-[1.7vw] hover:font-bold" onclick="closeMenu()">Close</h1>
+							</div>
+						</div>
+	
+						<div class="flex justify-center items-center py-[2vw] h-full mt-[4vw]">
+							<div class="text-center flex flex-col items-center uppercase">
+								<a href="/public/about.html" class="navigation relative" data-text="about">About</a>
+								
+								<a href="/public/service.html" class="navigation relative mt-[3vw]" data-text="services">Services</a>					
+								
+								<a href="/public/contact.html" class="navigation relative mt-[3vw]" data-text="contact">Contact</a>
+							</div>
+						</div>
+					</nav>
+				</div>		
+			</section0>
+
+
+
+			<section1>
+				<div class="h-screen w-screen pt-[8vw]">
+					<div class="flex items-center justify-center h-full">
+
+						<div>
+							<div class="flex justify-center items-center">
+								<div class="h-[3vw] w-[3vw]">
+									<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+								</div>
+
+								<div class="about text-[8vw] leading-[8vw] text-center mb-[2vw] mx-[2vw]">
+									<h1>ABOUT</h1>
+								</div>
+
+								<div class="h-[3vw] w-[3vw]">
+									<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+								</div>
+							</div>
+							
+
+							<div class="flex justify-center items-center px-[1vw] bg-zinc-900">
+								<div class="intro-hbs letter text-red-800 bg-black">
+									<h1>H</h1>
+								</div>
+
+								<div class="intro-hbs">
+									<!-- <img src="../src/assets/img/model.jpg" class="h-full w-full object-cover brightness-50" alt=”img”> -->
+									<iframe src="https://player.vimeo.com/video/869061440?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								
+								<div class="intro-hbs letter text-black bg-stone-200">
+									<h1>B</h1>
+								</div>
+
+								<div class="intro-hbs">
+									<!-- <iframe src="../src/assets/video/johnny.mp4" class=' h-full w-full brightness-50 grayscale' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
+									<iframe src="https://player.vimeo.com/video/869068933?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+
+								<div class="intro-hbs letter text-red-800 bg-black">
+									<h1>S</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section1>
+
+			<section2>
+				<div class="pt-[9vw] px-[2vw] text-white mb-[5vw">
+
+					<div class="relative w-full h-full">
+						<div>
+						<div class="cse text-[14vw] leading-[14vw] uppercase relative">
+							<div class="text-center">Creative</div>
+							<div class="studio1 mt-[1.2vw]">Studio</div>
+							<div class="text-center mt-[2.5vw]">Evolution</div>
+
+
+							<!-- <div class='min-h-[25vw] h-[25vw] w-[25vw] absolute top-0 right-0 rounded-full'>
+								<iframe src="../src/assets/video/vid5.mp4" class=' h-full w-full brightness-50 grayscal rounded-full' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe>
+								<iframe src="https://player.vimeo.com/video/873968269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[40%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+							</div> -->
+						</div>
+						</div>
+
+
+
+						<div class="absolute right-[15vw] bottom-[12vw] z-10">
+							<div class="circle mt-[32vw] ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+								<div class="text">
+									<p class="text-[0.9vw] text-stone-400">
+										<span class="hbSTU">HB STUDIOS</span> 
+										<span class="star">*</span>
+										<span>GET IN TOUCH</span>
+										<span class="star">*</span>
+										<span>GET IN TOUCH</span>
+										<span class="star">*</span>
+									</p>
+								</div>
+		
+								<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+									<div class="h-[3.5vw] w-[3.5vw]">
+										<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+<!-- 		
+								<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-10">
+									<div class="h-[3.5vw] w-[3.5vw]">
+										<img src="../src/assets/img/rightArrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div> -->
+							</div>
+						</div>
+
+
+						<div class="absolute bottom-[22vw] left-[38vw] text-stone-400">
+							<div class="elevate text-[1vw] leading-[1.2vw] w-[20vw]">
+								Elevating Artiste Image and Branding, unlocking visual Potentials: Introducing HEADBORN STUDIOS.
+							</div>
+						</div>
+					</div>					
+				</div>
+			</section2>
+
+
+			<section3>
+				<div>
+
+					<div class="flex justify-center relative overflow-hidden">
+						<div class='iframeCont1 h-screen w-[50vw]'>							
+							<iframe src="https://player.vimeo.com/video/891064567?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="memorable-brand uppercase absolute bottom-[8vw] left-0">
+							<div class="craft1 flex items-center w-[300vw] text-[5vw] leading-[5vw] mb-[0.6vw">
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+							</div>
+
+
+							<div class="lasting flex items-center w-[300vw] text-[5vw] leading-[5vw]">
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+
+
+					<div class="mb-[8vw]">
+						<div class="flex justify-center mt-[4vw]">
+							<div class="a-vision text-[1.3vw] leading-[1.5vw] uppercase text-center w-[19vw]">
+								A Vision Beyond Ordinary Image Consulting
+							</div>
+						</div>
+
+
+						<div class="subHead half-decade flex justify-center mt-[4vw]">
+							<div class="text-center text-[3.2vw] w-[44vw] leading-[3.7vw]">
+								Half a decade experience as independent creative professionals.
+							</div>
+						</div>
+
+						<div class="subBody we-craft flex justify-center mt-[7vw]">
+							<div class="text-center text-[1.1vw] w-[33vw] text-stone-300">
+								<p>
+									We craft a distinctive stage presence that elevates your performance, ensuring a memorable 
+									impact on both fans and industry insiders. By fusing worldwide fashion trends with the essence 
+									of Afrobeats, we craft an exceptional and cross-cultural aesthetic that deeply connects with global 
+									audiences. Our approach seamlessly incorporates fashion and style that harmonizes with your unique 
+									vision for music videos and content, reinforcing and amplifying your brand identity visually. 
+									Our ultimate goal is to empower artists, transforming them into self-assured, iconic figures poised 
+									to conquer the global stage. Drawing inspiration from the rich cultural heritage of Afrobeats, 
+									we curate a forward-thinking fashion identity that authentically reflects your roots and artistic 
+									journey.
+								</p>
+
+								<p class="mt-[2vw]">
+									Our proficiency extends well beyond mere fashion guidance. We offer a holistic approach encompassing 
+									image coaching, wardrobe enhancements, color analysis, and tailor-made branding strategies. 
+									We meticulously construct a memorable brand that makes an indelible mark on your audience, seamlessly 
+									aligning with your musical essence and creative vision.
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="px-[2vw] mb-[7.5vw]">
+						<div class="flex items-center justify-center relative">
+
+
+							<!-- Small Swiper -->
+							<div class="swiper swiper1 mySwiper mr-[6vw]">
+								<div class="swiper-wrapper brightness-[50%] w-full h-full">
+								  <div class="swiper-slide grayscale">
+									<img src="../src/assets/img/nezAndCos/img10.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img4.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img5.jpg" alt=”images”>
+								  </div>
+								  
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img7.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img8.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img2.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img9.jpg" alt=”images”>
+								  </div>
+								</div>
+								<!-- <div class="swiper-pagination"></div>
+								<div class="autoplay-progress">
+									<svg viewBox="0 0 48 48">
+									  <circle cx="24" cy="24" r="20"></circle>
+									</svg>
+									<span></span>
+								</div> -->
+							</div>
+
+
+
+
+
+
+
+							<!-- Big Swiper -->
+							<div class="swiper swiper2 mySwiper mr-[3vw]">
+								<div class="swiper-wrapper brightness-[50%] w-full h-full">
+								  <div class="swiper-slide grayscale">
+									<img src="../src/assets/img/nezAndCos/img10.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img4.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img5.jpg" alt=”images”>
+								  </div>
+								  
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img7.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img8.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img2.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="../src/assets/img/nezAndCos/img9.jpg" alt=”images”>
+								  </div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="autoplay-progress">
+									<svg viewBox="0 0 48 48">
+									  <circle cx="24" cy="24" r="20"></circle>
+									</svg>
+									<span></span>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Logo -->
+						<div class="h-[6.5vw] w-[6.5vw]">
+							<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+						</div>
+
+						<!-- Introducing Headborn Studios -->
+						<div class="mt-[2vw]">
+							<div class="intro text-[6vw] leading-[6vw] uppercase mr-[4vw] w-[43vw]">
+								<h1>Introducing Headborn Studios</h1>
+							</div>
+							
+
+							<div class="mt-[2vw]">
+								<div class="flex justify-end w-[42vw]">
+									<div class="h-[3.5vw] w-[3.5vw]">
+										<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex justify-end mb-[6vw] mr-[18vw] mt-[6vw]">
+							<div class="flex flex-col justify-center items-center">
+								<div class="subHead text-[3.6vw] w-[40vw] leading-[4.2vw]">
+									<div class="text-center">Welcome to Headborn Studios</div>	
+								</div>
+	
+	
+								<div class="subBody mt-[3vw]">
+									<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+										A trailblazing creative hub based in Lagos, Nigeria. 
+										We are a dynamic and innovative duo with a passion for Image Consulting and Fashion & Style Direction.
+										Our mission is to empower artists and brands to create continuous visual stories that resonates around 
+										fashion and lifestyle globally.
+									</div>
+								</div>
+							</div>
+						</div>	
+
+
+						<div>
+							<div class="flex items-center">
+
+								<div>
+									<div>
+										<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
+											<div class="">Why choose us?</div>
+										</div>
+		
+										<div class="subBody mt-[3vw]">
+											<div class="text-[1.1vw] w-[30vw] text-stone-300">
+												Our team comprises industry authorities with a deep comprehension of the Afrobeats 
+												genre and its global music trajectory. We boast a well-established history of propelling 
+												brands to attain notable recognitions, as exemplified by our successful partnership with PITH AFRICA.
+												our team's expertise, proven success, dedication to artistic excellence, and commitment to amplifying 
+												cultural voices collectively underscore our capacity to make a tangible impact in the music and branding 
+												industry. This impact is not only reflected in increased sales and brand recognition but also in our broader 
+												mission to contribute to the broader cultural narrative. 
+											</div>
+										</div>
+									</div>
+								</div>
+								
+
+								<div class='iframeCont h-[70vh] min-h-[70vh] w-[70vw]'>
+									<iframe src="https://player.vimeo.com/video/891065519?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</section3>
+
+
+			<section4>
+				<div class="mb-[15vw]">
+					<div class="mainBio">
+						<div class="profile-container border-y-[0.05vw] border-stone-700 py-[3vw] cursor-pointer">
+							<div class="pro1 profile flex justify-around items-center">
+								<div class="plus">
+									<div class="h-[2.5vw] w-[2.5vw]">
+										<img src="../src/assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+
+								<div class="name flex items-center text-[5vw] leading-[5vw] uppercase">
+									<div class="first-name mr-[1.5vw] text-[5vw] leading-[5vw]">Nez</div>
+									<div class="last-name">Anazodo</div>
+								</div>
+
+								<div>
+									<div class="position text-[1.3vw] leading-[1.3vw]">Creative Director & Image Consultant</div>
+								</div>
+							</div>
+
+
+
+							<div class="bio-img1 min-h-[40vh] h-[40vh] w-[15vw] z-[10000000] rounded-full">
+								<img src="../src/assets/img/nezAndCos/img1.jpg" class="h-full w-full object-cover rounded-full brightness-50 sepia" alt=”Image”>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="bio-container flex items-center justify-around py-[1.3vw pr-[5vw] bg-stone-200">
+								<div class="mr-[3vw">
+									<div class="h-[3vw] w-[3vw]">
+										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+
+								<div>
+									<div class="bio text-[1.1vw] text-black w-[50vw] text-justify">
+										An inspired creative director and image consultant passionate about crafting innovative 
+										narratives at the crossroads of fashion and culture. My morals revolves around reshaping 
+										fashion perspectives as fashion products by seamlessly blending individuality, lifestyle, 
+										beauty, cultural and contemporary symbolism, and human relations into captivating brand 
+										stories that can also be translated into organic growth.
+									</div>
+								</div>
+
+								<div class="ml-[3vw">
+									<div class="h-[3vw] w-[3vw]">
+										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="mainBio">
+						<div class="profile-container1 border-y-[0.05vw] border-stone-700 py-[3vw] cursor-pointer">
+							<div class="pro2 profile flex justify-around items-center uppercas">
+								<div>
+									<div class="h-[2.5vw] w-[2.5vw]">
+										<img src="../src/assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+
+								<div class="name flex items-center text-[5vw] leading-[5vw] uppercase">
+									<div class="first-name mr-[1.5vw] text-[5vw] leading-[5vw]">Cosmos</div>
+									<div class="last-name">Ojeme</div>
+								</div>
+
+								<div>
+									<div class="position text-[1.3vw] leading-[1.3vw]">Creative Director & Strategist</div>
+								</div>
+							</div>
+
+
+							<div class="bio-img2 min-h-[40vh] h-[40vh] w-[15vw] z-[10000000] rounded-full">
+								<img src="../src/assets/img/nezAndCos/img6.jpg" class="h-full w-full object-cover rounded-full brightness-50 sepia" alt=”Image”>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="bio-container1 flex items-center justify-around py-[1.3vw] pr-[5vw] bg-stone-200">
+								<div class="mr-[3vw">
+									<div class="h-[3vw] w-[3vw]">
+										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+
+								<div>
+									<div class="bio text-[1.1vw] text-black w-[50vw] text-justify">
+										A value-oriented creative-director and strategist, passionate about brand management and 
+										business growth with years of experience ideating, creating and marketing fashion products and 
+										immersive experiences. I love the process of creating and reiterative learning and I am committed 
+										to telling unique brand stories, building strong communities and generating revenue.
+									</div>
+								</div>
+
+								<div class="ml-[3vw">
+									<div class="h-[3vw] w-[3vw]">
+										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section4>
+
+
+
+			<section5>
+				<div>
+					<div class="flex justify-center items-center mb-[5vw]">
+						<a href="">
+							<div class="callToAction-container uppercase text-center">
+								<div class="callToAction text-[9vw] leading-[9vw]">
+									<div class="create text-[8vw] leading-[8vw]">Let's Create</div>
+									<div>Something Great</div>
+									<div>Together</div>
+								</div>
+								<div class="callToAction1 text-[1.5vw] leading-[1.5vw] mt-[4vw] capitalize">Get in touch and let's bring your vision to life</div>
+							</div>
+						</a>
+
+
+						<div class="emoji min-h-[25vh] h-[25vh] w-[14vw] z-[10000000]">
+							<img src="../src/assets/img/emoji.png" class="h-full w-full object-contain grayscale" alt=”Image”>
+						</div>
+					</div>
+
+
+					<div class="flex justify-end mb-[7vw] mr-[2vw]">
+						<a href="/public/bayanniShoot.html">
+							<div class="mr-[3vw]">
+								<div class="viewProject rounded-full h-[11vw] w-[11vw] text-center uppercase flex justify-around items-center text-[1vw] leading-[1vw] animate-bounce hover:animate-none">
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="../src/assets/img/longArrow1.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+	
+									<div>
+										<div>View</div>
+										<div>Projects</div>
+									</div>
+	
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="../src/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section5>
+
+
+
+
+
+
+
+
+
+
+
+				<!-- FOOTER -->
+				<div class="footer px-[2vw]">
+					<div>
+						<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase mt-[3vw] text-center">
+							HeadB0rn Studios*
+						</div>
+					</div>
+
+					<div class="footer-nav mt-[7vw]">
+						<div class="flex justify-around items-center text-[1.1vw] uppercase">
+							<div>
+								<div>About</div>
+								<div>Stories</div>
+								<div>Services</div>
+								<div>Contact</div>
+							</div>
+
+							<div>
+								<div>Email</div>
+								<div>Instagram</div>
+								<div>Twitter</div>
+							</div>
+						</div>
+
+						<div class="flex justify-end mt-[3vw]">
+							<div class="flex justify-between items-center w-[53vw]">
+								<a href="/public/index.html" data-text="back top">
+									<div class="flex items-center justify-center uppercase">
+										<div class="h-[2vw] w-[2vw] mr-[1vw]">
+											<img src="../src/assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+										</div>
+										<h1 class="backTop text-[1.3vw]">Back Top</h1>
+									</div>
+								</a>
+								<div class="text-right text-[1.1vw] leading-[1.4vw]">
+									<span class='text-[1.2vw]'>©</span>
+									<span>2023 HEADB0RN STUDIOS</span>
+									<div class="uppercase">All Rights Reserved</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</section>
+
+
+
+
+
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="../src/about/about.js"></script>		
+</body>
+</html>
