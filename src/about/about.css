@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* Cursor */
 .inner-cursor{
 	position: fixed;
 	left: 3vw;
@@ -52,6 +53,7 @@ body::-webkit-scrollbar {
 }
 
 
+/* Navigation  */
 .nav-sec {
 	font-family: 'Poppins', sans-serif; 
 	font-style: normal;
@@ -61,22 +63,51 @@ body::-webkit-scrollbar {
 
 .navbar{
 	/* font-family: 'Montserrat', sans-serif; */
-	font-family: 'Poppins', sans-serif; 
+	font-family: 'Anton', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
 
-.navigation::after{
+.close-icon{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.menu-num{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.navImage-display1, .navImage-display2, .navImage-display3{	
+		position: fixed;
+		left: 0;
+		pointer-events: none;
+		transition: transform .1s;
+		transform: rotate(45deg);
+		opacity: 0;
+}
+
+.exploreHead{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.exploreBody{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/* .navigation::after{
 	content: '';
 	height: 0.8vw;
 	width: 0;
-	/* background:  rgb(202 138 4); */
+	background:  rgb(202 138 4);
 	background: white;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	transition: width 0.5s;
-}
+} */
 
 .navigation:hover::after{
 	width: 100%;
@@ -103,30 +134,29 @@ body::-webkit-scrollbar {
 
 
 /* Section1 */
-.about{
-	font-weight: 500;
-	font-family: 'Anton', sans-serif;
-}
-
-
-.intro-hbs{
-	min-height: 50vh;
-	height: 50vh;
-	width: 17vw;
-}
-
-
-.letter{
-	font-size: 20vw;
-	line-height: 17vw;
-	text-align: center;
+.one{
+	font-weight: 400;
 	font-family: 'Bodoni Moda', serif;
-	font-weight: 800;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 2vw;
-	padding-right: 2vw;
+}
+
+.hbb{
+	font-weight: 500;
+	font-family: 'Bodoni Moda', serif;
+}
+
+.about{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.styleGen{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.stylG, .view{
+	font-family: 'Bodoni Moda', serif;
+    font-weight: 500;
 }
 
 
@@ -346,7 +376,7 @@ body::-webkit-scrollbar {
 	font-weight: 600;
 }
 
-.emoji{
+.emoji, .bio-img1, .bio-img2{
 	position: fixed;
 	left: 0;
 	pointer-events: none;
@@ -355,14 +385,14 @@ body::-webkit-scrollbar {
 	opacity: 0;
 }
 
-.bio-img1, .bio-img2{
+/* .bio-img1, .bio-img2{
 	position: fixed;
 	left: 0;
 	pointer-events: none;
 	transition: transform .1s;
 	transform: rotate(45deg);
 	opacity: 0;
-}
+} */
 
 .viewProject{
 	font-family: 'Poppins', sans-serif;

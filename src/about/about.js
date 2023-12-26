@@ -20,13 +20,16 @@ const showAnim = gsap.from('.nav-sec-container', {
 
   // OPEN AND CLOSE NAV
 let menu = document.getElementById('menu-wrapper');
+let logoAndCloseMenu = document.getElementById('logoAndClose');
 
 const closeMenu = () => {
 	menu.style.top = "-150vh";
+	logoAndCloseMenu.style.display = "none";
 }
 
 const openMenu = () => {
 	menu.style.top = "0";
+	logoAndCloseMenu.style.display = "flex";
 }
 
 
@@ -54,6 +57,8 @@ let navConnect = Array.from(document.querySelectorAll(".navConnect"));
 let circleText = document.querySelector(".circle");
 let closeDiv = document.querySelector(".close-icon");
 let closeCursor = document.querySelector(".closeCursor");
+
+
 
 
 links.forEach(link => {
@@ -85,11 +90,14 @@ navConnect.forEach(navConnect => {
 
 
 // CIRCLE ROTATE TEXT
-const text = document.querySelector('.text p');
-text.innerHTML = text.innerText.split('').map(
-	(char, i) =>
-	`<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-).join('');
+let texts = Array.from(document.querySelectorAll(".text p"));
+
+texts.forEach(text => {
+	text.innerHTML = text.innerText.split('').map(
+		(char, i) =>
+		`<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+	).join('');
+})
 
 
 // Circle Cursor Change
@@ -204,13 +212,19 @@ mainBio.forEach(mainBio => {
 
 
 
-// BIO-IMG & EMOJI ANIMATION
+// NAVIGATION IMAGE DISPLAY, BIO-IMG & EMOJI ANIMATION
 let callToAction = document.querySelector(".callToAction-container");
 let emoji = document.querySelector(".emoji");
 let bioImg1 = document.querySelector(".bio-img1");
 let bioImg2 = document.querySelector(".bio-img2");
 let pro1 = document.querySelector(".pro1");
 let pro2 = document.querySelector(".pro2");
+let navImg1 = document.querySelector(".navImage-display1");
+let navImg2 = document.querySelector(".navImage-display2");
+let navImg3 = document.querySelector(".navImage-display3");
+let navChild1 = document.querySelector(".navChild1");
+let navChild2 = document.querySelector(".navChild2");
+let navChild3 = document.querySelector(".navChild3");
 
 
 let mouseX;
@@ -222,6 +236,126 @@ window.addEventListener('mousemove', e => {
 
 	gsap.to(cursor, 0.3, {x: mouseX, y: mouseY})
 })
+
+
+
+
+
+// Navigation Images
+
+// About
+navChild1.addEventListener("mouseenter", () => {
+	gsap.to(navImg1, 1, 
+		{ 
+			scale: 1, 
+			opacity: 1, 
+			top: "-5vw", 
+			left: "-5vw", 
+			rotate: 0,
+			ease: Elastic.easeOut.config(1, 0.3) 
+		})
+
+		navImg1.style.display ='block';
+})
+
+navChild1.addEventListener("mousemove", () => {
+	gsap.to(navImg1, 1, 
+		{ 
+			x: mouseX,
+			y: mouseY
+		})
+})
+
+navChild1.addEventListener("mouseleave", () => {
+	gsap.to(navImg1, 0.2, 
+		{ 
+			scale: 0, 
+			opacity: 0, 
+			top: "0.1vw", 
+			left: "-0.5vw", 
+			rotate: 45
+		})
+
+		navImg1.style.display ='none';
+})
+
+
+
+// Service
+navChild2.addEventListener("mouseenter", () => {
+	gsap.to(navImg2, 1, 
+		{ 
+			scale: 1, 
+			opacity: 1, 
+			top: "-5vw", 
+			left: "-5vw", 
+			rotate: 0,
+			ease: Elastic.easeOut.config(1, 0.3) 
+		})
+
+		navImg2.style.display ='block';
+})
+
+navChild2.addEventListener("mousemove", () => {
+	gsap.to(navImg2, 1, 
+		{ 
+			x: mouseX,
+			y: mouseY
+		})
+})
+
+navChild2.addEventListener("mouseleave", () => {
+	gsap.to(navImg2, 0.2, 
+		{ 
+			scale: 0, 
+			opacity: 0, 
+			top: "0.1vw", 
+			left: "-0.5vw", 
+			rotate: 45
+		})
+
+		navImg2.style.display ='none';
+})
+
+
+
+// Contacts
+navChild3.addEventListener("mouseenter", () => {
+	gsap.to(navImg3, 1, 
+		{ 
+			scale: 1, 
+			opacity: 1, 
+			top: "-5vw", 
+			left: "-5vw", 
+			rotate: 0,
+			ease: Elastic.easeOut.config(1, 0.3) 
+		})
+
+		navImg3.style.display ='block';
+})
+
+navChild3.addEventListener("mousemove", () => {
+	gsap.to(navImg3, 1, 
+		{ 
+			x: mouseX,
+			y: mouseY
+		})
+})
+
+navChild3.addEventListener("mouseleave", () => {
+	gsap.to(navImg3, 0.2, 
+		{ 
+			scale: 0, 
+			opacity: 0, 
+			top: "0.1vw", 
+			left: "-0.5vw", 
+			rotate: 45
+		})
+
+		navImg3.style.display ='none';
+})
+
+
 
 
 

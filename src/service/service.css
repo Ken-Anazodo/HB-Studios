@@ -52,6 +52,7 @@ body::-webkit-scrollbar {
 }
 
 
+/* Navigation  */
 .nav-sec {
 	font-family: 'Poppins', sans-serif; 
 	font-style: normal;
@@ -60,22 +61,52 @@ body::-webkit-scrollbar {
 }
 
 .navbar{
-	font-family: 'Poppins', sans-serif; 
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Anton', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
 
-.navigation::after{
+.close-icon{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.menu-num{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.navImage-display1, .navImage-display2, .navImage-display3{	
+		position: fixed;
+		left: 0;
+		pointer-events: none;
+		transition: transform .1s;
+		transform: rotate(45deg);
+		opacity: 0;
+}
+
+.exploreHead{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.exploreBody{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/* .navigation::after{
 	content: '';
 	height: 0.8vw;
 	width: 0;
-	/* background:  rgb(202 138 4); */
+	background:  rgb(202 138 4);
 	background: white;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	transition: width 0.5s;
-}
+} */
 
 .navigation:hover::after{
 	width: 100%;
@@ -137,6 +168,10 @@ body::-webkit-scrollbar {
 .weOffer{
 	font-weight: 200;
 	font-family: 'Poppins', sans-serif;
+}
+
+.tint{
+	background-color: rgb(36, 163, 168);
 }
 
 .num{

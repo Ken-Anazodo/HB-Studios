@@ -73,15 +73,15 @@
 				</div>
 	
 				<div class="fixed top-[-150vh] left-0 h-screen w-full z-20" id="menu-wrapper">
-					<div class="absolute top-0 left-0 z-30 h-screen w-full bg-black bg-opacity-[85%] backdrop-blur-sm"></div>
-					<nav class="navbar absolute top-0 left-0 h-screen w-full  z-40 text-white text-[10vw] leading-[10vw] px-[2vw]">
+					<div class="absolute top-0 left-0 z-30 h-screen w-full bg-black bg-opacity-[85%] md:bg-opacity-[100%] backdrop-blur-sm"></div>
+					<nav class="navbar absolute top-0 left-0 h-screen w-full  z-40 text-white px-[2vw]">
 
 						<div class="h-[42vw] w-[27vw] absolute top-[13vh] left-[-2vw]">
-							<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[16%]" alt=”left-down arrow”>
+							<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
 						</div>
+
 						
-						
-						<div class="absolute top-0  left-0 flex justify-between items-center px-[3vw] cursor-pointer w-full h-[11vh]">
+						<div class="fixed top-0  left-0 [display:none] justify-between items-center px-[3vw] cursor-pointer w-full h-[11vh]" id="logoAndClose">
 							<a href="/public/index.html">
 								<div class="navConnect h-[7vw] w-[6vw]">
 									<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
@@ -93,17 +93,125 @@
 							</div>
 						</div>
 	
-						<div class="flex justify-center items-center py-[2vw] h-full mt-[4vw]">
-							<div class="text-center flex flex-col items-center uppercase">
-								<a href="/public/about.html" class="navigation relative" data-text="about">About</a>
+						<div class=" pt-[6vw] h-full">
+							<div class="flex flex-col uppercase text-[7vw] leading-[7vw]">
+								<a href="/public/about.html" data-text="about">
+									<div class="navChild1 navigation relative flex">
+										<h1 class="menu-num text-[1.2vw] leading-[1.2vw]">(01)</h1>
+										<h1>About</h1>
+									</div>
+	
+									<div class="navImage-display1 min-h-[40vh] h-[40vh] w-[30vw] z-[10000000]">
+										<img src="../src/assets/img/nezAndCos/img4.jpg" class="h-full w-full object-cover grayscale" alt=”Image”>
+									</div>
+								</a>
+								<hr>
+	
+	
+								<a href="/public/service.html"  data-text="services">
+									<div class="navChild2 flex justify-end">
+										<div class="navigation relative mt-[3vw] flex">
+											<h1>Services</h1>
+											<h1 class="menu-num text-[1.2vw] leading-[1.2vw]">(02)</h1>
+										</div>
+	
+										<div class='iframeCont navImage-display2 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+											<!-- <iframe src="../src/assets/video/vid4.mp4" class='aspect-video h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
+											<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+								</a>
+								<hr>					
 								
-								<a href="#" class="navigation relative mt-[3vw]" data-text="services">Services</a>					
-								
-								<a href="/public/contact.html" class="navigation relative mt-[3vw]" data-text="contact">Contact</a>
+								<a href="/public/contact.html" data-text="contact">
+									<div class="navChild3 navigation relative mt-[3vw] flex">
+										<h1 class="menu-num text-[1.2vw] leading-[1.2vw]">(03)</h1>
+										<h1>Contact</h1>
+									</div>
+	
+									<div class='iframeCont navImage-display3 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+										<!-- <iframe src="../src/assets/video/vid5.mp4" class='aspect-video h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
+										<iframe src="https://player.vimeo.com/video/897032294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</a>
+								<hr>
+							</div>
+	
+
+							<div class="mt-[5vw] flex justify-between items-end">
+								<div class="flex items-center">
+									<div class="mr-[2vw]">
+										<div class="min-h-[30vh] h-[30vh] w-[13vw]">
+											<img src="../src/assets/img/odunsi.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+										</div>
+									</div>
+
+									<div>
+										<div class="exploreHead text-[2.5vw] leading-[2.5vw] w-[12vw] uppercase">Explore HeadBorn Studios</div>
+										<div>
+											<div class="exploreBody text-[0.9vw] leading-[0.9vw] w-[12vw] mt-[1.5vw]">
+												You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.
+											</div>
+										</div>
+									</div>
+
+
+									<div class="z-10">
+										<div class="circle ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+											<div class="text">
+												<p class="text-[0.9vw] text-stone-400">
+													<span class="hbSTU">HB STUDIOS</span> 
+													<span class="star">*</span>
+													<span>OUR CREATION</span>
+													<span class="star">*</span>
+													<span>OUR CREATION</span>
+													<span class="star">*</span>
+												</p>
+											</div>
+					
+											<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+												<div class="h-[3.5vw] w-[3.5vw]">
+													<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+										</div>
+									</div>								
+								</div>
+
+								<div class="">
+									<div class="mb-[7vw]">
+										<div class="flex justify-between items-center w-[15vw]">
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="../src/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="../src/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="../src/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="footer-nav text-right text-[1.1vw] leading-[1.4vw]">
+										<span class='text-[1.2vw]'>©</span>
+										<span>2023 HEADB0RN STUDIOS</span>
+										<div class="uppercase">All Rights Reserved</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</nav>
-				</div>		
+				</div>	
 			</section0>
 
 			<section1>
@@ -128,7 +236,7 @@
 
 						<div class='iframeCont h-[52vh] w-[70vw]'>
 							<!-- <iframe src="../src/assets/video/vid.mp4" class=' h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
-							<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+							<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 
@@ -177,7 +285,7 @@
 
 					<div class="mt-[5vw]">
 						<div class="flex justify-center items-center">
-							<div class="w-[40vw] border-x-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]">
+							<div class="relative w-[40vw] border-x-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw] overflow-hidden" id="partition1" onclick="openPersonalStylePage()">
 								<div>
 									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>01</h1>
@@ -188,17 +296,20 @@
 									</div>
 	
 									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="pstyle-readMore" onclick="openPersonalStylePage()">Read More</h1>
+										<h1 class="readMore navConnect navigation1" id="pstyle-readMore">Read More</h1>
 
 										<div class="h-[5vw] w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
+
+
+								<div class="tint tint-1 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint1"></div>
 							</div>
 
 
-							<div class="w-[40vw] border-r-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]">
+							<div class="relative w-[40vw] border-r-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition2" onclick="openGroomingPage()">
 								<div>
 									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>02</h1>
@@ -210,20 +321,23 @@
 									</div>
 	
 									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="grooming-readMore" onclick="openGroomingPage()">Read More</h1>
+										<h1 class="readMore navConnect navigation1" id="grooming-readMore">Read More</h1>
 
 										<div class="h-[5vw] w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
+
+
+								<div class="tint tint-2 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint2"></div>
 							</div>
 						</div>
 
 
 
 						<div class="flex justify-center items-center">
-							<div class="w-[40vw] border-x-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]">
+							<div class="relative w-[40vw] border-x-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition3" onclick="openPersonalBrandingPage()">
 								<div class="mt-[5vw]">
 									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>03</h1>
@@ -234,16 +348,18 @@
 									</div>
 	
 									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="pBranding-readMore" onclick="openPersonalBrandingPage()">Read More</h1>
+										<h1 class="readMore navConnect navigation1" id="pBranding-readMore">Read More</h1>
 
 										<div class="h-[5vw] w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
+
+								<div class="tint tint-3 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint3"></div>
 							</div>
 
-							<div class="w-[40vw] border-r-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]">
+							<div class="relative w-[40vw] border-r-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition4" onclick="openColorAnalysisPage()">
 								<div class="mt-[5vw]">
 									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>04</h1>
@@ -254,13 +370,16 @@
 									</div>
 	
 									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="cAnalysis-readMore" onclick="openColorAnalysisPage()">Read More</h1>
+										<h1 class="readMore navConnect navigation1" id="cAnalysis-readMore">Read More</h1>
 
 										<div class="h-[5vw] w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
+
+
+								<div class="tint tint-4 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint4"></div>
 							</div>
 						</div>
 					</div>
