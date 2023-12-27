@@ -112,6 +112,14 @@ circleText.addEventListener("mouseleave", () =>{
 })
 
 
+// SECTION 2
+gsap.fromTo('.sec2', {x: '50vw'}, {x: 0, duration: 2, transition: 0.2, 
+	scrollTrigger:{
+		trigger: '.sec2',
+		scrub: true
+	}
+}, "0.2")
+
 
 
 // First Video Display
