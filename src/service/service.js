@@ -100,12 +100,12 @@ texts.forEach(text => {
 // Circle Cursor Change
 circleText.addEventListener("mouseover", () =>{
 	innerCursor.classList.add("grow");
-	outerCursor.style.display = 'none';
+	outerCursor.classList.add("grow");
 })
 
 circleText.addEventListener("mouseleave", () =>{
 	innerCursor.classList.remove("grow");
-	outerCursor.style.display = 'block';
+	outerCursor.classList.remove("grow");
 })
 
 

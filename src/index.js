@@ -116,11 +116,49 @@ function moveCursor(e) {
 }
 
 let links = Array.from(document.querySelectorAll("a"));
+let homeIcon = document.querySelector(".iconNav");
+let homeDisplay = document.querySelector(".hmeCont");
+let hbNav = document.querySelector(".hbNav");
+let welcomeToHb = document.querySelector(".welcomeCont");
 let navConnect = Array.from(document.querySelectorAll(".navConnect"));
-let circleText = document.querySelector(".circle");
+let circleTexts = Array.from(document.querySelectorAll(".circle"));
 // let menuCursor = document.querySelector(".menuCursor");
 let closeDiv = document.querySelector(".close-icon");
 let closeCursor = document.querySelector(".closeCursor");
+
+
+
+homeIcon.addEventListener("mouseover", () =>{
+	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.5, transition: 0.5,
+		scrollTrigger:{
+			trigger: ".hmeCont",
+		}
+	})
+	homeDisplay.style.display ='flex';
+})
+
+homeIcon.addEventListener("mouseleave", () =>{
+	homeDisplay.style.display = 'none';
+})
+
+
+
+
+hbNav.addEventListener("mouseover", () =>{
+	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.5, transition: 0.5,
+		scrollTrigger:{
+			trigger: ".welcomeCont",
+		}
+	})
+	welcomeToHb.style.display ='flex';
+})
+
+hbNav.addEventListener("mouseleave", () =>{
+	welcomeToHb.style.display = 'none';
+})
+
+
+
 
 links.forEach(link => {
 	link.addEventListener("mouseover", () =>{
@@ -146,14 +184,16 @@ navConnect.forEach(navConnect => {
 	})
 })
 
-circleText.addEventListener("mouseover", () =>{
-	innerCursor.classList.add("grow");
-	outerCursor.classList.add("grow");
-})
+circleTexts.forEach(circleText => {
+	circleText.addEventListener("mouseover", () =>{
+		innerCursor.classList.add("grow");
+		outerCursor.classList.add("grow");
+	})
 
-circleText.addEventListener("mouseleave", () =>{
-	innerCursor.classList.remove("grow");
-	outerCursor.classList.remove("grow");
+	circleText.addEventListener("mouseleave", () =>{
+		innerCursor.classList.remove("grow");
+		outerCursor.classList.remove("grow");
+	})
 })
 
 

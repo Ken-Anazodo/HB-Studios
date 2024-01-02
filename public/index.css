@@ -144,6 +144,16 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcome, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
 .mission-statement{
 	font-family: 'Anton', sans-serif;
 }
@@ -154,14 +164,8 @@ body::-webkit-scrollbar {
 	font-weight: 400;    
 }
 
-.circle{
-	/* position: relative;
-	width: 200px;
-	height: 200px; */
+.circle{	
 	border-radius: 50%;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 
 .text{
@@ -188,6 +192,11 @@ body::-webkit-scrollbar {
 	left: 50%;
 	font-size: 1.2em;
 	transform-origin: 0 100px;
+}
+
+.exploreHB{
+	font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
 }
 
 .we-transcend{
