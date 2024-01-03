@@ -354,13 +354,13 @@ body::-webkit-scrollbar {
 .credit-subhead{
 	font-weight: 200;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.5vw;
+	/* font-size: 1.5vw; */
 }
 
 .credit-ans{
 	font-weight: 600;
 	font-family: 'Bodoni Moda', serif;
-	font-size: 1.5vw;
+	/* font-size: 1.5vw; */
 }
 
 .film{
