@@ -129,7 +129,7 @@ let closeCursor = document.querySelector(".closeCursor");
 
 
 homeIcon.addEventListener("mouseover", () =>{
-	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.5, transition: 0.5,
+	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
 			trigger: ".hmeCont",
 		}
@@ -145,7 +145,7 @@ homeIcon.addEventListener("mouseleave", () =>{
 
 
 hbNav.addEventListener("mouseover", () =>{
-	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.5, transition: 0.5,
+	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
 			trigger: ".welcomeCont",
 		}

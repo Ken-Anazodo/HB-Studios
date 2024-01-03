@@ -72,19 +72,27 @@
 				<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
 					
 					<a href="/public/index.html">
-						<div class="navConnect iconNav h-[7vw] w-[6vw] flex items-center">
+						<div class="navConnect iconNav h-[14vw] md:h-[7vw] w-[13vw] md:w-[6vw] flex items-center">
 							<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
 						</div>
 					</a>
 
 					<div class="navConnect hbNav text-center text-[1.1vw] leading-[1.2vw]">
-						<div class="stu hb ">HEADB0RN</div>
-						<div class="stu text-[1.6vw] ">STUDIOS</div>
+						<div class="[display:none] md:[display:block]">
+							<div class="stu hb ">HEADB0RN</div>
+							<div class="stu text-[1.6vw] ">STUDIOS</div>
+						</div>
+						
+						<div class="hBs md:[display:none] text-[5vw] leading-[5vw]">HBS</div>
 					</div>
 
 					<div>
-						<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
-							MENU
+						<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[1.2vw] text-stone-200 md:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+							<h1 class="[display:none] md:[display:block]">MENU</h1>
+
+							<div class="md:[display:none] h-[13vw] w-[13vw] ">
+								<img src="../src/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -253,7 +261,7 @@
 
 		<section1 class="relative">
 		
-				<div class="h-[42vw] w-[27vw] absolute top-[13vh] left-[-2vw]">
+				<div class="h-[93vw] w-[57vw] md:h-[42vw] md:w-[27vw] absolute top-[13vh] left-[-2vw]">
 					<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[16%]" alt=”left-down arrow”>
 				</div>
 			
@@ -289,15 +297,15 @@
 
 
 
-			<div class="pt-[45vw] relative">
-				<div class='iframeCont h-screen w-screen sticky top-[-2vw]'>
+			<div class="pt-[64vh] lg:pt-[45vw] relative">
+				<div class='iframeCont h-auto lg:h-screen w-screen sticky top-[65vh] lg:top-[-2vw]'>
 					<!-- <iframe src="../src/assets/video/artiste.mp4" class=' h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
 					<iframe src="https://player.vimeo.com/video/873968269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[40%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 				</div>	
 
 			
-				<div class="absolute top-0 left-0 w-screen z-10 flex justify-between px-[2vw]">
-					<div class="circle mt-[37vw] ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px]  hover:text-yellow-60 cursor-pointer">
+				<div class="absolute top-0 left-0 w-screen z-10 md:flex justify-between px-[2vw]">
+					<div class="circle mt-[37vw] ml-[3vw] relative h-[200px] w-[200px]  hover:text-yellow-60 cursor-pointer [display:none] md:flex justify-center items-start">
 						<div class="text">
 							<p class="text-[0.9vw]">
 								<span class="hbSTU">HB STUDIOS</span> 
@@ -309,30 +317,24 @@
 							</p>
 						</div>
 
-						<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+						<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
 							<div class="h-[3.5vw] w-[3.5vw]">
 								<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 							</div>
 						</div>
-
-						<!-- <div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-10">
-							<div class="h-[3.5vw] w-[3.5vw]">
-								<img src="../src/assets/img/rightArrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
-							</div>
-						</div> -->
 					</div>
 
 
 
 					<div class="flex justify-end text-right">
-						<div class="w-[68vw]">
-							<div class="mt-[37vh] text-[2.7vw] mb-[1.5vw] mr-[0.5vw]">Our Mission</div>
+						<div class="w-[72vw]">
+							<div class="mt-[37vh] text-[7vw] md:text-[2.7vw] mb-[4.5vw] md:mb-[1.5vw] mr-[0.5vw]">Our Mission</div>
 							<div>
-								<div class="mission-statement uppercase text-[14vw] leading-[15vw]">
+								<div class="mission-statement uppercase  text-[15vw] leading-[16vw]">
 									 empower *artists and brands to create continuous visual stories that resonates around fashion and lifestyle globally.
 								</div>
 
-								<div class="crafting text-[2.2vw] mt-[1vw]">*Crafting Artists as Icons</div>
+								<div class="crafting text-[3.5vw] lg:text-[2.2vw] mt-[1.5vw] lg:mt-[1vw]">*Crafting Artists as Icons</div>
 							</div>
 						</div>
 					</div>
@@ -341,65 +343,57 @@
 				<!-- mission statement double in black -->
 				<div class="w-screen text-transparent">
 					<div class="px-[2vw] flex justify-end text-right">
-						<div class="w-[68vw]">
-							<div class="mt-[25vh] text-[2.7vw] mb-[1.5vw]">Our Mission</div>
+						<div class="w-[72vw]">
+							<div class="mt-[37vh] text-[7vw] md:text-[2.7vw] mb-[4.5vw] md:mb-[1.5vw]">Our Mission</div>
 							<div>
-								<div class="mission-statement uppercase text-[14vw] leading-[15vw]">
+								<div class="mission-statement uppercase text-[15vw] leading-[16vw]">
 									empower *artists and brands to create continuous visual stories that resonates around fashion and lifestyle globally.
 								</div>
+
+								<div class="crafting text-[3.5vw] lg:text-[2.2vw] mt-[1.5vw] lg:mt-[1vw]">*Crafting Artists as Icons</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 
-				<!-- <div class="absolute w-full top-0 left-0">
-					<div class=" ml-[23vw] mt-[37vw] z-20 overflow-hidden">
-						<marquee behavior="" direction="right" class="w-[20vw]">
-							<div class="flex items-center justify-center">
-								<div class="exploreHB text-[1.3vw] leading-[1.3vw] uppercase text-stone-700">
-									<h1>Explore The World Of HeadBorn Studios</h1>
-								</div>
-								
-								<div class="h-[10vw] w-[14vw]">
-									<img src="../src/assets/img/solarArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
-								</div>
-
-								<div class="h-[10vw] w-[14vw] ml-[10vw]">
-									<img src="../src/assets/img/solarArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+				<div class="absolute w-full top-0 left-0 [display:none] md:[display:block]">
+					<div class=" mr-[35.5vw] mt-[37vw] z-20">
+							<div class="flex items-center justify-center">						
+								<div class="h-[8vw] w-[17vw]">
+									<img src="../src/assets/img/rightArrow.png" class="h-full w-full object-cover" alt=”left-down arrow”>
 								</div>
 							</div>
-						</marquee>
 					</div>
-				</div> -->
+				</div>
 			</div>	
 		</section1>	
 
 		<section2 class="overflow-hidden">
-			<div class="pt-[10vw] px-[2vw]">
+			<div class="pt-[10vw] px-[3vw] lg:px-[2vw]">
 				<div>
-					<div class="we-transcend w-[65vw] text-[4.7vw] leading-[4.75vw] pl-[2vw]">
+					<div class="we-transcend md:w-[65vw] text-[8.5vw] leading-[8.55vw] md:text-[4.7vw] md:leading-[4.75vw] pl-[2vw]">
 						At Headborn Studios We transcend the conventional boundaries of Image Consulting.
 						We meticulously assess and align artists' personal and professional images with 
 						their unique goals. 
 					</div>
 
-					<div>
-						<div class="flex justify-center mt-[16vw]">
-							<div class="a-vision text-[1.3vw] leading-[1.5vw] uppercase text-center w-[19vw]">
+					<div class="px-[3vw] lg:px-0">
+						<div class="lg:flex justify-center mt-[30vw] lg:mt-[16vw]">
+							<div class="a-vision text-[2.3vw] leading-[2.3vw] lg:text-[1.3vw] lg:leading-[1.5vw] uppercase lg:text-center w-[24vw] lg:w-[19vw]">
 								A Vision Beyond Ordinary Image Consulting
 							</div>
 						</div>
 
 
-						<div class="subHead half-decade flex justify-center mt-[4vw]">
-							<div class="text-center text-[3.2vw] w-[44vw] leading-[3.7vw]">
+						<div class="subHead half-decade lg:flex justify-center mt-[6vw] lg:mt-[4vw]">
+							<div class="lg:text-center text-[6vw] leading-[7vw] lg:text-[3.2vw] lg:w-[44vw] lg:leading-[3.7vw]">
 								Half a decade experience as independent creative professionals.
 							</div>
 						</div>
 
-						<div class="subBody we-craft flex justify-center mt-[7vw]">
-							<div class="text-center text-[1.1vw] w-[33vw] text-stone-300">
+						<div class="subBody we-craft lg:flex justify-center mt-[9vw] lg:mt-[7vw]">
+							<div class="lg:text-center text-[3.4vw] leading-[6vw] lg:leading-normal lg:text-[1.1vw] lg:w-[33vw] text-stone-300">
 								<p>
 									We craft a distinctive stage presence that elevates your performance, ensuring a memorable 
 									impact on both fans and industry insiders. By fusing worldwide fashion trends with the essence 
@@ -412,7 +406,7 @@
 									journey.
 								</p>
 
-								<p class="mt-[2vw]">
+								<p class="mt-[4vw] lg:mt-[2vw]">
 									Our proficiency extends well beyond mere fashion guidance. We offer a holistic approach encompassing 
 									image coaching, wardrobe enhancements, color analysis, and tailor-made branding strategies. 
 									We meticulously construct a memorable brand that makes an indelible mark on your audience, seamlessly 
@@ -422,53 +416,67 @@
 						</div>
 					</div>
 
-					<div class="relative flex items-center mt-[-2vw">
+					<div class="relative flex items-center mt-[7vh] lg:mt-0 mb-[7vh] lg:mb-0">
 						<div class="ml-[-4vw] overflow-hidden">
-							<div class="giantLogo mt-[5vw] w-[90vw] min-h-[160vh] h-[160vh]">
+							<div class="giantLogo mt-[5vw] w-[90vw] min-h-[48vh] h-[48vh] lg:min-h-[160vh] lg:h-[160vh]">
 								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”roll image”>
 							</div>
 						</div>
 
-						<div class="pt-[20vw mr-[4vw] overflow-hidden">
-							<div class="giantLogo mt-[5vw] w-[90vw] min-h-[160vh] h-[160vh]">
+						<div class="mr-[4vw] overflow-hidden">
+							<div class="giantLogo mt-[5vw] w-[90vw] min-h-[48vh] h-[48vh] lg:min-h-[160vh] lg:h-[160vh]">
 								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”roll image”>
 							</div>
 						</div>
 					</div>
 
 
-					<div class="flex items-end mt-[-4vw]">
-						<div class="ml-[3vw]">
+					<div class="lg:flex items-end mt-[-4vw] px-[3vw] lg:px-0">
+						<div class="[display:none] lg:[display:block] ml-[3vw]">
 							<div class="h-[34.5vw] w-[25vw]">
 								<img src="../src/assets/img/collab1.JPG" class="h-full w-full object-fill grayscal" alt=”left-down arrow”>
 							</div>
 						</div>
 
 						<div>
-							<div class="text-[8vw] leading-[8.2vw] ml-[15vw]">
+							<div class="text-[10vw] leading-[10.2vw] lg:text-[8vw] lg:leading-[8.2vw] lg:ml-[15vw]">
 								<div>
-									<div class="style w-[50vw]">
+									<div class="style w-[60vw] lg:w-[50vw]">
 										<div class="uppercase">The Impact of Style on Music</div>
 									</div>
 								
-
-									<div class="h-[3.5vw] w-[3.5vw] mt-[3vw]">
+									<!-- Large Screen -->
+									<div class="h-[3.5vw] w-[3.5vw] mt-[3vw] [display:none] lg:[display:block]">
 										<img src="../src/assets/img/arrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+
+									<!-- Small Screen -->
+									<div class="lg:[display:none] w-[60vw] flex justify-end">
+										<div class="h-[7vw] w-[7vw] mt-[5vw]">
+											<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+									
+									<!-- Image Small Screen -->
+									<div class="lg:[display:none] flex justify-end mt-[5vw]">
+										<div class="h-[40vh] w-[52vw]">
+											<img src="../src/assets/img/collab1.JPG" class="h-full w-full object-fill grayscal" alt=”left-down arrow”>
+										</div>
 									</div>
 								</div>
 							</div>
 
 
 
-							<div class="mt-[8vw] flex items-center ml-[6vw]">
+							<div class="mt-[10vw] lg:mt-[8vw] flex items-center lg:ml-[6vw]">
 								<div>
-									<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
-										<div class="text-center">Creating Legends through Style</div>
+									<div class="subHead text-[6vw] leading-[7vw] lg:text-[3.6vw] lg:leading-[4.2vw] w-[70vw] lg:w-[35vw]">
+										<div class="lg:text-center">Creating Legends through Style</div>
 									</div>
 
 
-									<div class="subBody mt-[3vw] flex justify-center">
-										<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+									<div class="subBody mt-[4vw] lg:mt-[3vw] lg:flex justify-center">
+										<div class="lg:text-center text-[3.4vw] leading-[6vw] lg:leading-normal lg:text-[1.1vw] w-[65vw] lg:w-[27vw] text-stone-300">
 											Fashion has been inseparable from music cultures throughout history. 
 											Our visionary techniques leverage fashion to shape artists' unique identities, 
 											fuelling fan devotion and inspiring subcultures. From timeless icons like Prince 
@@ -482,17 +490,24 @@
 					</div>
 
 
-					<div class="mt-[10vw] text-[8vw] leading-[8.2vw]">
+					<div class="mt-[15vw] lg:mt-[10vw] text-[10vw] leading-[10.2vw] lg:text-[8vw] lg:leading-[8.2vw] px-[3vw] lg:px-0">
 						<div>
-							<div class="style w-[60vw]">
+							<div class="style w-[80vw] lg:w-[60vw]">
 								<div class="uppercase">Elevating Artists through Collaborations.</div>
 							</div>
 						
 
 
-							<div class="w-[50vw] flex justify-end mt-[5vw]">
-								<div class="h-[3.5vw] w-[3.5vw]">
+							<div class="w-[50vw] lg:flex justify-end mt-[5vw]">
+								<!-- Large Screen -->
+								<div class="h-[3.5vw] w-[3.5vw] [display:none] lg:[display:block]">
 									<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+
+
+								<!-- Small Screen -->
+								<div class="h-[7vw] w-[7vw] lg:[display:none]">
+									<img src="../src/assets/img/arrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 								</div>
 							</div>
 						</div>
@@ -501,15 +516,15 @@
 
 
 
-					<div class="mt-[6vw] flex justify-center items-center">
+					<div class="mt-[10vw] lg:mt-[6vw] lg:flex justify-center items-center px-[3vw] lg:px-0">
 						<div>
-							<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
-								<div class="text-center">Strategic Collaborations for Unrivalled Influence</div>	
+							<div class="subHead text-[6vw] leading-[7vw] lg:text-[3.6vw] w-[65vw] lg:w-[35vw] lg:leading-[4.2vw]">
+								<div class="lg:text-center">Strategic Collaborations for Unrivalled Influence</div>	
 							</div>
 
 
-							<div class="subBody mt-[3vw] flex justify-center">
-								<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+							<div class="subBody mt-[4vw] lg:mt-[3vw] lg:flex justify-center">
+								<div class="lg:text-center text-[3.4vw] leading-[6vw] lg:leading-normal lg:text-[1.1vw] w-[70vw] lg:w-[27vw] text-stone-300">
 									Join forces with us to unlock the boundless potential of fashion and music 
 									collaborations. We curate strategic partnerships with fashion brands, amplifying artists' 
 									visual presence across global stages. Experience the transformative impact of 
@@ -520,27 +535,28 @@
 					</div>
 
 
-					<div class="flex justify-end mr-[7vw] mt-[2vw]">
-						<div class="flex items-center">
-							<div class="infuse mr-[4vw] text-[3vw] leading-[3vw] w-[35vw]">
-								<span>Infusing</span>
-								<span class="style-music italic text-stone-300">Style</span>
-								<span>And</span>
-								<span class="style-music italic text-stone-300">Music</span>
-								<span>Together</span>
+					<div class="flex justify-end lg:mr-[7vw] lg:mt-[2vw] mt-[15vw] px-[3vw] lg:px-0">
+						<div class="lg:flex items-center">
+							<div class="flex justify-end">
+								<div class="infuse lg:mr-[4vw] text-[5.5vw] leading-[5.5vw] lg:text-[3vw] lg:leading-[3vw] w-[65vw] lg:w-[35vw] text-right lg:text-left">
+									<span>Infusing</span>
+									<span class="style-music italic text-stone-300">Style</span>
+									<span>And</span>
+									<span class="style-music italic text-stone-300">Music</span>
+									<span>Together</span>
+								</div>
 							</div>
 
 
 
-							<div class="flex items-start">
-								<div class='h-[40vw] w-[23vw] mr-[3vw] mt-[8vw]'>
-									<!-- <iframe src="https://player.vimeo.com/video/869061440?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class=' h-full w-full grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Artist"></iframe> -->
+							<div class="flex items-start mt-[7vw] lg:mt-0">
+								<div class='h-[40vh] w-[43vw] lg:h-[40vw] lg:w-[23vw] mr-[3vw] mt-[13vw] lg:mt-[8vw]'>
 									<img src="../src/assets/img/remy/remy4.jpg" class="h-full w-full object-cover brightness-50 grayscale" alt=”left-down arrow”>
 								</div>	
 
 								
 								<a href="./bayanniShoot.html" data-text="Bayanni">
-									<div class="h-[35vw] w-[23vw]">
+									<div class="h-[40vh] w-[43vw] lg:h-[35vw] lg:w-[23vw]">
 										<img src="../src/assets/img/bayanni.JPEG" class="h-full w-full object-cover brightness-50" alt=”left-down arrow”>
 									</div>
 								</a>
@@ -550,15 +566,15 @@
 					</div>
 
 
-					<div>
-						<div class="mt-[7vw] text-[8vw] leading-[8.2vw]">
+					<div class="px-[2vw] lg:px-0">
+						<div class="mt-[12vw] lg:mt-[7vw] text-[10vw] leading-[10.2vw] lg:text-[8vw] lg:leading-[8.2vw]">
 							<div>
 								<div class="style w-[75vw]">
 									<div class="uppercase">Revolutionising Artist Revenues through Fashion.</div>
 								</div>
 
-								<div class="w-[38vw] flex justify-end mt-[3vw]">
-									<div class="h-[3.5vw] w-[3.5vw]">
+								<div class="w-[68vw] lg:w-[38vw] flex justify-end mt-[5vw] lg:mt-[3vw]">
+									<div class="h-[7vw] w-[7vw] lg:h-[3.5vw] lg:w-[3.5vw]">
 										<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 									</div>
 								</div>
@@ -569,38 +585,40 @@
 
 
 
-						<div class=" flex items-center justify-center mt-[5vw] mb-[8vw]">
+						<div class=" lg:flex items-center justify-center mt-[5vw] mb-[8vw]">
 							<div>
-								<div class="h-[42vw] w-[50vw] mr-[4vw]">
+								<div class="h-[40vh] w-full lg:h-[42vw] lg:w-[50vw] mr-[4vw]">
 									<img src="../src/assets/img/ajeboHustlers/img1.jpg" class="h-full w-full object-cover" alt=”Artiste”>
 								</div>
 							</div>
 
 
-							<div>
-								<div class="flex justify-center text-center">
-									<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
-										<div>Empowering Artists for Financial Success</div>			
-									</div>
-								</div>
-	
-	
+							<div class="flex justify-center lg:[display:block] mt-[10vw] lg:mt-0">
 								<div>
-									<div class="mt-[3vw]">											
-											<div class=" text-[1.1vw] w-[35vw] text-stone-300">
-												<p class="text-center">
-													Fashion merchandising becomes an unparalleled revenue stream when fused with artists' magnetic personas. 
-													We specialise in developing branded products inspired by artists' distinctive styles, fostering brand 
-													loyalty among fans. Fashion merchandising allows artists to express their creativity in new ways. 
-												</p>
-												<p class="mt-[2vw] text-center">
-													During concerts and tours, artists often sell merchandise as part of the overall experience. Tour merchandise, 
-													including T-shirts, posters, and other items, can be highly profitable and provide extra income on top of ticket sales.
-													They can collaborate with designers or use their artwork and lyrics to create unique and visually appealing products. 
-													Witness the rise of fashion icons like Tyler The Creator, Bad Bunny, Travis Scott where music and 
-													style converge for enduring impact.
-												</p>
-											</div>										
+									<div class="lg:flex justify-center lg:text-center">
+										<div class="subHead text-[6vw] leading-[7vw] lg:text-[3.6vw] lg:leading-[4.2vw] w-[70vw] lg:w-[35vw]">
+											<div>Empowering Artists for Financial Success</div>			
+										</div>
+									</div>
+		
+		
+									<div>
+										<div class="mt-[7vw] lg:mt-[3vw]">											
+												<div class=" text-[3.4vw] leading-[6vw] lg:leading-normal lg:text-[1.1vw] w-[80vw] lg:w-[35vw] text-stone-300">
+													<p class="lg:text-center">
+														Fashion merchandising becomes an unparalleled revenue stream when fused with artists' magnetic personas. 
+														We specialise in developing branded products inspired by artists' distinctive styles, fostering brand 
+														loyalty among fans. Fashion merchandising allows artists to express their creativity in new ways. 
+													</p>
+													<p class="mt-[4vw] lg:mt-[2vw] lg:text-center">
+														During concerts and tours, artists often sell merchandise as part of the overall experience. Tour merchandise, 
+														including T-shirts, posters, and other items, can be highly profitable and provide extra income on top of ticket sales.
+														They can collaborate with designers or use their artwork and lyrics to create unique and visually appealing products. 
+														Witness the rise of fashion icons like Tyler The Creator, Bad Bunny, Travis Scott where music and 
+														style converge for enduring impact.
+													</p>
+												</div>										
+										</div>
 									</div>
 								</div>
 							</div>
