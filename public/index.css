@@ -445,5 +445,42 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+
+@media all and (max-width: 640px){
+	.swiper-slide{
+		min-height: 55vh;
+		height: 55vh;
+		border-radius: 2vw;
+	}
+
+	.swiper, .swiper-slide img{
+		border-radius: 2vw;
+	}
+
+	.nameProj1{
+		font-size: 3vw;
+		line-height: 3.2vw;
+	}
+	
+	.nameProj2{
+		font-size: 3.2vw;
+		line-height: 3.2vw;
+	}
+}
+
+
+@media all and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+}
+
+
 
 

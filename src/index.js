@@ -349,9 +349,21 @@ navChild3.addEventListener("mouseleave", () => {
 // SLIDERS
 // OUTER SLIDER
 let swiper = new Swiper(".mySwiper", {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
+	breakpoints: {
+		  // when window width is <= 499px
+		499: {
+			slidesPerView: 2,
+			spaceBetweenSlides: 30
+		},
+		  // when window width is <= 999px
+		999: {
+			slidesPerView: 3,
+			spaceBetweenSlides: 30
+		},
+	},
 	autoplay: {
 		delay: 4000,
 		disableOnInteraction: false
