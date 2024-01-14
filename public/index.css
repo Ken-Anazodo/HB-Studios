@@ -481,6 +481,13 @@ body::-webkit-scrollbar {
 	}
 }
 
+@media all and (max-width: 1279px){
+	.swiper-slide{
+		min-height: 600px;
+		height: 600px;
+	}
+}
+
 
 
 
