@@ -1277,6 +1277,22 @@ video {
   height: 100vh;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[125px\] {
+  height: 125px;
+}
+
 .min-h-\[11vh\] {
   min-height: 11vh;
 }
@@ -1391,6 +1407,26 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.min-h-\[150px\] {
+  min-height: 150px;
+}
+
+.min-h-\[120px\] {
+  min-height: 120px;
+}
+
+.min-h-\[12px\] {
+  min-height: 12px;
+}
+
+.min-h-\[125px\] {
+  min-height: 125px;
 }
 
 .w-0 {
@@ -1647,6 +1683,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[16vw\] {
+  width: 16vw;
 }
 
 @keyframes bounce {
@@ -3511,6 +3551,10 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-\[30vh\] {
+    height: 30vh;
+  }
+
   .xl\:min-h-\[110vh\] {
     min-height: 110vh;
   }
@@ -3529,6 +3573,10 @@ video {
 
   .xl\:min-h-\[75vh\] {
     min-height: 75vh;
+  }
+
+  .xl\:min-h-\[30vh\] {
+    min-height: 30vh;
   }
 
   .xl\:w-\[1\.3vw\] {
@@ -3617,6 +3665,10 @@ video {
 
   .xl\:w-\[70vw\] {
     width: 70vw;
+  }
+
+  .xl\:w-\[13vw\] {
+    width: 13vw;
   }
 
   .xl\:justify-end {
