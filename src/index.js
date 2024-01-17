@@ -89,10 +89,10 @@ ease: "power4 inOut"
 });
 
 // COUNTER BACKGROUND
-gsap.to(".counter", 0.25, {delay: 10.5, top: '-200vw'});
+gsap.to(".counter", 0.25, {delay: 10.5, top: '-300vw'});
 
 // OVERLAY BACKGROUND
-gsap.to(".overlay", 1.5, {delay: 10.5, top: '-200vw'});
+gsap.to(".overlay", 1.5, {delay: 10.5, top: '-300vw'});
 
 
 

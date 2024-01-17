@@ -99,7 +99,7 @@
 			</div>
 
 			<div class="fixed top-[-150vh] left-0 h-screen w-full z-20" id="menu-wrapper">
-				<div class="absolute top-0 left-0 z-30 h-full w-full bg-black bg-opacity-[85%] md:bg-opacity-[100%] backdrop-blur-sm"></div>
+				<div class="absolute top-0 left-0 z-30 h-full w-full bg-black bg-opacity-[100%] backdrop-blur-sm"></div>
 				<nav class="navbar absolute top-0 left-0 h-full w-full  z-40 text-white px-[2vw]">
 
 					<div class="h-[42vw] w-[27vw] absolute top-[13vh] left-[-2vw]">
@@ -119,8 +119,8 @@
 						</div>
 					</div>
 
-					<div class="pt-[20vw] xl:pt-[6vw] h-full">
-						<div class="flex flex-col uppercase text-[11vw] leading-[11vw] xl:text-[7vw] xl:leading-[7vw]">
+					<div class="pt-[20vw] xl:pt-[6vw] h-screen flex flex-col">
+						<div class="flex flex-col uppercase text-[40px] leading-[42px] xl:text-[7vw] xl:leading-[7vw]">
 							<a href="/public/about.html" data-text="about">
 								<div class="navChild1 navigation relative flex">
 									<h1 class="menu-num text-[2.5vw] leading-[2.5vw] xl:text-[1.2vw] xl:leading-[1.2vw]">(01)</h1>
@@ -136,7 +136,7 @@
 
 							<a href="/public/service.html"  data-text="services">
 								<div class="navChild2 flex xl:justify-end">
-									<div class="navigation relative mt-[6vw] xl:mt-[3vw] flex">
+									<div class="navigation relative mt-[4vw] xl:mt-[3vw] flex">
 										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] xl:text-[1.2vw] xl:leading-[1.2vw] xl:[display:none]">(02)</h1>
 										<h1>Services</h1>
 										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] xl:text-[1.2vw] xl:leading-[1.2vw] [display:none] xl:block">(02)</h1>
@@ -151,7 +151,7 @@
 							<hr>					
 							
 							<a href="/public/contact.html" data-text="contact">
-								<div class="navChild3 navigation relative mt-[6vw] xl:mt-[3vw] flex">
+								<div class="navChild3 navigation relative mt-[4vw] xl:mt-[3vw] flex">
 									<h1 class="menu-num text-[2.5vw] leading-[2.5vw] xl:text-[1.2vw] xl:leading-[1.2vw]">(03)</h1>
 									<h1>Contact</h1>
 								</div>
@@ -164,40 +164,47 @@
 							<hr>
 						</div>
 
+
+						<div class="flex items-end xl:block flex-1">
 						<div class="mt-[5vw] xl:flex justify-between items-end">
-							<div class="flex items-center">
-								<div class="mr-[2vw]">
-									<div class="min-h-[125px] h-[125px] w-[23vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
-										<img src="../src/assets/img/odunsi.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+							<div class="xl:flex items-center">
+								<div class="flex items-center">
+									<div class="mr-[2vw]">
+										<div class="min-h-[130px] h-[130px] w-[24vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+											<img src="../src/assets/img/odunsi.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+										</div>
+									</div>
+
+									<div>
+										<div class="exploreHead text-[21px] leading-[23px] w-[20vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">Explore HeadBorn Studios</div>
+										<div>
+											<div class="exploreBody text-[13px] leading-[15px] w-[20vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] xl:mt-[1.5vw]">
+												<div class="[display:none] xl:block">You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.</div>
+												<div class="xl:[display:none]">Experience HBS.</div>
+											</div>
+										</div>
 									</div>
 								</div>
+
 
 								<div>
-									<div class="exploreHead text-[2.5vw] leading-[2.5vw] w-[12vw] uppercase">Explore HeadBorn Studios</div>
-									<div>
-										<div class="exploreBody text-[0.9vw] leading-[0.9vw] w-[12vw] mt-[1.5vw]">
-											You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.
-										</div>
-									</div>
-								</div>
-
-
-								<div class="z-10">
-									<div class="circle ml-[1.5vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
-										<div class="text">
-											<p class="text-[0.9vw] text-stone-400">
-												<span class="hbSTU">HB STUDIOS</span> 
-												<span class="star">*</span>
-												<span>OUR CREATION</span>
-												<span class="star">*</span>
-												<span>OUR CREATION</span>
-												<span class="star">*</span>
-											</p>
-										</div>
-				
-										<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
-											<div class="h-[3.5vw] w-[3.5vw]">
-												<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									<div class="z-10">
+										<div class="circle ml-[1.5vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+											<div class="text">
+												<p class="text-[0.9vw] text-stone-400">
+													<span class="hbSTU">HB STUDIOS</span> 
+													<span class="star">*</span>
+													<span>OUR CREATION</span>
+													<span class="star">*</span>
+													<span>OUR CREATION</span>
+													<span class="star">*</span>
+												</p>
+											</div>
+					
+											<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+												<div class="h-[8.5vw] w-[8.5vw] xl:h-[3.5vw] xl:w-[3.5vw]">
+													<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -205,18 +212,22 @@
 							</div>
 
 
-							<div class="flex items-center mr-[3vw]">
+							<div class="flex items-center xl:mr-[3vw]">
 								<div class="mr-[2vw]">
-									<div class="min-h-[125px] h-[125px] w-[23vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+									<div class="min-h-[130px] h-[130px] w-[24vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
 										<img src="../src/assets/img/remy/remy.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
 									</div>
 								</div>
 
 								<div>
-									<div class="exploreHead text-[2.5vw] leading-[2.5vw] w-[12vw] uppercase">Forging Artists into Icons</div>
+									<div class="exploreHead text-[21px] leading-[23px] w-[20vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">
+										<div class="[display:none] xl:block">Forging Artists into Icons</div>
+										<div class="xl:[display:none]">Forging Icons</div>
+									</div>
 									<div>
-										<div class="exploreBody text-[0.9vw] leading-[0.9vw] w-[12vw] mt-[1.5vw]">
-											Enable artists and brands to craft enduring visual narratives that resonate globally within the realms of fashion and lifestyle.
+										<div class="exploreBody text-[13px] leading-[15px] w-[20vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] xl:mt-[1.5vw]">
+											<div class="[display:none] xl:block">Enable artists and brands to craft enduring visual narratives that resonate globally within the realms of fashion and lifestyle.</div>
+											<div class="xl:[display:none]">Crafting enduring visual narratives.</div>
 										</div>
 									</div>
 								</div>
@@ -224,7 +235,7 @@
 				
 
 
-							<div class="">
+							<div>
 								<div class="mb-[7vw]">
 									<div class="flex justify-between items-center w-[15vw]">
 										<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
@@ -248,12 +259,13 @@
 								</div>
 
 
-								<div class="footer-nav text-right text-[1.1vw] leading-[1.4vw]">
+								<div class="footer-nav xl:text-right text-[1.1vw] leading-[1.4vw]">
 									<span class='text-[1.2vw]'>©</span>
 									<span>2023 HEADB0RN STUDIOS</span>
 									<div class="uppercase">All Rights Reserved</div>
 								</div>
 							</div>
+						</div>
 						</div>
 					</div>
 				</nav>
