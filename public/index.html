@@ -119,7 +119,7 @@
 						</div>
 					</div>
 
-					<div class="pt-[20vw] xl:pt-[6vw] h-screen flex flex-col">
+					<div class="pt-[20vw] xl:pt-[6vw] min-h-screen h-screen flex flex-col">
 						<div class="flex flex-col uppercase text-[40px] leading-[42px] xl:text-[7vw] xl:leading-[7vw]">
 							<a href="/public/about.html" data-text="about">
 								<div class="navChild1 navigation relative flex">
@@ -166,6 +166,39 @@
 
 
 						<div class="flex items-end xl:block flex-1">
+							<div>
+							<div class="flex justify-between items-end xl:block">
+
+							<!-- Circle Texts for Small Screens -->
+							<div class="xl:[display:none]">
+								<div class="z-10">
+									<!-- <div class="circle relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+										<div class="text">
+											<p class="text-[0.9vw] text-stone-400">
+												<span class="hbSTU">HB STUDIOS</span> 
+												<span class="star">*</span>
+												<span>OUR CREATION</span>
+												<span class="star">*</span>
+												<span>OUR CREATION</span>
+												<span class="star">*</span>
+											</p>
+										</div>
+				
+										<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+											<div class="h-[8.5vw] w-[8.5vw] xl:h-[3.5vw] xl:w-[3.5vw]">
+												<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+									</div> -->
+
+
+									<div>
+										<h1 class="" id="myElement"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION </h1>
+									</div>
+								</div>
+							</div>													
+
+
 						<div class="mt-[5vw] xl:flex justify-between items-end">
 							<div class="xl:flex items-center">
 								<div class="flex items-center">
@@ -187,7 +220,8 @@
 								</div>
 
 
-								<div>
+								<!-- Circle Texts for Large Screens -->
+								<div class="[display:none] xl:block">
 									<div class="z-10">
 										<div class="circle ml-[1.5vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
 											<div class="text">
@@ -212,7 +246,7 @@
 							</div>
 
 
-							<div class="flex items-center xl:mr-[3vw]">
+							<div class="flex items-center xl:mr-[3vw] mt-[3vw] xl:mt-0">
 								<div class="mr-[2vw]">
 									<div class="min-h-[130px] h-[130px] w-[24vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
 										<img src="../src/assets/img/remy/remy.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
@@ -234,8 +268,8 @@
 							</div>
 				
 
-
-							<div>
+							<!-- Social Media & Copyrights for Large Screen -->
+							<div class="[display:none] xl:block">
 								<div class="mb-[7vw]">
 									<div class="flex justify-between items-center w-[15vw]">
 										<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
@@ -267,6 +301,47 @@
 							</div>
 						</div>
 						</div>
+
+
+
+
+
+						<!-- Social Media & Copyrights for Small Screen -->
+						<div class="flex items-center justify-between xl:[display:none] mt-[5vw] mb-[2vw]">
+							<div class="footer-nav xl:text-right text-[10px] leading-[10.3px] xl:text-[1.1vw] xl:leading-[1.4vw]">
+								<span class='text-[10.2px] xl:text-[1.2vw]'>©</span>
+								<span>2023 HEADB0RN STUDIOS</span>
+								<div class="uppercase">All Rights Reserved</div>
+							</div>
+
+
+							<div class="mb-[7vw">
+								<div class="flex justify-between items-center w-[45vw] xl:w-[15vw]">
+									<div class="h-[6vw] w-[6vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] md:h-[3vw] md:w-[3vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="../src/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="h-[6vw] w-[6vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] md:h-[3vw] md:w-[3vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="../src/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="h-[6vw] w-[6vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] md:h-[3vw] md:w-[3vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="../src/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+
+
+
+						</div>						
 					</div>
 				</nav>
 			</div>		
@@ -1382,17 +1457,6 @@
 												</div>
 											</div>
 										</div>
-
-										<!-- Footer Images -->
-										<!-- <div class="fle items-center mt-[10vw] lg:[display:none]">
-											<div class="h-[65vw] w-[85vw] mr-[7vw]">
-												<img src="../src/assets/img/roll1.png" class="h-full w-full object-contain" alt=”brand”>
-											</div> -->
-
-											<!-- <div class="h-[10vw] w-[10vw]">
-												<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”brand”>
-											</div> -->
-										<!-- </div> -->
 										
 									
 									<div class="flex justify-between items-end lg:block">
@@ -1440,9 +1504,20 @@
 		</section3>
 	</section>
 
+		<!-- CIRCLE TYPE TEXT CDN -->
+		<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+		<!-- FIT TEXT -->
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="jquery.fittext.js"></script>
+		<script>jQuery("#responsive_headline").fitText();</script> -->
+		<script>window.fitText( document.getElementById("myElement") );</script>
+
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- GSAP -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 		<script src="../src/index.js"></script>		

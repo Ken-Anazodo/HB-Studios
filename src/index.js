@@ -29,6 +29,28 @@ texts.forEach(text => {
 
 
 
+
+
+
+
+// Instantiate `CircleType` with an HTML element.
+const circleType = new CircleType(document.getElementById('myElement'));
+
+// Set the text radius and direction. Note: setter methods are chainable.
+circleType.radius();
+
+circleType.forceHeight();
+circleType.forceWidth(true);
+// $(circleType.element).fitText();
+
+
+
+
+
+
+
+
+
 // OPEN AND CLOSE NAV
 let menu = document.getElementById('menu-wrapper');
 let logoAndCloseMenu = document.getElementById('logoAndClose');

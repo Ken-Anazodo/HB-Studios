@@ -49,24 +49,32 @@
 		
 		<section class="bg-black text-stone-200 pb-[2vw] relative">
 			<section0 class="relative overflow-hidden h-screen w-full">
-				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[11vh] bg-blac">
+				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[8vh] xl:h-[11vh] bg-blac">
 					<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
 					<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
 						
 						<a href="/public/index.html">
-							<div class="navConnect h-[7vw] w-[6vw] flex items-center">
+							<div class="navConnect iconNav h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw] flex items-center">
 								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
 							</div>
 						</a>
-	
-						<div class="navConnect text-center text-[1.1vw] leading-[1.2vw]">
-							<div class="stu hb ">HEADB0RN</div>
-							<div class="stu text-[1.6vw] ">STUDIOS</div>
+
+						<div class="navConnect hbNav text-center md:text-[1.7vw] md:leading-[2.1vw] xl:text-[1.1vw] xl:leading-[1.2vw] lg:pt-[1vw] xl:pt-0">
+							<div class="[display:none] md:[display:block]">
+								<div class="stu hb ">HEADB0RN</div>
+								<div class="stu md:text-[2.5vw] xl:text-[1.6vw] ">STUDIOS</div>
+							</div>
+							
+							<div class="hBs md:[display:none] text-[4.5vw] leading-[4.5vw] sm:text-[4vw] sm:leading-[4vw]">HBS</div>
 						</div>
-	
+
 						<div>
-							<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
-								MENU
+							<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+								<h1 class="[display:none] md:[display:block]">MENU</h1>
+
+								<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
+									<img src="../src/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -236,42 +244,53 @@
 			</section0>
 
 			<section1>
-				<div class="pt-[8vw] pb-[4vw">
-					<div class="flex justify-between items-center px-[2vw]">
-						<div class="text-center mr-[2vw]">
-							<div class="discover text-[2vw] leading-[2vw]">Discover more about</div>
-							<h1 class="services text-[10vw] leading-[10vw] mt-[1vw]">SERVICES</h1>
+				<div class="px-[5vw] xl:px-0 pt-[20vw] xl:pt-[8vw]">
+					<div class="xl:flex justify-between items-center xl:px-[2vw]">
+						<div class="xl:text-center mr-[2vw]">
+							<div class="flex items-end xl:block">
+								<div class="mr-[1vw] xl:mr-0">
+									<div class="discover text-[3.5vw] leading-[3.5vw] xl:text-[2vw] xl:leading-[2vw]">Discover more about</div>
+									<h1 class="services text-[15vw] leading-[15vw] xl:text-[10vw] xl:leading-[10vw] mt-[1vw]">SERVICES</h1>
+								</div>
 
-							<div class="flex justify-center mt-[2vw]">
-								<div class="h-[5vw] w-[5vw]">
-									<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+								<div class="xl:flex justify-center mt-[2vw]">
+									<div class="h-[5vw] w-[5vw]">
+										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
 								</div>
 							</div>
 
-							<div class="flex justify-end">
+							<!-- Arrow large Screen -->
+							<div class="[display:none] xl:flex justify-end ">
 								<div class="h-[3.8vw] w-[3.8vw] mt-[5vw]">
 									<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 								</div>
 							</div>							
 						</div>
 
-						<div class='iframeCont h-[52vh] w-[70vw]'>
+						<div class='iframeCont h-auto w-full xl:min-h-[52vh] xl:h-[52vh] xl:w-[70vw] mt-[3vw] xl:mt-0'>
 							<!-- <iframe src="../src/assets/video/vid.mp4" class=' h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
 							<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 
+					<!-- Arrow Small Screen -->
+					<div class="xl:[display:none]">
+						<div class="h-[7vw] w-[7vw] mt-[5vw]">
+							<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+					</div>	
 
 
-					<div class="flex items-center justify-center mt-[2.5vw]">
+					<div class="xl:flex items-center justify-center mt-[10vw] xl:mt-[2.5vw]">
 						<div>
-							<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
-								<div class="text-center">Welcome to Headborn Studios</div>
+							<div class="subHead text-[25px] leading-[30px]  sm:text-[30px] sm:leading-[36px] md:text-[35px] md:leading-[41px] lg:text-[38px] lg:leading-[44px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[65vw] xl:w-[35vw]">
+								<div class="xl:text-center">Welcome to Headborn Studios</div>
 							</div>
 
 
-							<div class="subBody mt-[3vw] flex justify-center">
-								<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+							<div class="subBody mt-[4vw] lg:mt-[3vw] xl:mt-[2.5vw] xl:flex justify-center">
+								<div class="xl:text-center  leading-6 text-[15px] sm:text-[16px] sm:leading-7 lg:text-[18px] xl:text-[1.1vw] xl:leading-normal w-[65vw] xl:w-[27vw] text-stone-300">
 									Step into the realm of Headborn Studios Services, where creative prowess seamlessly intersects with expertise. 
 									We specialize in shaping brand identities and crafting compelling visual narratives.
 								</div>
@@ -283,136 +302,136 @@
 
 
 			<section2>
-				<div class="text-stone-200 pb-[7vw]">
-					<div class="flex justify-center text-center pt-[8vw]">
-						<div class="offerings text-[11vw] leading-[11vw] w-[80vw] uppercase">
+				<div class="text-stone-200 pb-[7vw] pt-[25vw] sm:pt-[20vw] xl:pt-[8vw] px-[5vw] xl:px-0">
+					<div class="lg:flex justify-center lg:text-center">
+						<div class="offerings text-[18vw] leading-[18vw] xl:text-[11vw] xl:leading-[11vw] w-[80vw] uppercase">
 							Offerings
 						</div>
 					</div>
 
 
-					<div class="flex justify-center text-center mt-[2.5vw]">
-						<div class="weOffer text-[2.5vw] leading-[3.1vw] w-[60vw]">
+					<div class="flex justify-center lg:text-center mt-[6vw] xl:mt-[2.5vw]">
+						<div class="weOffer text-[26px] leading-[32px] sm:text-[29px] sm:leading-[35px] xl:text-[2.5vw] xl:leading-[3.1vw] w-full xl:w-[60vw]">
 							<h1 class="">
 								/We offer an extensive array of services crafted to elevate both personal and professional images, 
 								fostering confidence, authenticity, and positive impressions across various facets of life. 
 								These services can be tailored to individual needs, ensuring a personalized and impactful transformation.
 							</h1>
 
-							<div class="n text-[2.5vw] leading-[2vw] italic mt-[1.5vw]">(N)</div>
+							<div class="n text-[30px] leading-[40px] sm:text-[33px] sm:leading-[43px] xl:text-[2.5vw] xl:leading-[2vw] italic mt-[1.5vw]">(N)</div>
 						</div>
 					</div>
 
 
-					<div class="mt-[5vw]">
-						<div class="flex justify-center items-center">
-							<div class="relative w-[40vw] border-x-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw] overflow-hidden" id="partition1" onclick="openPersonalStylePage()">
-								<div>
-									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+					<div class="mt-[25vw] sm:pt-[10vw] lg:mt-[5vw]">
+						<div class="lg:flex justify-center items-center border-y-[1.2vw] border-zinc-800 lg:border-none">
+							<div class="relative w-full lg:w-[40vw] lg:border-x-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw] overflow-hidden" id="partition1" onclick="openPersonalStylePage()">
+								<div class="mt-[2vw] lg:mt-0">
+									<div class="num text-[4vw] leading-[4vw] lg:text-[2.5vw] lg:leading-[2.5vw] w-[9.5vw] h-[9.5vw] lg:w-[4.5vw] lg:h-[4.5vw] rounded-full border-[1vw] lg:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>01</h1>
 									</div>
 	
-									<div class="title w-[25vw] text-[5vw] leading-[5vw] mt-[2vw]">
+									<div class="title w-full lg:w-[25vw] text-[8vw] leading-[8vw] lg:text-[5vw] lg:leading-[5vw] mt-[2vw]">
 										<div>Personal Styling & Wardrobe Evaluation</div>
 									</div>
 	
-									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="pstyle-readMore">Read More</h1>
+									<div class="mt-[6vw] lg:mt-[9vw] text-[6vw] leading-[6vw] lg:text-[3vw] lg:leading-[3vw] flex justify-between items-center">
+										<h1 class="readMore navConnect navigation1 underline lg:no-underline" id="pstyle-readMore">Read More</h1>
 
-										<div class="h-[5vw] w-[5vw]">
+										<div class="h-[10vw] w-[10vw] lg:h-[5vw] lg:w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
 
 
-								<div class="tint tint-1 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint1"></div>
+								<div class="tint tint-1 absolute top-0 left-0 w-0 h-full opacity-[20%]" id="tint1"></div>
 							</div>
 
 
-							<div class="relative w-[40vw] border-r-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition2" onclick="openGroomingPage()">
-								<div>
-									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+							<div class="relative w-full lg:w-[40vw] border-t-[1.2vw] lg:border-t-0 lg:border-r-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition2" onclick="openGroomingPage()">
+								<div class="mt-[2vw] lg:mt-0">
+									<div class="num text-[4vw] leading-[4vw] lg:text-[2.5vw] lg:leading-[2.5vw] w-[9.5vw] h-[9.5vw] lg:w-[4.5vw] lg:h-[4.5vw] rounded-full border-[1vw] lg:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>02</h1>
 									</div>
 	
-									<div class="title w-[25vw] text-[5vw] leading-[5vw] mt-[2vw]">
+									<div class="title w-full lg:w-[25vw] text-[8vw] leading-[8vw] lg:text-[5vw] lg:leading-[5vw] mt-[2vw]">
 										<div>Grooming & Appearance Enhancement</div>
-										<div class="opacity-0">sfdfd</div>
+										<div class="opacity-0 [display:none] lg:block">sfdfd</div>
 									</div>
 	
-									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="grooming-readMore">Read More</h1>
+									<div class="mt-[6vw] lg:mt-[9vw] text-[6vw] leading-[6vw] lg:text-[3vw] lg:leading-[3vw] flex justify-between items-center">
+										<h1 class="readMore navConnect navigation1 underline lg:no-underline" id="grooming-readMore">Read More</h1>
 
-										<div class="h-[5vw] w-[5vw]">
+										<div class="h-[10vw] w-[10vw] lg:h-[5vw] lg:w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
 
 
-								<div class="tint tint-2 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint2"></div>
+								<div class="tint tint-2 absolute top-0 left-0 w-0 h-full opacity-[20%]" id="tint2"></div>
 							</div>
 						</div>
 
 
 
-						<div class="flex justify-center items-center">
-							<div class="relative w-[40vw] border-x-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition3" onclick="openPersonalBrandingPage()">
-								<div class="mt-[5vw]">
-									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+						<div class="lg:flex justify-center items-center border-b-[1.2vw] border-zinc-800 lg:border-none">
+							<div class="relative w-full lg:w-[40vw] lg:border-x-[0.4vw] lg:border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition3" onclick="openPersonalBrandingPage()">
+								<div class="mt-[2vw] lg:mt-[5vw]">
+									<div class="num text-[4vw] leading-[4vw] lg:text-[2.5vw] lg:leading-[2.5vw] w-[9.5vw] h-[9.5vw] lg:w-[4.5vw] lg:h-[4.5vw] rounded-full border-[1vw] lg:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>03</h1>
 									</div>
 	
-									<div class="title w-[25vw] text-[5vw] leading-[5vw] mt-[2vw]">
+									<div class="title w-full lg:w-[25vw] text-[8vw] leading-[8vw] lg:text-[5vw] lg:leading-[5vw] mt-[2vw]">
 										<div>Personal Branding</div>
 									</div>
 	
-									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="pBranding-readMore">Read More</h1>
+									<div class="mt-[6vw] lg:mt-[9vw] text-[6vw] leading-[6vw] lg:text-[3vw] lg:leading-[3vw] flex justify-between items-center">
+										<h1 class="readMore navConnect navigation1 underline lg:no-underline" id="pBranding-readMore">Read More</h1>
 
-										<div class="h-[5vw] w-[5vw]">
+										<div class="h-[10vw] w-[10vw] lg:h-[5vw] lg:w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
 
-								<div class="tint tint-3 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint3"></div>
+								<div class="tint tint-3 absolute top-0 left-0 w-0 h-full opacity-[20%]" id="tint3"></div>
 							</div>
 
-							<div class="relative w-[40vw] border-r-[0.4vw] border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition4" onclick="openColorAnalysisPage()">
-								<div class="mt-[5vw]">
-									<div class="num text-[2.5vw] leading-[2.5vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+							<div class="relative w-full lg:w-[40vw] border-t-[1.2vw] lg:border-r-[0.4vw] lg:border-t-[0.4vw] border-zinc-800 px-[1vw] uppercase py-[1vw]" id="partition4" onclick="openColorAnalysisPage()">
+								<div class="mt-[2vw] lg:mt-[5vw]">
+									<div class="num text-[4vw] leading-[4vw] lg:text-[2.5vw] lg:leading-[2.5vw] w-[9.5vw] h-[9.5vw] lg:w-[4.5vw] lg:h-[4.5vw] rounded-full border-[1vw] lg:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 										<h1>04</h1>
 									</div>
 	
-									<div class="title w-[25vw] text-[5vw] leading-[5vw] mt-[2vw]">
+									<div class="title w-full lg:w-[25vw] text-[8vw] leading-[8vw] lg:text-[5vw] lg:leading-[5vw] mt-[2vw]">
 										<div>Color Analysis</div>
 									</div>
 	
-									<div class="mt-[9vw] text-[3vw] leading-[3vw] flex justify-between items-center">
-										<h1 class="readMore navConnect navigation1" id="cAnalysis-readMore">Read More</h1>
+									<div class="mt-[6vw] lg:mt-[9vw] text-[6vw] leading-[6vw] lg:text-[3vw] lg:leading-[3vw] flex justify-between items-center">
+										<h1 class="readMore navConnect navigation1 underline lg:no-underline" id="cAnalysis-readMore">Read More</h1>
 
-										<div class="h-[5vw] w-[5vw]">
+										<div class="h-[10vw] w-[10vw] lg:h-[5vw] lg:w-[5vw]">
 											<img src="../src/assets/img/blackArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 										</div>
 									</div>
 								</div>
 
 
-								<div class="tint tint-4 absolute top-0 left-0 w-0 h-full bg-yellow-600 opacity-[20%]" id="tint4"></div>
+								<div class="tint tint-4 absolute top-0 left-0 w-0 h-full opacity-[20%]" id="tint4"></div>
 							</div>
 						</div>
 					</div>
 
 
 
-					<div class="mt-[7vw] px-[2vw]">
-						<div class="flex justify-between items-end ">
+					<div class="mt-[15vw] lg:mt-[7vw] lg:px-[2vw]">
+						<div class="lg:flex justify-between items-end ">
 
-							<div class="px-[2vw] mt-[4vw] mr-[4vw]">
-								<div class="z-10 flex justify-end">
-									<div class="circle ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+							<div class="lg:px-[2vw] mt-[4vw] mr-[4vw]">
+								<div class="z-10 lg:flex justify-end">
+									<div class="circle lg:ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
 										<div class="text">
 											<p class="text-[0.9vw] text-stone-200">
 												<span class="hbSTU">HB STUDIOS</span> 
@@ -429,26 +448,22 @@
 												<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 											</div>
 										</div>
-		<!-- 		
-										<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-10">
-											<div class="h-[3.5vw] w-[3.5vw]">
-												<img src="../src/assets/img/rightArrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							</div>
 
 
 							<div>
-								<div class="theGoal w-[48vw] text-right text-[4vw] leading-[4vw] uppercase">
-									The goal is to create a positive and authentic impression through appearance,
-									behavior, and communication 
+								<div class="flex justify-end">
+									<div class="theGoal mt-[10vw] lg:mt-0 w-[80vw] lg:w-[48vw] text-right text-[8vw] leading-[8.5vw] lg:text-[4vw] lg:leading-[4vw] uppercase">
+										The goal is to create a positive and authentic impression through appearance,
+										behavior, and communication 
+									</div>
 								</div>
 
 
 								<div class="flex justify-end mt-[1.5vw]">
-									<div class="h-[5vw] w-[5vw]">
+									<div class="h-[10vw] w-[10vw] lg:h-[5vw] lg:w-[5vw]">
 										<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 									</div>
 								</div>
@@ -461,25 +476,33 @@
 
 
 
+
+
+
+
+
 			<!--Personal Style & Wardrobe Evaluation -->
-			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 pt-[4vw] pb-[1vw] h-screen overflow-auto" id="personalStylePage">
-				<div class="x fixed top-0 right-[1vw] [display:none]" id="ex">
-					<div class="text-[5vw]" onclick="closePersonalStylePage()">X</div>
+			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 px-[5vw] xl:px-0 pt-[15vw] xl:pt-[4vw] pb-[1vw] h-screen w-screen overflow-auto" id="personalStylePage">
+				<div class="x fixed top-[1vw] xl:top-0 right-[1vw] [display:none]" id="ex">
+					<!-- <div class="text-[5vw]" onclick="closePersonalStylePage()">X</div> -->
+					<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]" onclick="closePersonalStylePage()">
+						<img src="../src/assets/img/close.png" class="h-full w-full object-contain" alt=”brand”>
+					</div>
 				</div>
 
 
 				<div class="w-full">
-					<div class="flex items-end">
-						<div class="sticky top-0 w-[50vw] pl-[2vw] uppercase pb-[28vw]" id="style-part1 ">
-							<div class="h-[5vw] w-[5vw]">
+					<div class="xl:flex items-end">
+						<div class="xl:sticky top-0 w-full xl:w-[50vw] xl:pl-[2vw] uppercase pb-[10vw] xl:pb-[28vw]" id="style-part1 ">
+							<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]">
 								<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 							</div>
 
-							<div class="title w-[25vw] text-[6vw] leading-[6.2vw] mt-[2vw]">
+							<div class="title xl:w-[25vw] text-[11vw] leading-[11.2vw] xl:text-[6vw] xl:leading-[6.2vw] mt-[4vw] xl:mt-[2vw]">
 								Personal Styling & Wardrobe Evaluation
 							</div>
 
-							<div class="weBelieve w-[35vw] text-[1.7vw] leading-[1.9vw] mt-[2vw] text-zinc-400">
+							<div class="weBelieve xl:w-[35vw] text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[4vw] xl:mt-[2vw] text-zinc-400">
 								We believe in understanding the individual, their preferences, and empowering 
 								them to present their best selves through their wardrobe choices.
 							</div>
@@ -487,32 +510,32 @@
 						
 
 
-						<div class="w-[50vw] px-[2vw] pr-[5vw] uppercase" id="style-part2 ">
-							<div>
-								<div class="aboutService text-[2.5vw] leading-[2.7vw]">
+						<div class="w-full xl:w-[50vw] xl:px-[2vw] xl:pr-[5vw] border-white border-t-[1.3vw] xl:border-none uppercase" id="style-part2 ">
+							<div class="mt-[3.5vw] xl:mt-0">
+								<div class="aboutService text-[6.5vw] leading-[6.9vw] xl:text-[2.5vw] xl:leading-[2.7vw]">
 									This is a meticulous and personalized process aimed at enhancing an individual's overall 
 									appearance and refining their personal style, it entails:
 								</div>
 
 
-								<div class="flex justify-between mt-[3vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[5vw] xl:mt-[3vw]">
+									<div class="pr-[0.5vw] w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>01</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Assessment of Existing Wardrobe & Identification of Style Preferences</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>02</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Understanding Body Shape & Color Consultation</div>
 										</div>
 									</div>
@@ -520,24 +543,24 @@
 
 
 
-								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[2vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800 w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>03</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>build a versatile capsule wardrobe with essential and complementary pieces that can be mixed and matched</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>04</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Guidance is provided on strategic clothing purchases to fill gaps in the wardrobe and enhance overall versatility.</div>
 										</div>
 									</div>
@@ -546,23 +569,23 @@
 
 
 								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>05</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Virtual Styling Services</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>06</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Remote Consultations </div>
 										</div>
 									</div>
@@ -571,24 +594,24 @@
 
 
 
-								<div class="flex justify-between mt-[3vw] border-b-[0.4vw] border-zinc-800">
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[3vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>07</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Outfit Coordination & Accessorizing</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800   w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>08</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Transitioning Wardrobe for Seasons & Incorporating Trends</div>
 										</div>
 									</div>
@@ -598,9 +621,9 @@
 					</div>
 				</div>
 
-				<div class="flex justify-center mt-[6vw]">
-					<div class="service-footers text-center text-[1.1vw] leading-[1.4vw]">
-						<span class='text-[1.2vw]'>©</span>
+				<div class="flex justify-center mt-[10vw] xl:mt-[6vw]">
+					<div class="service-footers text-center text-[10.3px] leading-[10.5px] sm:text-[12px] sm:leading-3 xl:text-[1.1vw] xl:leading-[1.4vw]">
+						<span class='text-[2.6vw] xl:text-[1.2vw]'>©</span>
 						<span>2023 HEADBORN STUDIOS</span>
 						<div class="uppercase">All Rights Reserved</div>
 					</div>
@@ -614,24 +637,27 @@
 
 
 			<!--GROOMING & APPEARANCE ENHANCEMET -->
-			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 pt-[4vw] pb-[1vw] h-screen overflow-auto" id="groomingPage">
-				<div class="x fixed top-0 right-[1vw] [display:none]" id="ex1">
-					<div class="text-[5vw]" onclick="closeGroomingPage()">X</div>
+			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 px-[5vw] xl:px-0 pt-[15vw] xl:pt-[4vw] pb-[1vw] h-screen w-screen overflow-auto" id="groomingPage">
+				<div class="x fixed top-[1vw] xl:top-0 right-[1vw] [display:none]" id="ex1">
+					<!-- <div class="text-[5vw]" onclick="closeGroomingPage()">X</div> -->
+					<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]" onclick="closeGroomingPage()">
+						<img src="../src/assets/img/close.png" class="h-full w-full object-contain" alt=”brand”>
+					</div>
 				</div>
 
 
 				<div class="w-full">
-					<div class="flex items-end">
-						<div class="sticky top-0 w-[50vw] pl-[2vw] uppercase pb-[40vw]" id="style-part1 ">
-							<div class="h-[5vw] w-[5vw]">
+					<div class="xl:flex items-end">
+						<div class="xl:sticky top-0 w-full xl:w-[50vw] xl:pl-[2vw] uppercase pb-[10vw] xl:pb-[28vw]" id="style-part1 ">
+							<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]">
 								<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 							</div>
 
-							<div class="title w-[28vw] text-[6vw] leading-[6.2vw] mt-[2vw]">
+							<div class="title xl:w-[25vw] text-[11vw] leading-[11.2vw] xl:text-[6vw] xl:leading-[6.2vw] mt-[4vw] xl:mt-[2vw]">
 								Grooming & Appearance Enhancement
 							</div>
 
-							<div class="weBelieve w-[37vw] text-[1.7vw] leading-[1.9vw] mt-[2vw] text-zinc-400">
+							<div class="weBelieve xl:w-[35vw] text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[4vw] xl:mt-[2vw] text-zinc-400">
 								We address various aspects of personal grooming and presentation, these services aim to 
 								boost confidence, enhance self-perception, and contribute to an overall positive and polished image.
 							</div>
@@ -639,32 +665,32 @@
 						
 
 
-						<div class="w-[50vw] px-[2vw] pr-[5vw] uppercase" id="style-part2 ">
-							<div>
-								<div class="aboutService text-[2.5vw] leading-[2.7vw]">
+						<div class="w-full xl:w-[50vw] xl:px-[2vw] xl:pr-[5vw] border-white border-t-[1.3vw] xl:border-none uppercase" id="style-part2 ">
+							<div class="mt-[3.5vw] xl:mt-0">
+								<div class="aboutService text-[6.5vw] leading-[6.9vw] xl:text-[2.5vw] xl:leading-[2.7vw]">
 									This involves a meticulous and tailored approach to refining an individual's physical presentation.
 									Here's an in-depth exploration of what this service entails:
 								</div>
 
 
 								<div class="flex justify-between mt-[3vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>01</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Hairstyle Assessment & Personalized Recommendations</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>02</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Guidiance on Facial Hair Styling and Maintenance</div>
 										</div>
 									</div>
@@ -672,24 +698,24 @@
 
 
 
-								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[2vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>03</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Personalized Recommendations and Tailoring to lifestyle type, preferences, and personal and professional goals</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800 w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>04</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Confidence-Building Techniques on body language to convey confidence and professionalism.</div>
 										</div>
 									</div>
@@ -697,24 +723,24 @@
 
 
 
-								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[2vw]">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>05</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Professional Attire Guidance & Cultural Sensitivity</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>06</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Makeup Consultation </div>
 										</div>
 									</div>
@@ -723,24 +749,24 @@
 
 
 
-								<div class="flex justify-between mt-[3vw] border-b-[0.4vw] border-zinc-800">
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[3vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>07</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Fitness and Health Recommendations</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800 w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>08</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Empowering through Confidence and Self-Perception, acknowledging that grooming is not solely
 												about physical appearance but also about cultivating a positive self-image and overall well-being
@@ -753,9 +779,9 @@
 					</div>
 				</div>
 
-				<div class="flex justify-center mt-[6vw]">
-					<div class="service-footers text-center text-[1.1vw] leading-[1.4vw]">
-						<span class='text-[1.2vw]'>©</span>
+				<div class="flex justify-center mt-[10vw] xl:mt-[6vw]">
+					<div class="service-footers text-center text-[10.3px] leading-[10.5px] sm:text-[12px] sm:leading-3 xl:text-[1.1vw] xl:leading-[1.4vw]">
+						<span class='text-[2.6vw] xl:text-[1.2vw]'>©</span>
 						<span>2023 HEADBORN STUDIOS</span>
 						<div class="uppercase">All Rights Reserved</div>
 					</div>
@@ -770,24 +796,27 @@
 
 
 			<!--PERSONAL BRANDING -->
-			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 pt-[4vw] pb-[1vw] h-screen overflow-auto" id="personalBrandingPage">
-				<div class="x fixed top-0 right-[1vw] [display:none]" id="ex2">
-					<div class="text-[5vw]" onclick="closePersonalBrandingPage()">X</div>
+			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 px-[5vw] xl:px-0 pt-[15vw] xl:pt-[4vw] pb-[1vw] h-screen w-screen overflow-auto" id="personalBrandingPage">
+				<div class="x fixed top-[1vw] xl:top-0 right-[1vw] [display:none]" id="ex2">
+					<!-- <div class="text-[5vw]" onclick="closePersonalBrandingPage()">X</div> -->
+					<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]" onclick="closePersonalBrandingPage()">
+						<img src="../src/assets/img/close.png" class="h-full w-full object-contain" alt=”brand”>
+					</div>
 				</div>
 
 
 				<div class="w-full">
-					<div class="flex items-end">
-						<div class="sticky top-0 w-[50vw] pl-[2vw] uppercase pb-[38vw]" id="style-part1 ">
-							<div class="h-[5vw] w-[5vw]">
+					<div class="xl:flex items-end">
+						<div class="xl:sticky top-0 w-full xl:w-[50vw] xl:pl-[2vw] uppercase pb-[10vw] xl:pb-[28vw]" id="style-part1 ">
+							<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]">
 								<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 							</div>
 
-							<div class="title w-[25vw] text-[6vw] leading-[6.2vw] mt-[2vw]">
+							<div class="title xl:w-[25vw] text-[11vw] leading-[11.2vw] xl:text-[6vw] xl:leading-[6.2vw] mt-[4vw] xl:mt-[2vw]">
 								Personal Branding
 							</div>
 
-							<div class="weBelieve w-[35vw] text-[1.7vw] leading-[1.9vw] mt-[2vw] text-zinc-400">
+							<div class="weBelieve xl:w-[35vw] text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[4vw] xl:mt-[2vw] text-zinc-400">
 								We empower individuals to authentically present themselves in a way that aligns with their personal 
 								and professional objectives. Through a holistic approach that encompasses appearance, communication, 
 								and online presence. 
@@ -796,32 +825,32 @@
 						
 
 
-						<div class="w-[50vw] px-[2vw] pr-[5vw] uppercase" id="style-part2 ">
-							<div>
-								<div class="aboutService text-[2.5vw] leading-[2.7vw]">
+						<div class="w-full xl:w-[50vw] xl:px-[2vw] xl:pr-[5vw] border-white border-t-[1.3vw] xl:border-none uppercase" id="style-part2 ">
+							<div class="mt-[3.5vw] xl:mt-0">
+								<div class="aboutService text-[6.5vw] leading-[6.9vw] xl:text-[2.5vw] xl:leading-[2.7vw]">
 									Our strategic process involves creating and managing a unique identity for individuals to 
 									distinguish themselves in their personal and professional lives. Here's an exploration of the key aspects:
 								</div>
 
 
 								<div class="flex justify-between mt-[3vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>01</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Self Discovery, Conduct assessments to identify their strengths, values, and goals. </div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>02</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Enhancing verbal and non-verbal communication skills. 
 											</div>
@@ -831,13 +860,13 @@
 
 
 
-								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[2vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>03</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Guidiance on dressing appropriately for different occasions and settings. 
 												We create understanding in the impact of colors, styles, and accessories on their overall image. 
@@ -846,12 +875,12 @@
 									</div>
 
 
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>04</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Curating a professional online presence which involves optimizing social media accounts, 
 												and ensuring that the content aligns with their personal brand.
@@ -863,12 +892,12 @@
 
 
 								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>05</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Work on crafting a clear and compelling personal brand message. 
 											</div>
@@ -876,12 +905,12 @@
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>06</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Transitioning Wardrobe for Seasons & Incorporating Trends</div>
 										</div>
 									</div>
@@ -890,24 +919,24 @@
 
 
 
-								<div class="flex justify-between mt-[3vw] border-b-[0.4vw] border-zinc-800">
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[3vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>07</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Crisis Management</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800   w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>08</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Reputation Management </div>
 										</div>
 									</div>
@@ -917,9 +946,9 @@
 					</div>
 				</div>
 
-				<div class="flex justify-center mt-[6vw]">
-					<div class="service-footers text-center text-[1.1vw] leading-[1.4vw]">
-						<span class='text-[1.2vw]'>©</span>
+				<div class="flex justify-center mt-[10vw] xl:mt-[6vw]">
+					<div class="service-footers text-center text-[10.3px] leading-[10.5px] sm:text-[12px] sm:leading-3 xl:text-[1.1vw] xl:leading-[1.4vw]">
+						<span class='text-[2.6vw] xl:text-[1.2vw]'>©</span>
 						<span>2023 HEADBORN STUDIOS</span>
 						<div class="uppercase">All Rights Reserved</div>
 					</div>
@@ -936,24 +965,27 @@
 
 
 			<!--COLOR ANALYSIS -->
-			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 pt-[4vw] pb-[1vw] h-screen overflow-auto" id="colorAnalysisPage">
-				<div class="x fixed top-0 right-[1vw] [display:none]" id="ex3">
-					<div class="text-[5vw]" onclick="closeColorAnalysisPage()">X</div>
+			<section class="fixed bg-black text-stone-200 top-0 right-[100vw] z-20 px-[5vw] xl:px-0 pt-[15vw] xl:pt-[4vw] pb-[1vw] h-screen w-screen overflow-auto" id="colorAnalysisPage">
+				<div class="x fixed top-[1vw] xl:top-0 right-[1vw] [display:none]" id="ex3">
+					<!-- <div class="text-[5vw]" onclick="closeColorAnalysisPage()">X</div> -->
+					<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]" onclick="closeColorAnalysisPage()">
+						<img src="../src/assets/img/close.png" class="h-full w-full object-contain" alt=”brand”>
+					</div>
 				</div>
 
 
 				<div class="w-full">
-					<div class="flex items-end">
-						<div class="sticky top-0 w-[50vw] pl-[2vw] uppercase pb-[34vw]" id="style-part1 ">
-							<div class="h-[5vw] w-[5vw]">
+					<div class="xl:flex items-end">
+						<div class="xl:sticky top-0 w-full xl:w-[50vw] xl:pl-[2vw] uppercase pb-[10vw] xl:pb-[28vw]" id="style-part1 ">
+							<div class="h-[10vw] w-[10vw] xl:h-[5vw] xl:w-[5vw]">
 								<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 							</div>
 
-							<div class="title w-[25vw] text-[6vw] leading-[6.2vw] mt-[2vw]">
+							<div class="title xl:w-[25vw] text-[11vw] leading-[11.2vw] xl:text-[6vw] xl:leading-[6.2vw] mt-[4vw] xl:mt-[2vw]">
 								Color Analysis
 							</div>
 
-							<div class="weBelieve w-[35vw] text-[1.7vw] leading-[1.9vw] mt-[2vw] text-zinc-400">
+							<div class="weBelieve xl:w-[35vw] text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[4vw] xl:mt-[2vw] text-zinc-400">
 								We help Clients make informed decisions about their clothing, accessories, and grooming choices
 								by considering factors such as undertones, seasonal analysis, and color psychology.
 								we use color analysis to provide personalized guidance that enhances clients' overall image and confidence.
@@ -962,21 +994,21 @@
 						
 
 
-						<div class="w-[50vw] px-[2vw] pr-[5vw] uppercase" id="style-part2 ">
-							<div>
-								<div class="aboutService text-[2.5vw] leading-[2.7vw]">
+						<div class="w-full xl:w-[50vw] xl:px-[2vw] xl:pr-[5vw] border-white border-t-[1.3vw] xl:border-none uppercase" id="style-part2 ">
+							<div class="mt-[3.5vw] xl:mt-0">
+								<div class="aboutService text-[6.5vw] leading-[6.9vw] xl:text-[2.5vw] xl:leading-[2.7vw]">
 									We provide guidance and help individuals understand which colors enhance their natural features and complement 
 									their skin undertones, hair color, and eye color. it entails:
 								</div>
 
 
 								<div class="flex justify-between mt-[3vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>01</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Consider the fabric and texture of clothing when conducting color analysis.
 											</div>
@@ -984,12 +1016,12 @@
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>02</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Guide clients on choosing clothing and accessories in colors that enhance their overall appearance.</div>
 										</div>
 									</div>
@@ -997,24 +1029,24 @@
 
 
 
-								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[2vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw]  mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>03</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Offering recommendations for makeup colors that enhances client's natural beauty.</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-y-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>04</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>
 												Identify client's skin undertones, which can be warm, cool, or neutral. 
 												This is essential for determining the most flattering colors.
@@ -1026,23 +1058,23 @@
 
 
 								<div class="flex justify-between mt-[2vw]">
-									<div class="pr-[0.5vw] w-[23vw] mr-[1.5vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>05</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Hair Color Considerations.</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] w-[23vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw]  w-[45vw] xl:w-[23vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>06</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Seasonal Color Analysis</div>
 										</div>
 									</div>
@@ -1051,24 +1083,24 @@
 
 
 
-								<div class="flex justify-between mt-[3vw] border-b-[0.4vw] border-zinc-800">
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800 w-[23vw] mr-[1.5vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+								<div class="flex justify-between mt-[4vw] xl:mt-[3vw]">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800  w-[45vw] xl:w-[23vw] mr-[5vw] xl:mr-[1.5vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>07</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Teach clients how to coordinate colors within their wardrobe.</div>
 										</div>
 									</div>
 
 
-									<div class="pr-[0.5vw] border-t-[0.4vw] border-zinc-800  w-[23vw] py-[2vw]">									
-										<div class="num text-[2vw] leading-[2vw] w-[4.5vw] h-[4.5vw] rounded-full border-[0.4vw] border-zinc-800 flex justify-center items-center">
+									<div class="pr-[0.5vw] border-y-[1vw] xl:border-y-[0.4vw] border-zinc-800 w-[45vw] xl:w-[23vw] py-[4vw] xl:py-[2vw]">									
+										<div class="num text-[4vw] leading-[4vw] xl:text-[2vw] xl:leading-[2vw] w-[9.5vw] h-[9.5vw] xl:w-[4.5vw] xl:h-[4.5vw] rounded-full border-[1vw] xl:border-[0.4vw] border-zinc-800 flex justify-center items-center">
 											<div>08</div>
 										</div>
 	
-										<div class="title text-[1.7vw] leading-[1.9vw] mt-[2vw]">
+										<div class="title text-[4.7vw] leading-[5.5vw] xl:text-[1.7vw] xl:leading-[1.9vw] mt-[3vw] xl:mt-[2vw]">
 											<div>Introducing clients to color psychology, emphasizing the emotional and psychological impact of different colors</div>
 										</div>
 									</div>
@@ -1078,9 +1110,9 @@
 					</div>
 				</div>
 
-				<div class="flex justify-center mt-[6vw]">
-					<div class="service-footers text-center text-[1.1vw] leading-[1.4vw]">
-						<span class='text-[1.2vw]'>©</span>
+				<div class="flex justify-center mt-[10vw] lg:mt-[6vw]">
+					<div class="service-footers text-center text-[10.3px] leading-[10.5px] sm:text-[12px] sm:leading-3 lg:text-[1.1vw] lg:leading-[1.4vw]">
+						<span class='text-[2.6vw] lg:text-[1.2vw]'>©</span>
 						<span>2023 HEADBORN STUDIOS</span>
 						<div class="uppercase">All Rights Reserved</div>
 					</div>
@@ -1100,44 +1132,87 @@
 				<!-- FOOTER -->
 				<div class="footer px-[2vw]">
 					<div>
-						<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase mt-[3vw] text-center">
+						<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase mt-[20vw] md:mt-[10vw] lg:mt-[3vw] text-center [display:none lg:block  text-white lg:text-white">
 							HeadB0rn Studios*
 						</div>
 					</div>
 
-					<div class="footer-nav mt-[7vw]">
-						<div class="flex justify-around items-center text-[1.1vw] uppercase">
-							<div>
-								<div>About</div>
-								<div>Stories</div>
-								<div>Services</div>
-								<div>Contact</div>
-							</div>
+					<div class="footer-nav mt-[25vw mt-[7vw] text-white lg:text-white">
+						
+							<div class="lg:flex justify-around items-center text-[12.5px] sm:text-[14px] lg:text-[1.1vw] uppercase">
+								<div>
+									<div>About</div>
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Stories</div>
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Services</div>
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Contact</div>
+								</div>
 
-							<div>
-								<div>Email</div>
-								<div>Instagram</div>
-								<div>Twitter</div>
-							</div>
-						</div>
+								<div class="mt-[3.3vw] lg:mt-0 [display:none] lg:block">
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Email</div>
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Instagram</div>
+									<div class="mt-[1.5vw] lg:mt-[0.5vw]">Twitter</div>
+								</div>
 
-						<div class="flex justify-end mt-[3vw]">
-							<div class="flex justify-between items-center w-[53vw]">
-								<a href="/public/index.html" data-text="back top">
-									<div class="flex items-center justify-center uppercase">
-										<div class="h-[2vw] w-[2vw] mr-[1vw]">
-											<img src="../src/assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+								<div class="mt-[9vw] lg:[display:none]">
+									<div class="flex justify-between items-center w-[40vw]">
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="../src/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
 										</div>
-										<h1 class="backTop text-[1.3vw]">Back Top</h1>
+
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="../src/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="../src/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
 									</div>
-								</a>
-								<div class="text-right text-[1.1vw] leading-[1.4vw]">
-									<span class='text-[1.2vw]'>©</span>
-									<span>2023 HEADB0RN STUDIOS</span>
-									<div class="uppercase">All Rights Reserved</div>
+								</div>
+							</div>
+							
+						
+						<div class="flex justify-between items-end lg:block">
+							<!-- Small Screen -->
+							<div class="madeBy text-[14px] sm:text-[16px] uppercase lg:[display:none] text-whit">
+								<h1>Made by The Clan Chief</h1>
+							</div>
+
+
+							<div class="flex mt-[6vw] lg:mt-[3vw] lg:px-[1.7vw]">
+								<div class="lg:flex justify-between items-center w-full">
+									<!-- Large Screen -->
+									<div class="madeBy text-[1.4vw] uppercase [display:none] lg:block">
+										<h1>Made by The Clan Chief</h1>
+									</div>
+
+
+									<a href="/public/index.html" data-text="back top">
+										<div class="flex justify-end">
+											<div class="flex items-center justify-center uppercase mt-[-2vw] lg:mt-0">
+												<div class="h-[4vw] w-[4vw] lg:h-[2vw] lg:w-[2vw] mr-[1.7vw] lg:mr-[1vw]">
+													<img src="../src/assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+												</div>
+												<h1 class="backTop text-[11.5px] sm:text-[13px] lg:text-[1.3vw] text-white">Back Top</h1>
+											</div>
+										</div>
+									</a>
+
+
+									<div class="text-right text-[10.3px] leading-[10.5px] sm:text-[12px] sm:leading-3 lg:text-[1.1vw] lg:leading-[1.4vw] mt-[4vw] lg:mt-0">
+										<span class='text-[2.6vw] lg:text-[1.2vw]'>©</span>
+										<span>2023 HEADB0RN STUDIOS</span>
+										<div class="uppercase">All Rights Reserved</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 		</section>
