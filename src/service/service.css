@@ -137,6 +137,18 @@ body::-webkit-scrollbar {
 }
 
 
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
+
 /* Section 1 */
 .discover{
 	font-family: kepler-std-semicondensed-dis, serif;
@@ -203,6 +215,22 @@ body::-webkit-scrollbar {
 	font-weight: 700;
 	font-family: 'Anton', sans-serif;
 }
+
+.serviceNav::after{
+	content: '';
+	height: 0.4vw;
+	width: 0;
+	background: white;
+	position: absolute;
+	bottom: 1vw;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.serviceNav:hover::after{
+	width: 14vw;
+}
+
 
 .x{
 	font-weight: 200;
@@ -301,4 +329,11 @@ body::-webkit-scrollbar {
 .madeBy{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 800;
+}
+
+@media all and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
 }

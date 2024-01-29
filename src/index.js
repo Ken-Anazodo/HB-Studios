@@ -138,16 +138,19 @@ function moveCursor(e) {
 }
 
 let links = Array.from(document.querySelectorAll("a"));
-let homeIcon = document.querySelector(".iconNav");
-let homeDisplay = document.querySelector(".hmeCont");
-let hbNav = document.querySelector(".hbNav");
-let welcomeToHb = document.querySelector(".welcomeCont");
 let navConnect = Array.from(document.querySelectorAll(".navConnect"));
 let circleTexts = Array.from(document.querySelectorAll(".circle"));
 // let menuCursor = document.querySelector(".menuCursor");
 let closeDiv = document.querySelector(".close-icon");
 let closeCursor = document.querySelector(".closeCursor");
 
+
+
+// Nav Narration Display
+let homeIcon = document.querySelector(".iconNav");
+let homeDisplay = document.querySelector(".hmeCont");
+let hbNav = document.querySelector(".hbNav");
+let welcomeToHb = document.querySelector(".welcomeCont");
 
 
 homeIcon.addEventListener("mouseover", () =>{
@@ -181,7 +184,7 @@ hbNav.addEventListener("mouseleave", () =>{
 
 
 
-
+// CURSOR ANIMATION
 links.forEach(link => {
 	link.addEventListener("mouseover", () =>{
 		innerCursor.classList.add("grow");

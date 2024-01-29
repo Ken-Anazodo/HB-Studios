@@ -49,24 +49,32 @@
 
 		<section class="bg-black text-stone-200 pb-[2vw]">
 			<section0 class="relative overflow-hidden h-screen w-full">
-				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[11vh]">
+				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[8vh] xl:h-[11vh] bg-blac">
 					<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
 					<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
 						
 						<a href="/public/index.html">
-							<div class="navConnect h-[7vw] w-[6vw] flex items-center">
+							<div class="navConnect iconNav h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw] flex items-center">
 								<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
 							</div>
 						</a>
 	
-						<div class="navConnect text-center text-[1.1vw] leading-[1.2vw]">
-							<div class="stu hb ">HEADB0RN</div>
-							<div class="stu text-[1.6vw] ">STUDIOS</div>
+						<div class="navConnect hbNav text-center md:text-[1.7vw] md:leading-[2.1vw] xl:text-[1.1vw] xl:leading-[1.2vw] lg:pt-[1vw] xl:pt-0">
+							<div class="[display:none] md:[display:block]">
+								<div class="stu hb ">HEADB0RN</div>
+								<div class="stu md:text-[2.5vw] xl:text-[1.6vw] ">STUDIOS</div>
+							</div>
+							
+							<div class="hBs md:[display:none] text-[4.5vw] leading-[4.5vw] sm:text-[4vw] sm:leading-[4vw]">HBS</div>
 						</div>
 	
 						<div>
-							<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
-								MENU
+							<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+								<h1 class="[display:none] md:[display:block]">MENU</h1>
+	
+								<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
+									<img src="../src/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -238,89 +246,174 @@
 
 
 			<section1>
-				<div class="h-screen pt-[4vw]">
-					<div class="flex justify-between">
-						<div>
+				<!-- NAV Narration Display -->
+				<div class="welcomeCont absolute top-[11vh] left-0 w-full justify-center [display:none] z-10">
+					<div class="ml-[1.5vw] w-[30vw] min-h-[12vh] h-[12vh] flex justify-around items-center border-[0.1vw] border-stone-400">
+						<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+							<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+
+						<div class="welcomex w-[20vw] text-[0.9vw] leading-[1.1vw] text-stone-400 uppercase text-center ">
+							<div class="welcomeNav">Welcome to Headborn Studios </div>
+							<div>Enjoy the endless possibilities</div>
+							<div class="noos mt-[0.5vw]">H.B.S</div>
+						</div>
+
+						<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+							<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+					</div>
+				</div>
+
+				<div class="hmeCont absolute top-[11vh] left-0 w-full [display:none] z-10">					
+						<div class="welcomex ml-[3vw] w-[10vw] text-stone-50 uppercase text-center flex items-center">
+							<div class="h-[2vw] w-[2vw] mr-[1vw]">
+								<img src="../src/assets/img/rightArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+							</div>
+							<div class="welcomeNav text-[1.1vw]">Home</div>
+						</div>	
+				</div>
+
+
+
+
+
+
+
+				<!-- Body Beginning -->
+
+				<div class="xl:h-screen pt-[20vw] xl:pt-[4vw]">
+					<!-- First row Images for Large Screen -->
+					<div class="xl:flex justify-between">
+						<div class="[display:none] xl:block">
 							<div class="min-h-[45vh] h-[45vh] w-[21vw] ml-[6vw] mb-[4vw]">
-								<img src="../src/assets/img/pascal.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+								<img src="../src/assets/img/Johnny/john.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
 							</div>
 
 							<div class="min-h-[35vh] h-[35vh] w-[15vw] ml-[3vw]">
-								<img src="../src/assets/img/hoc.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								<img src="../src/assets/img/bayanni/bayanni1.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
 							</div>
-							<!-- <div class="min-h-[30vh] h-[30vh] w-[12vw] ml-[3vw] mb-[6vw]">
-								<iframe src="../src/assets/video/model.mp4" class=' h-full w-full brightness-[60%]' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe>
-								<iframe src="https://player.vimeo.com/video/869061440?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscale' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-							</div> -->
 						</div>
 
 
 
-						<div class="mt-[6vw] ml-[2.5vw]">
+						<div class="centerPiece xl:mt-[6vw] xl:ml-[2.5vw]">
+							<!-- Upper Images Small Screen -->
+							<div class="xl:[display:none] flex justify-between mb-[15vw] px-[5.5vw]">
+								<div class="min-h-[70px] h-[70px] w-[15vw] ml-[4vw]">
+									<img src="../src/assets/img/Johnny/john.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+
+								<div class="min-h-[100px] h-[100px] w-[25vw] xl:mb-[3vw]">
+									<img src="../src/assets/img/prettyboydo/prettyboydo2.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+							</div>
+
+
+
+							<div class="flex justify-center xl:block">
 							<div>
-								<div class="about text-center text-[3vw] leading-[3vw] mb-[0.5vw] text-stone-300">ALL ABOUT</div>
+								<div class="about text-center text-[8vw] leading-[8vw] xl:text-[3vw] xl:leading-[3vw] mb-[1.5vw] xl:mb-[0.5vw] text-stone-300">ALL ABOUT</div>
 								<hr class="border-stone-600">
 								
-								<div class="text-center mt-[1vw]">
-									<h1 class="one text-[1vw] leading-[1vw]">(001)</h1>
-									<div class="justify-center items-center mt-[3.5vw]">
-										<div class="hbb text-[6vw] leading-[5.8vw] uppercase">
+								<div class="text-center mt-[2.5vw] xl:mt-[1vw]">
+									<h1 class="one text-[3vw] leading-[3vw] xl:text-[1vw] xl:leading-[1vw]">(001)</h1>
+									<div class="justify-center items-center mt-[8vw] xl:mt-[3.5vw]">
+										<div class="hbb text-[14vw] leading-[14vw] xl:text-[6vw] xl:leading-[5.8vw] uppercase">
 											<h1>Headborn</h1>
 											<p>Studios</p>
 										</div>
 									</div>
 
-									<div class="flex justify-center items-center mt-[2.5vw]">
+									<div class="flex justify-center items-center mt-[5vw] xl:mt-[2.5vw]">
 										<div class="styleGen">
 											<div class="flex justify-center">
-												<div class="h-[4vw] w-[4vw]">
+												<div class="h-[11vw] w-[11vw] xl:h-[4vw] xl:w-[4vw]">
 													<img src="../src/assets/img/roll1.png" class="h-full w-full object-contain" alt=”brand”>
 												</div>
 											</div>
 											
 											<div class="flex flex-col justify-center items-center">
-												<p class="mt-[1vw] uppercase text-[2.3vw] leading-[2.3vw] text-stone-400">Styling Geniuses</p>
-												<p class="stylG mt-[1vw] uppercase text-[1.1vw] leading-[1.1vw] w-[13vw] text-stone-700">Enter the realm of the styling Geniuses</p>
+												<p class="mt-[3vw] xl:mt-[1vw] uppercase text-[5vw] leading-[5vw] xl:text-[2.3vw] xl:leading-[2.3vw] text-stone-400">Styling Geniuses</p>
+												<p class="stylG mt-[3vw] xl:mt-[1vw] uppercase text-[2.7vw] leading-[2.9vw] xl:text-[1.1vw] xl:leading-[1.1vw] w-[30vw] xl:w-[13vw] text-stone-700">Enter the realm of the styling Geniuses</p>
 											</div>
 										</div>
 									</div>									
 								</div>
 
-								<hr class="mt-[1vw]">
-								<div class="mt-[-0.7vw]">
-									<div class="flex justify-between items-center w-[33vw] border-y-[0.1vw border-stone-200">
-										<div class="view text-[1.3vw] leading-[1.3vw]">VIEW WORKS</div>
+			
+								<div class="mt-[3vw] xl:mt-[1vw]">
+									<div class="flex justify-between items-center border-t-[0.1vw] border-b-[1vw] xl:border-b-[0.4vw] border-stone-200 py-[2.5vw] xl:py-[0.5vw]">
+										<div class="view text-[4.5vw] leading-[4.5vw] xl:text-[1.3vw] xl:leading-[1.3vw]">VIEW WORKS</div>
 
-										<div class="h-[4vw] w-[4vw]">
+										<div class="h-[4vw] w-[10vw] xl:h-[2vw] xl:w-[4vw] mr-[0.5vw]">
 											<img src="../src/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
 										</div>
 									</div>
 								</div>
-								<hr class="mt-[-0.7vw]">
+							</div>
+							</div>
+
+
+							<!-- Lower Images Small Screen -->
+							<div class="xl:[display:none] flex justify-between items-end mt-[10vw]">
+								<div class="min-h-[160px] h-[160px] w-[33vw]">
+									<img src="../src/assets/img/bayanni/bayanni1.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+
+								<div class="min-h-[90px] h-[90px] w-[20vw] mr-[9vw]">
+									<img src="../src/assets/img/im7.jpg" class="h-full w-full object-cover brightness-[60%] grayscale" alt=”Image”>
+								</div>
 							</div>
 						</div>
 
 
 
-
-						<div>
+						<!-- Second row Images for Large Screen -->
+						<div class="[display:none] xl:block">
 							<div class="min-h-[33vh] h-[33vh] w-[15vw] ml-[3vw] mb-[3vw]">
-								<!-- <iframe src="../src/assets/video/model.mp4" class=' h-full w-full brightness-[60%]' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
-								<!-- <iframe src="https://player.vimeo.com/video/869068933?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
-								<img src="../src/assets/img/jis.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								<img src="../src/assets/img/prettyboydo/prettyboydo2.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
 							</div>
 
 							<div class="min-h-[54vh] h-[54vh] w-[27vw]">
-								<img src="../src/assets/img/malick.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								<img src="../src/assets/img/im7.jpg" class="h-full w-full object-cover brightness-[60%] grayscale" alt=”Image”>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section1>
 
+
+
+
+
+
 			<section2>
 				<div class="overflow-hidden">
-					<div class="sec2 pt-[10vw] px-[2vw] text-white mb-[5vw">
+					<div class="sec2 xl:pt-[10vw] px-[2vw] text-white">
+
+						<div class="flex justify-center mr-[25vw] z-10 xl:[display:none] mb-[5vw]">
+							<div class="circle mt-[32vw] ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
+								<div class="text">
+									<p class="text-[10px] text-stone-200">
+										<span class="hbSTU">HB STUDIOS</span> 
+										<span class="star">*</span>
+										<span>GET IN TOUCH</span>
+										<span class="star">*</span>
+										<span>GET IN TOUCH</span>
+										<span class="star">*</span>
+									</p>
+								</div>
+		
+								<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+									<div class="h-[6vw] w-[6vw] xl:h-[3.5vw] xl:w-[3.5vw]">
+										<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 
 						<div class="relative w-full h-full">
 							<div>
@@ -328,18 +421,12 @@
 								<div class="text-center">Creative</div>
 								<div class="studio1 mt-[1.2vw]">Studio</div>
 								<div class="text-center mt-[2.5vw]">Evolution</div>
-
-
-								<!-- <div class='min-h-[25vw] h-[25vw] w-[25vw] absolute top-0 right-0 rounded-full'>
-									<iframe src="../src/assets/video/vid5.mp4" class=' h-full w-full brightness-50 grayscal rounded-full' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe>
-									<iframe src="https://player.vimeo.com/video/873968269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[40%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-								</div> -->
 							</div>
 							</div>
 
 
 
-							<div class="absolute right-[15vw] bottom-[12vw] z-10">
+							<div class="absolute right-[15vw] bottom-[12vw] z-10 [display:none] xl:block">
 								<div class="circle mt-[32vw] ml-[3vw] relative flex justify-center items-start h-[200px] w-[200px] hover:text-yellow-60 cursor-pointer">
 									<div class="text">
 										<p class="text-[0.9vw] text-stone-200">
@@ -367,8 +454,8 @@
 							</div>
 
 
-							<div class="absolute bottom-[22vw] left-[38vw] text-stone-200">
-								<div class="elevate text-[1vw] leading-[1.2vw] w-[20vw]">
+							<div class="absolute bottom-[18vw] xl:bottom-[22vw] left-[38vw] text-stone-200">
+								<div class="elevate text-[2.5vw] leading-[2.7vw] xl:text-[1vw] xl:leading-[1.2vw] w-[40vw] xl:w-[20vw]">
 									Elevating Artiste Image and Branding, unlocking visual Potentials: Introducing HEADBORN STUDIOS.
 								</div>
 							</div>
@@ -378,11 +465,15 @@
 			</section2>
 
 
+
+
+
+
 			<section3>
-				<div>
+				<div class="mt-[40vw] xl:mt-0">
 
 					<div class="flex justify-center relative overflow-hidden">
-						<div class='iframeCont1 h-screen w-[50vw]'>							
+						<div class='iframeCont1 h-auto xl:h-screen w-[50vw]'>							
 							<iframe src="https://player.vimeo.com/video/891064567?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
@@ -427,22 +518,22 @@
 
 
 
-					<div class="mb-[8vw]">
-						<div class="flex justify-center mt-[4vw]">
-							<div class="a-vision text-[1.3vw] leading-[1.5vw] uppercase text-center w-[19vw]">
+					<div class="px-[5vw] lg:px-0 mb-[25vw] xl:mb-[8vw]">
+						<div class="md:flex justify-center mt-[40vw] md:mt-[4vw]">
+							<div class="a-vision text-[2.3vw] leading-[2.3vw] sm:text-[15px] sm:leading-[15.5px] md:text-[1.3vw] md:leading-[1.5vw] uppercase md:text-center w-[24vw] md:w-[30vw md:w-[19vw]">
 								A Vision Beyond Ordinary Image Consulting
 							</div>
 						</div>
 
 
-						<div class="subHead half-decade flex justify-center mt-[4vw]">
-							<div class="text-center text-[3.2vw] w-[44vw] leading-[3.7vw]">
+						<div class="subHead half-decade md:flex justify-center mt-[6vw] lg:mt-[4vw]">
+							<div class="md:text-center text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.2vw] xl:leading-[3.7vw] md:w-[60vw] lg:w-[50vw] xl:w-[44vw]">
 								Half a decade experience as independent creative professionals.
 							</div>
 						</div>
 
-						<div class="subBody we-craft flex justify-center mt-[7vw]">
-							<div class="text-center text-[1.1vw] w-[33vw] text-stone-300">
+						<div class="subBody we-craft md:flex justify-center mt-[9vw] xl:mt-[7vw]">
+							<div class="md:text-center text-[15px] leading-6 sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal  md:w-[40vw] lg:w-[35vw] xl:w-[33vw] text-stone-300">
 								<p>
 									We craft a distinctive stage presence that elevates your performance, ensuring a memorable 
 									impact on both fans and industry insiders. By fusing worldwide fashion trends with the essence 
@@ -455,7 +546,7 @@
 									journey.
 								</p>
 
-								<p class="mt-[2vw]">
+								<p class="mt-[4vw] xl:mt-[2vw]">
 									Our proficiency extends well beyond mere fashion guidance. We offer a holistic approach encompassing 
 									image coaching, wardrobe enhancements, color analysis, and tailor-made branding strategies. 
 									We meticulously construct a memorable brand that makes an indelible mark on your audience, seamlessly 
@@ -468,8 +559,8 @@
 
 
 
-					<div class="px-[2vw] mb-[7.5vw]">
-						<div class="flex items-center justify-center relative">
+					<div class="px-[5vw] xl:px-[2vw] mb-[7.5vw]">
+						<div class="flex items-end xl:items-center justify-center relative">
 
 
 							<!-- Small Swiper -->
@@ -561,35 +652,35 @@
 						</div>
 
 						<!-- Logo -->
-						<div class="h-[6.5vw] w-[6.5vw]">
+						<div class="h-[8.5vw] w-[8.5vw] xl:h-[6.5vw] xl:w-[6.5vw] mt-[15vw] xl:mt-0">
 							<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
 						</div>
 
 						<!-- Introducing Headborn Studios -->
 						<div class="mt-[2vw]">
-							<div class="intro text-[6vw] leading-[6vw] uppercase mr-[4vw] w-[43vw]">
+							<div class="intro text-[10vw] leading-[10vw] xl:text-[6vw] xl:leading-[6vw] uppercase mr-[4vw] w-[50vw] xl:w-[43vw]">
 								<h1>Introducing Headborn Studios</h1>
 							</div>
 							
 
-							<div class="mt-[2vw]">
-								<div class="flex justify-end w-[42vw]">
-									<div class="h-[3.5vw] w-[3.5vw]">
+							<div class=" mt-[5vw] xl:mt-[2vw]">
+								<div class="xl:flex justify-end w-[42vw]">
+									<div class="h-[7vw] w-[7vw] xl:h-[3.5vw] xl:w-[3.5vw]">
 										<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="flex justify-end mb-[6vw] mr-[18vw] mt-[6vw]">
-							<div class="flex flex-col justify-center items-center">
-								<div class="subHead text-[3.6vw] w-[40vw] leading-[4.2vw]">
-									<div class="text-center">Welcome to Headborn Studios</div>	
+						<div class="xl:flex justify-end mb-[20vw] xl:mb-[6vw] xl:mr-[18vw] mt-[10vw] xl:mt-[6vw]">
+							<div class="flex flex-col xl:justify-center xl:items-center">
+								<div class="subHead text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[60vw] xl:w-[40vw]">
+									<div class="xl:text-center">Welcome to Headborn Studios</div>	
 								</div>
 	
 	
 								<div class="subBody mt-[3vw]">
-									<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+									<div class="xl:text-center leading-6 text-[15px] sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[70vw] xl:w-[27vw] text-stone-300">
 										A trailblazing creative hub based in Lagos, Nigeria. 
 										We are a dynamic and innovative duo with a passion for Image Consulting and Fashion & Style Direction.
 										Our mission is to empower artists and brands to create continuous visual stories that resonates around 
@@ -601,16 +692,20 @@
 
 
 						<div>
-							<div class="flex items-center">
+							<div class="xl:flex items-center">
+								<!-- Video Small Screen -->
+								<div class='iframeCont h-auto w-full xl:h-[70vh] xl:min-h-[70vh] xl:w-[70vw] xl:[display:none] mb-[15vw]'>
+									<iframe src="https://player.vimeo.com/video/891065519?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
 
 								<div>
 									<div>
-										<div class="subHead text-[3.6vw] w-[35vw] leading-[4.2vw]">
+										<div class="subHead text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[50vw] lg:w-[35vw]">
 											<div class="">Why choose us?</div>
 										</div>
 		
 										<div class="subBody mt-[3vw]">
-											<div class="text-[1.1vw] w-[30vw] text-stone-300">
+											<div class="leading-6 text-[15px] sm:leading-6 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[75vw] sm:w-[65vw] md:w-[40vw] lg:w-[30vw] text-stone-300">
 												Our team comprises industry authorities with a deep comprehension of the Afrobeats 
 												genre and its global music trajectory. We boast a well-established history of propelling 
 												brands to attain notable recognitions, as exemplified by our successful partnership with PITH AFRICA.
@@ -623,8 +718,8 @@
 									</div>
 								</div>
 								
-
-								<div class='iframeCont h-[70vh] min-h-[70vh] w-[70vw]'>
+								<!-- Video Large Screen -->
+								<div class='iframeCont h-auto xl:h-[70vh] xl:min-h-[70vh] w-[70vw] [display:none] xl:block'>
 									<iframe src="https://player.vimeo.com/video/891065519?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>

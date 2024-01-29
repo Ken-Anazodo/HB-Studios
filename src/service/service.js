@@ -85,6 +85,51 @@ navConnect.forEach(navConnect => {
 })
 
 
+
+
+
+
+// Nav Narration Display
+let homeIcon = document.querySelector(".iconNav");
+let homeDisplay = document.querySelector(".hmeCont");
+let hbNav = document.querySelector(".hbNav");
+let welcomeToHb = document.querySelector(".welcomeCont");
+
+
+homeIcon.addEventListener("mouseover", () =>{
+	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.3,
+		scrollTrigger:{
+			trigger: ".hmeCont",
+		}
+	})
+	homeDisplay.style.display ='flex';
+})
+
+homeIcon.addEventListener("mouseleave", () =>{
+	homeDisplay.style.display = 'none';
+})
+
+
+
+hbNav.addEventListener("mouseover", () =>{
+	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.3,
+		scrollTrigger:{
+			trigger: ".welcomeCont",
+		}
+	})
+	welcomeToHb.style.display ='flex';
+})
+
+hbNav.addEventListener("mouseleave", () =>{
+	welcomeToHb.style.display = 'none';
+})
+
+
+
+
+
+
+
 // CIRCLE ROTATE TEXT
 let texts = Array.from(document.querySelectorAll(".text p"));
 
@@ -109,7 +154,40 @@ circleText.addEventListener("mouseleave", () =>{
 })
 
 
+
 // OFFERINGS
+let serviceNav = Array.from(document.querySelectorAll(".serviceNav"));
+let tintCont = Array.from(document.querySelectorAll(".tintCont"));
+
+
+// tintCont.addEventListener("mouseenter", () => {
+// 	serviceNav.forEach(serviceNav => {
+// 		serviceNav.classList.add("serviceNav:hover::after");
+// 	})	
+
+// 	gsap.to('.tint-1', 0.5, 
+// 		{  
+// 			width: "100%", 
+// 			ease: 'power3.easeIn',
+// 			duration: 0.3
+// 		})
+// })
+
+// tintCont.addEventListener("mouseleave", () => {
+// 	serviceNav.forEach(serviceNav => {
+// 		serviceNav.classList.remove("serviceNav:hover::after");
+// 	})	
+	
+// 	gsap.to('.tint-1', 0.5, 
+// 		{  
+// 			width: "0%", 
+// 			ease: 'power3.easeIn',
+// 			duration: 0.3,
+// 			// x: '40vw'
+// 		})
+// })
+
+
 
 // PERSONAL STYLE
 let stylePage = document.getElementById('personalStylePage');
@@ -130,7 +208,7 @@ let openPersonalStylePage = () => {
 	closeSign.style.display = "block";
 }
 
-// Orange Effect
+// Green Effect
 partition1.addEventListener("mouseenter", () => {
 	gsap.to('.tint-1', 0.5, 
 		{  
@@ -140,7 +218,7 @@ partition1.addEventListener("mouseenter", () => {
 		})
 })
 
-// Orange Effect
+// Green Effect
 partition1.addEventListener("mouseleave", () => {
 	gsap.to('.tint-1', 0.5, 
 		{  
@@ -170,7 +248,7 @@ let openGroomingPage = () => {
 	closeSign1.style.display = "block";
 }
 
-// Orange Effect
+// Green Effect
 partition2.addEventListener("mouseenter", () => {
 	gsap.to('.tint-2', 0.5, 
 		{  
@@ -180,7 +258,7 @@ partition2.addEventListener("mouseenter", () => {
 		})
 })
 
-// Orange Effect
+// Green Effect
 partition2.addEventListener("mouseleave", () => {
 	gsap.to('.tint-2', 0.5, 
 		{  
@@ -215,7 +293,7 @@ let openPersonalBrandingPage = () => {
 }
 
 
-// Orange Effect
+// Green Effect
 partition3.addEventListener("mouseenter", () => {
 	gsap.to('.tint-3', 0.5, 
 		{  
@@ -225,7 +303,7 @@ partition3.addEventListener("mouseenter", () => {
 		})
 })
 
-// Orange Effect
+// Green Effect
 partition3.addEventListener("mouseleave", () => {
 	gsap.to('.tint-3', 0.5, 
 		{  
@@ -260,7 +338,7 @@ let openColorAnalysisPage = () => {
 }
 
 
-// Orange Effect
+// Green Effect
 partition4.addEventListener("mouseenter", () => {
 	gsap.to('.tint-4', 0.5, 
 		{  
@@ -270,7 +348,7 @@ partition4.addEventListener("mouseenter", () => {
 		})
 })
 
-// Orange Effect
+// Green Effect
 partition4.addEventListener("mouseleave", () => {
 	gsap.to('.tint-4', 0.5, 
 		{  

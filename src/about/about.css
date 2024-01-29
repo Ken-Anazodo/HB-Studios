@@ -132,6 +132,21 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
 
 /* Section1 */
 .one{
@@ -419,4 +434,20 @@ body::-webkit-scrollbar {
 
 .backTop{
 	font-weight: 800;
+}
+
+
+
+@media all and (max-width: 640px){
+	.swiper1 {
+		width: 17vw;
+		height: 80px;
+		min-height: 80px;
+	  }
+	
+	.swiper2 {
+		width: 65vw;
+		height: 300px;
+		min-height: 300px;
+	  }
 }
