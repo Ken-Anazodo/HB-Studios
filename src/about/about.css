@@ -359,14 +359,14 @@ body::-webkit-scrollbar {
 .bio-container, .bio-container1{
 	transition: .4s linear .2s;
 	height: 0;
-	opacity: 0;
+	display: none;
 	padding: 0;
 }
 
 .bio-container.active, .bio-container1.active{
 	height: 19.5vh;
 	min-height: 19.5vh;
-	opacity: 100%;
+	display: flex;
 	padding: 1.3vw 0;
 }
 
@@ -436,6 +436,11 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
 
 
 @media all and (max-width: 640px){
@@ -450,4 +455,15 @@ body::-webkit-scrollbar {
 		height: 300px;
 		min-height: 300px;
 	  }
+
+	.bio-container.active, .bio-container1.active{
+		height: auto;
+		min-height: auto;
+		display: block;
+		padding: 3vw 5vw;
+	}
+
+	.viewProject{
+		font-weight: 600;
+	}
 }
