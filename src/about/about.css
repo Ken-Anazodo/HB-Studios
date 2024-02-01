@@ -300,6 +300,7 @@ body::-webkit-scrollbar {
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
+	font-size: 16px;
 	color: white;
   }
 
@@ -444,6 +445,28 @@ body::-webkit-scrollbar {
 
 
 @media all and (max-width: 640px){
+	
+	.bio-container.active, .bio-container1.active{
+		height: auto;
+		min-height: auto;
+		display: block;
+		padding: 3vw 5vw;
+	}
+
+	.viewProject{
+		font-weight: 600;
+	}
+
+	.autoplay-progress {
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	  }
+}
+
+
+@media all and (max-width: 768px){
+
 	.swiper1 {
 		width: 17vw;
 		height: 80px;
@@ -455,15 +478,19 @@ body::-webkit-scrollbar {
 		height: 300px;
 		min-height: 300px;
 	  }
+}
 
-	.bio-container.active, .bio-container1.active{
-		height: auto;
-		min-height: auto;
-		display: block;
-		padding: 3vw 5vw;
-	}
 
-	.viewProject{
-		font-weight: 600;
-	}
+@media all and (max-width: 1024px){
+	.swiper1 {
+		width: 19vw;
+		height: 160px;
+		min-height: 160px;
+	  }
+	
+	.swiper2 {
+		width: 72vw;
+		height: 550px;
+		min-height: 550px;
+	  }
 }
