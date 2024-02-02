@@ -444,7 +444,40 @@ body::-webkit-scrollbar {
 
 
 
-@media all and (max-width: 640px){
+@media screen and (max-width: 1024px){
+	.swiper1 {
+		width: 19vw;
+		height: 160px;
+		min-height: 160px;
+	  }
+	
+	.swiper2 {
+		width: 72vw;
+		height: 550px;
+		min-height: 550px;
+	  }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.swiper1 {
+		width: 17vw;
+		height: 80px;
+		min-height: 80px;
+	  }
+	
+	.swiper2 {
+		width: 65vw;
+		height: 300px;
+		min-height: 300px;
+	  }
+}
+
+
+
+@media screen and (max-width: 640px){
 	
 	.bio-container.active, .bio-container1.active{
 		height: auto;
@@ -465,32 +498,3 @@ body::-webkit-scrollbar {
 }
 
 
-@media all and (max-width: 768px){
-
-	.swiper1 {
-		width: 17vw;
-		height: 80px;
-		min-height: 80px;
-	  }
-	
-	.swiper2 {
-		width: 65vw;
-		height: 300px;
-		min-height: 300px;
-	  }
-}
-
-
-@media all and (max-width: 1024px){
-	.swiper1 {
-		width: 19vw;
-		height: 160px;
-		min-height: 160px;
-	  }
-	
-	.swiper2 {
-		width: 72vw;
-		height: 550px;
-		min-height: 550px;
-	  }
-}
