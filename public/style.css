@@ -710,6 +710,22 @@ video {
   top: 7vw;
 }
 
+.top-\[10vw\] {
+  top: 10vw;
+}
+
+.top-\[30vw\] {
+  top: 30vw;
+}
+
+.top-\[35vw\] {
+  top: 35vw;
+}
+
+.top-\[40vw\] {
+  top: 40vw;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1319,6 +1335,30 @@ video {
   height: 132vw;
 }
 
+.h-\[39vw\] {
+  height: 39vw;
+}
+
+.h-\[60vw\] {
+  height: 60vw;
+}
+
+.h-\[70vw\] {
+  height: 70vw;
+}
+
+.h-\[85vw\] {
+  height: 85vw;
+}
+
+.h-\[90vw\] {
+  height: 90vw;
+}
+
+.h-\[30vw\] {
+  height: 30vw;
+}
+
 .min-h-\[11vh\] {
   min-height: 11vh;
 }
@@ -1453,6 +1493,26 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[39vw\] {
+  min-height: 39vw;
+}
+
+.min-h-\[60vw\] {
+  min-height: 60vw;
+}
+
+.min-h-\[70vw\] {
+  min-height: 70vw;
+}
+
+.min-h-\[85vw\] {
+  min-height: 85vw;
+}
+
+.min-h-\[90vw\] {
+  min-height: 90vw;
 }
 
 .w-0 {
@@ -1711,6 +1771,30 @@ video {
   width: 22.5vw;
 }
 
+.w-\[5\.5vw\] {
+  width: 5.5vw;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
+}
+
+.w-\[55vw\] {
+  width: 55vw;
+}
+
+.w-\[16vw\] {
+  width: 16vw;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1729,6 +1813,17 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1910,6 +2005,10 @@ video {
      object-fit: fill;
 }
 
+.p-\[5vw\] {
+  padding: 5vw;
+}
+
 .px-\[0\.4em\] {
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -2067,6 +2166,14 @@ video {
 
 .pt-\[6vw\] {
   padding-top: 6vw;
+}
+
+.pl-\[4vw\] {
+  padding-left: 4vw;
+}
+
+.pt-\[23vw\] {
+  padding-top: 23vw;
 }
 
 .text-center {
@@ -2349,6 +2456,14 @@ video {
   font-size: 50px;
 }
 
+.text-\[3\.1vw\] {
+  font-size: 3.1vw;
+}
+
+.text-\[3\.3vw\] {
+  font-size: 3.3vw;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2625,6 +2740,46 @@ video {
   line-height: 52px;
 }
 
+.leading-\[26vw\] {
+  line-height: 26vw;
+}
+
+.leading-\[3\.2vw\] {
+  line-height: 3.2vw;
+}
+
+.leading-\[3\.3vw\] {
+  line-height: 3.3vw;
+}
+
+.leading-\[3\.4vw\] {
+  line-height: 3.4vw;
+}
+
+.leading-\[3\.7vw\] {
+  line-height: 3.7vw;
+}
+
+.leading-\[4\.7vw\] {
+  line-height: 4.7vw;
+}
+
+.leading-\[5\.2vw\] {
+  line-height: 5.2vw;
+}
+
+.leading-\[6\.2vw\] {
+  line-height: 6.2vw;
+}
+
+.leading-\[5\.7vw\] {
+  line-height: 5.7vw;
+}
+
+.leading-\[3\.8vw\] {
+  line-height: 3.8vw;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2772,6 +2927,42 @@ video {
 .hover\:text-yellow-600:hover {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+  }
+
+  .motion-safe\:animate-bounce {
+    animation: bounce 1s infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+  }
+
+  .motion-reduce\:animate-bounce {
+    animation: bounce 1s infinite;
+  }
 }
 
 @media (min-width: 321px) {
@@ -4300,6 +4491,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:sticky {
     position: sticky;
   }
@@ -4600,6 +4795,10 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-full {
+    height: 100%;
+  }
+
   .xl\:min-h-\[110vh\] {
     min-height: 110vh;
   }
@@ -4888,6 +5087,14 @@ video {
     padding-bottom: 2vw;
   }
 
+  .xl\:pl-\[9vw\] {
+    padding-left: 9vw;
+  }
+
+  .xl\:pt-\[11vh\] {
+    padding-top: 11vh;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -5024,6 +5231,10 @@ video {
     font-size: 8vw;
   }
 
+  .xl\:text-\[20vw\] {
+    font-size: 20vw;
+  }
+
   .xl\:leading-\[0\.95vw\] {
     line-height: 0.95vw;
   }
@@ -5138,6 +5349,10 @@ video {
 
   .xl\:leading-normal {
     line-height: 1.5;
+  }
+
+  .xl\:leading-\[16vw\] {
+    line-height: 16vw;
   }
 
   .xl\:no-underline {

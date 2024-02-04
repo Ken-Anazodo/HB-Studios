@@ -176,7 +176,24 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
 
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
+
+/* Section 1 */
 .contact{
 	font-family: 'Anton', sans-serif;
 	font-weight: 600;
@@ -218,6 +235,24 @@ body::-webkit-scrollbar {
 }
 
 
+.btn-orange{
+	border-radius: 30vw;
+	border-color: #fff;
+	border-width: 0.05vw;
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+	/* background-color: rgb(224, 155, 18); */
+	padding: 1vw 2vw;
+}
+
+.btn-orange:hover{
+	background-color: rgb(234 88 12);
+	border-width: 0;
+	color: black;
+	font-weight: 400;
+}
+
+
 
 
 /* FOOTER */
@@ -233,4 +268,16 @@ body::-webkit-scrollbar {
 
 .backTop{
 	font-weight: 800;
+}
+
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+@media all and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
 }

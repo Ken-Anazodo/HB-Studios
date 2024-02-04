@@ -34,30 +34,20 @@ texts.forEach(text => {
 
 
 // Instantiate `CircleType` with an HTML element.
+// Small Screen
 const circleType = new CircleType(document.getElementById('myElement'));
-
-// Set the text radius and direction. Note: setter methods are chainable.
-circleType.radius();
 circleType.forceHeight();
 circleType.forceWidth(true);
 
 
-
 // Large Screen
 const circleType1 = new CircleType(document.getElementById('myElement1'));
-
-// Set the text radius and direction. Note: setter methods are chainable.
-circleType1.radius();
 circleType1.forceHeight();
 circleType1.forceWidth(true);
 
 
-
 // Circle Text in body
 // const circleType2 = new CircleType(document.getElementById('myElement2'));
-
-// // Set the text radius and direction. Note: setter methods are chainable.
-// circleType2.radius();
 // circleType2.forceHeight();
 // circleType2.forceWidth(true);
 
