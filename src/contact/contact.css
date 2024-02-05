@@ -238,11 +238,12 @@ body::-webkit-scrollbar {
 .btn-orange{
 	border-radius: 30vw;
 	border-color: #fff;
-	border-width: 0.05vw;
+	border-width: 0.4vw;
 	font-family: 'Poppins', sans-serif; 
     font-weight: 300;
 	/* background-color: rgb(224, 155, 18); */
-	padding: 1vw 2vw;
+	padding: 1.2vw 2vw;
+	margin-top: 2.5vw;
 }
 
 .btn-orange:hover{
@@ -279,5 +280,12 @@ body::-webkit-scrollbar {
 	.madeBy{
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 639px){
+	.btn-orange{
+		padding: 1vw 2vw;
+		margin-top: 2vw;
 	}
 }
