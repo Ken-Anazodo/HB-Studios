@@ -48,24 +48,32 @@
 		</div>
 
 		<section0 class="relative overflow-hidden h-screen w-full">
-			<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[11vh] bg-blac">
+			<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[8vh] xl:h-[11vh] bg-blac">
 				<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
 				<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
 					
 					<a href="/public/index.html">
-						<div class="navConnect h-[7vw] w-[6vw] flex items-center">
+						<div class="navConnect iconNav h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw] flex items-center">
 							<img src="../src/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
 						</div>
 					</a>
 
-					<div class="navConnect text-center text-[1.1vw] leading-[1.2vw]">
-						<div class="stu hb ">HEADB0RN</div>
-						<div class="stu text-[1.6vw] ">STUDIOS</div>
+					<div class="navConnect hbNav text-center md:text-[1.7vw] md:leading-[2.1vw] xl:text-[1.1vw] xl:leading-[1.2vw] lg:pt-[1vw] xl:pt-0">
+						<div class="[display:none] md:[display:block]">
+							<div class="stu hb ">HEADB0RN</div>
+							<div class="stu md:text-[2.5vw] xl:text-[1.6vw] ">STUDIOS</div>
+						</div>
+						
+						<div class="hBs md:[display:none] text-[4.5vw] leading-[4.5vw] sm:text-[4vw] sm:leading-[4vw]">HBS</div>
 					</div>
 
 					<div>
-						<div class="navConnect menu-icon cursor-pointer text-[1.2vw] text-stone-200 hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
-							MENU
+						<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+							<h1 class="[display:none] md:[display:block]">MENU</h1>
+
+							<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
+								<img src="../src/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -234,9 +242,45 @@
 
 		
 		<section1>
-			<div class="container flex justify-center px-[2vw] w-full">
-				<div>
-					<div class="bayanni navConnect text-[31vw] leading-[31vw] mt-[8vw] text-center bg-white text-black">
+			<!-- NAV Narration Display -->
+			<div class="welcomeCont absolute top-[11vh] left-0 w-full justify-center [display:none] z-10">
+				<div class="ml-[1.5vw] w-[30vw] min-h-[12vh] h-[12vh] flex justify-around items-center border-[0.1vw] border-stone-600">
+					<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+						<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+					</div>
+
+					<div class="welcomex w-[20vw] text-[0.9vw] leading-[1.1vw] text-stone-600 uppercase text-center">
+						<div class="welcomeNav">Welcome to Headborn Studios </div>
+						<div>Enjoy the endless possibilities</div>
+						<div class="noos mt-[0.5vw]">H.B.S</div>
+					</div>
+
+					<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+						<img src="../src/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+					</div>
+				</div>
+			</div>
+
+			<div class="hmeCont absolute top-[11vh] left-0 w-full [display:none] z-10">					
+					<div class="welcomex ml-[3vw] w-[10vw] text-stone-50 uppercase text-center flex items-center">
+						<div class="h-[2vw] w-[2vw] mr-[1vw]">
+							<img src="../src/assets/img/rightArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+						<div class="welcomeNav text-[1.1vw]">Home</div>
+					</div>	
+			</div>
+
+
+
+
+
+
+
+			<!-- Body Beginning -->
+
+			<div class="px-[3vw] xl:px-0 w-full pt-[20vw] xl:pt-[8vw]">
+				<div class="w-full">
+					<div class="bayanni navConnect text-[29vw] leading-[29vw] xl:text-[31vw] xl:leading-[31vw] text-center bg-white text-black w-full">
 						<h1>BAYANNI</h1>
 						
 						<div class="emoji min-h-[12vw] h-[12vw] w-[12vw] z-[10000000] rounded-full">
@@ -246,53 +290,53 @@
 
 		
 
-					<div class="flex justify-between">
-						<div class="no1 text-[2vw] leading-[2vw] mt-[3vw] text-stone-200">
+					<div class="xl:flex justify-between">
+						<div class="no1 text-[5.2vw] leading-[5.2vw] xl:text-[2vw] xl:leading-[2vw] mt-[15vw] xl:mt-[3vw] text-stone-200">
 							<h1>/PROJECT 01</h1>
 						</div>
 
-						<div class="w-[46vw]">
+						<div class="w-full xl:w-[46vw] mt-[6vw] xl:mt-0">
 							<div class="uppercase">
 								<div class=" border-t-[0.1vw] mt-[1vw]"></div>
 								
-								<div class="credit text-[4vw] leading-[4vw] my-[0.8vw]">
+								<div class="credit text-[8vw] leading-normal xl:text-[4vw] xl:leading-[4vw] my-[0.8vw]">
 									<span>credits</span>
 								</div>
 
 								<div class=" border-y-[0.1vw] mt-[-0.2vw]">
 
 									<div>
-										<div class="credit-subhead leading-[1.5vw] mt-[1vw]">Styling & Costume Designs:</div>
+										<div class="credit-subhead text-[4.2vw] leading-[3.6vw] xl:text-[1.5vw] xl:leading-[1.5vw] mt-[3vw] xl:mt-[1vw]">Styling & Costume Designs:</div>
 										<div class="flex justify-between items-center">
-											<div class="credit-ans">HeadB0rn Studios</div>
+											<div class="credit-ans text-[4.2vw] xl:text-[1.5vw]">HeadB0rn Studios</div>
 
-											<div class="h-[1.3vw] w-[1.3vw]">
+											<div class="h-[4vw] w-[4vw] xl:h-[1.3vw] xl:w-[1.3vw]">
 												<img src="../src/assets/img/arrow4.png" class="h-full w-full object-contain" alt=”right-down arrow”>
 											</div>
 										</div>												
 									</div>
 
-									<div class="  border-t-[0.1vw] mt-[0.5vw]"></div>
+									<div class="w-full border-t-[0.1vw] mt-[1vw] xl:mt-[0.5vw]"></div>
 
 									<div>
-										<div class="credit-subhead leading-[1.5vw] mt-[1vw]">Photography:</div>
+										<div class="credit-subhead text-[4.2vw] leading-[3.6vw] xl:text-[1.5vw] xl:leading-[1.5vw] mt-[3vw] xl:mt-[1vw]">Photography:</div>
 										<div class="flex justify-between items-center">
-											<div class="credit-ans">Dara Banjo</div>
+											<div class="credit-ans text-[4.2vw] xl:text-[1.5vw]">Dara Banjo</div>
 
-											<div class="h-[1.3vw] w-[1.3vw]">
+											<div class="h-[4vw] w-[4vw] xl:h-[1.3vw] xl:w-[1.3vw]">
 												<img src="../src/assets/img/arrow4.png" class="h-full w-full object-contain" alt=”right-down arrow”>
 											</div>
 										</div>												
 									</div>
 
-									<div class="  border-t-[0.1vw] mt-[0.5vw]"></div>
+									<div class="w-full border-t-[0.1vw] mt-[1vw] xl:mt-[0.5vw]"></div>
 
 									<div>
-										<div class="credit-subhead leading-[1.5vw] mt-[1vw]">Directed By:</div>
+										<div class="credit-subhead text-[4.2vw] leading-[3.6vw] xl:text-[1.5vw] xl:leading-[1.5vw] mt-[3vw] xl:mt-[1vw]">Directed By:</div>
 										<div class="flex justify-between items-center">
-											<div class="credit-ans">Dir. K</div>
+											<div class="credit-ans text-[4.2vw] xl:text-[1.5vw]">Dir. K</div>
 
-											<div class="h-[1.3vw] w-[1.3vw]">
+											<div class="h-[4vw] w-[4vw] xl:h-[1.3vw] xl:w-[1.3vw]">
 												<img src="../src/assets/img/arrow4.png" class="h-full w-full object-contain" alt=”right-down arrow”>
 											</div>
 										</div>										
@@ -304,45 +348,54 @@
 
 
 
-					<div class="flex justify-between items-end mt-[4vw]">
+					<div class="flex justify-between items-end mt-[15vw] xl:mt-[4vw]">
 						<div>
 							<div class=" mb-[15vw]">
-								<h1 class="ta text-[2vw] leading-[2vw] uppercase">Ta Ta Ta Remix</h1>
-								<h1 class="film1 text-[1.6vw] leading-[1.6vw] mt-[0.09vw] uppercase underline">Music Film</h1>
+								<h1 class="ta text-[4.8vw] leading-[4.8vw] xl:text-[2vw] xl:leading-[2vw] uppercase">Ta Ta Ta Remix</h1>
+								<h1 class="film1 text-[3vw] leading-[3vw] xl:text-[1.6vw] xl:leading-[1.6vw] mt-[1.3vw] xl:mt-[0.09vw] uppercase underline">Music Film</h1>
 							</div>
 
-							<div class="h-[40vh] min-h-[40vh] w-[20vw]">
+							<div class="h-[80px] min-h-[80px] w-[17vw] md:h-[160px] md:min-h-[160px] md:w-[19vw] xl:h-[40vh] xl:min-h-[40vh] xl:w-[20vw]">
 								<img src="../src/assets/img/bayanni/bayanni7.jpg" class="h-full w-full object-cover brightness-50" alt=”left-down arrow”>
 							</div>
 						</div>
 
-						<div class="h-screen min-h-screen w-[46vw]">
+						<div class="h-[300px] min-h-[300px] w-[65vw] md:h-[550px] md:min-h-[550px] md:w-[72vw] xl:h-screen xl:min-h-screen xl:w-[46vw]">
 							<img src="../src/assets/img/bayanni/bayanni1.jpg" class="h-full w-full object-cover brightness-50" alt=”left-down arrow”>
 						</div>
 					</div>
 
 
-					<div class="mt-[7vw] mb-[5vw]">
-						<div class="styl-dir text-[6vw] leading-[6vw] uppercase w-[60vw]">
+
+
+					<div class="mt-[12vw] xl:mt-[7vw]">
+						<div class="styl-dir text-[10vw] leading-[10.2vw] xl:text-[6vw] xl:leading-[6vw] uppercase xl:w-[60vw]">
 							<h1>Style direction and costume design for Bayanni</h1>
 						</div>
 
-						<div class="w-[46.5vw] flex justify-end mt-[2vw]">
+						<!-- Large Screen -->
+						<div class="w-[46.5vw] flex justify-end mt-[2vw] [display:none] xl:block">
 							<div class="h-[3.5vw] w-[3.5vw]">
 								<img src="../src/assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 							</div>
 						</div>
+
+						<!-- Small Screen -->
+						<div class="mt-[5vw] h-[7vw] w-[7vw] xl:[display:none]">
+							<img src="../src/assets/img/arrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
 					</div>
+				
 					
-					<div class="flex justify-center mb-[7vw]">
-						<div class="flex flex-col justify-center items-center">
-							<div class="subHead text-[3.6vw] w-[30vw] leading-[4.2vw]">
-								<div class="text-center">Our Visionary Techniques</div>	
+					<div class="xl:flex justify-center mt-[10vw] md:mt-[8vw] xl:mt-[5vw]">
+						<div class="flex flex-col justify-center xl:items-center">
+							<div class="subHead text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[45vw] xl:w-[30vw]">
+								<div class="xl:text-center">Our Visionary Techniques</div>	
 							</div>
 
 
-							<div class="subBody mt-[3vw]">
-								<div class="text-center text-[1.1vw] w-[27vw] text-stone-300">
+							<div class="subBody mt-[4vw] xl:mt-[3vw]">
+								<div class="xl:text-center leading-6 text-[15px] sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[65vw] xl:w-[27vw] text-stone-300">
 									Develop a stage look that enhances performance, 
 									leaving a lasting impression on fans and industry professionals.
 									We leverage fashion to shape artists' unique identities, fuelling fan devotion 
@@ -352,50 +405,65 @@
 						</div>
 					</div>
 
-					<div class="mb-[7vw]">
+					<div class="mt-[10vw] xl:mt-[7vw]">
 						<div class="flex justify-around">
-							<div class="blackWhite h-[47vh] min-h-[47vh] w-[22vw] mt-[24vw] relative">
+							<div class="blackWhite h-[80px] min-h-[80px] xl:h-[47vh] xl:min-h-[47vh] w-[19vw] xl:w-[22vw] mt-[45vw] xl:mt-[24vw] relative">
 								<img src="../src/assets/img/bayanni/bayanni2.jpg" class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0" alt=”left-down arrow”>
 							</div>
 	
-							<div class="blackWhite h-[90vh] min-h-[90vh] w-[44vw] relative">
+							<div class="blackWhite h-[250px] min-h-[250px] xl:h-[90vh] xl:min-h-[90vh] w-[45vw] xl:w-[44vw] relative">
 								<img src="../src/assets/img/bayanni/bayanni3.jpg" class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0" alt=”left-down arrow”>
 							</div>
 
-							<div class="blackWhite h-[47vh] min-h-[47vh] w-[22vw] relative">
+							<div class="blackWhite h-[80px] min-h-[80px] xl:h-[47vh] xl:min-h-[47vh] w-[19vw] xl:w-[22vw] relative">
 								<img src="../src/assets/img/bayanni/bayanni4.jpg" class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0" alt=”left-down arrow”>
 							</div>
 						</div>
 					</div>
 
-					<div class="flex justify-center items-center mb-[7vw]">
+					<div class="flex justify-center items-center mt-[15vw] xl:mt-[7vw]">
 						<div>
 							<div>
-								<div class="integrate text-[4vw] leading-[4.5vw] w-[80vw]">
+								<div class="integrate text-[7vw] leading-[7.5vw] xl:text-[4vw] xl:leading-[4.5vw] xl:w-[80vw]">
 									/We integrate cohesive fashion and style that directly integrates seamlessly 
 									into the personal style and vision for the music videos and content, 
 									reinforcing brand identity through visuals.
 								</div>
-								<p class="n italic text-[2.5vw]">(N)</p>
+								<p class="n italic text-[5.5vw] xl:text-[2.5vw] mt-[1.5vw] xl:mt-0">(N)</p>
 							</div>
 
-							<div class="flex justify-around text-[1.4vw] leading-[1.4vw] uppercase mt-[1vw] px-[6vw]">
+							<!-- Large Screen -->
+							<div class="flex justify-around text-[1.4vw] leading-[1.4vw] uppercase mt-[1vw] px-[6vw] [display:none] xl:flex">
 								<div class="btn-orange">Identity</div>
 								<div class="btn-orange">Fashion</div>
 								<div class="btn-orange">Lifestyle</div>
 								<div class="btn-orange">Trends</div>
 							</div>
+
+
+							<!-- Small Screen -->
+							<div class="flex flex-col items-center text-[3.6vw] leading-[3.6vw] xl:text-[1.4vw] xl:leading-[1.4vw] uppercase mt-[10vw] px-[6vw] xl:[display:none]">
+								<div class="flex justify-between w-[70vw]">
+									<div class="btn-orange">Identity</div>
+									<div class="btn-orange">Fashion</div>
+								</div>
+								
+								<div class="flex justify-between w-[45vw] mt-[5vw]">
+									<div class="btn-orange">Lifestyle</div>
+									<div class="btn-orange">Trends</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
 
-					<div class="flex justify-end">
-						<div class="blackWhite h-[93vh] min-h-[93vh] w-[44vw] relative">
+					<div class="flex justify-end mt-[15vw] xl:mt-[7vw]">
+						<div class="blackWhite h-[300px] min-h-[300px] w-[65vw] xl:h-[93vh] xl:min-h-[93vh] xl:w-[44vw] relative">
 							<img src="../src/assets/img/bayanni/bayanni9.jpg" class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0" alt=”left-down arrow”>
 						</div>
 					</div>
 
-					<div class="mt-[7vw]">
+					<div class="mt-[15vw] xl:mt-[7vw]">
 						<div>
 							<div class="sd text-[8vw] leading-[8.5vw] uppercase">
 								<h1>Style Direction</h1>

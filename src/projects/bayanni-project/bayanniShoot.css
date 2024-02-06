@@ -115,6 +115,22 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
 .bayanni{
 	font-family: 'Anton', sans-serif;
 	font-weight: 500;
@@ -153,13 +169,13 @@ body::-webkit-scrollbar {
 .credit-subhead{
 	font-weight: 200;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.5vw;
+	/* font-size: 1.5vw; */
 }
 
 .credit-ans{
 	font-weight: 800;
 	font-family: 'Bodoni Moda', serif;
-	font-size: 1.5vw;
+	/* font-size: 1.5vw; */
 }
 
 .styl-dir{
@@ -188,10 +204,9 @@ body::-webkit-scrollbar {
 .btn-orange{
 	border-radius: 30vw;
 	border-color: #fff;
-	border-width: 0.05vw;
+	border-width: 0.2vw;
 	font-family: 'Poppins', sans-serif; 
     font-weight: 300;
-	/* background-color: rgb(224, 155, 18); */
 	padding: 0.7vw 1.5vw;
 }
 
@@ -317,4 +332,12 @@ body::-webkit-scrollbar {
 
 .backTop{
 	font-weight: 800;
+}
+
+
+@media screen and (max-width: 639px){
+	.btn-orange{
+		padding: 1vw 2vw;
+		margin-top: 2vw;
+	}
 }

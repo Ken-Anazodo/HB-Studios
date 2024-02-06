@@ -162,6 +162,55 @@ bayanni.addEventListener("mouseleave", () => {
 
 
 
+
+
+
+
+// Nav Narration Display
+let homeIcon = document.querySelector(".iconNav");
+let homeDisplay = document.querySelector(".hmeCont");
+let hbNav = document.querySelector(".hbNav");
+let welcomeToHb = document.querySelector(".welcomeCont");
+let centerPiece = document.querySelector(".centerpiece");
+let about = document.querySelector(".about");
+
+
+homeIcon.addEventListener("mouseover", () =>{
+	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.3,
+		scrollTrigger:{
+			trigger: ".hmeCont",
+		}
+	})
+	homeDisplay.style.display ='flex';
+})
+
+homeIcon.addEventListener("mouseleave", () =>{
+	homeDisplay.style.display = 'none';
+})
+
+
+
+hbNav.addEventListener("mouseover", () =>{
+	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.3,
+		scrollTrigger:{
+			trigger: ".welcomeCont",
+		}
+	})
+	welcomeToHb.style.display ='flex';
+	about.style.opacity = '0';
+})
+
+hbNav.addEventListener("mouseleave", () =>{
+	welcomeToHb.style.display = 'none';
+	about.style.opacity = '100%';
+})
+
+
+
+
+
+
+
 // Navigation Images
 
 let navImg1 = document.querySelector(".navImage-display1");

@@ -1047,6 +1047,26 @@ video {
   margin-top: 9vw;
 }
 
+.mt-\[1\.3vw\] {
+  margin-top: 1.3vw;
+}
+
+.mt-\[12vw\] {
+  margin-top: 12vw;
+}
+
+.mt-\[43vw\] {
+  margin-top: 43vw;
+}
+
+.mt-\[44vw\] {
+  margin-top: 44vw;
+}
+
+.mt-\[45vw\] {
+  margin-top: 45vw;
+}
+
 .flex {
   display: flex;
 }
@@ -1319,6 +1339,22 @@ video {
   height: 100vh;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
 .min-h-\[12vh\] {
   min-height: 12vh;
 }
@@ -1453,6 +1489,26 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
+.min-h-\[80px\] {
+  min-height: 80px;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
+}
+
+.min-h-\[60px\] {
+  min-height: 60px;
+}
+
+.min-h-\[250px\] {
+  min-height: 250px;
 }
 
 .w-0 {
@@ -1713,6 +1769,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[19vw\] {
+  width: 19vw;
+}
+
+.w-\[29vw\] {
+  width: 29vw;
 }
 
 .flex-1 {
@@ -2061,6 +2125,10 @@ video {
   padding-top: 6vw;
 }
 
+.pt-\[8vw\] {
+  padding-top: 8vw;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2337,6 +2405,22 @@ video {
   font-size: 9vw;
 }
 
+.text-\[29vw\] {
+  font-size: 29vw;
+}
+
+.text-\[5\.2vw\] {
+  font-size: 5.2vw;
+}
+
+.text-\[4\.8vw\] {
+  font-size: 4.8vw;
+}
+
+.text-\[4\.4vw\] {
+  font-size: 4.4vw;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2609,6 +2693,26 @@ video {
   line-height: 9.1vw;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-\[5\.2vw\] {
+  line-height: 5.2vw;
+}
+
+.leading-\[4\.8vw\] {
+  line-height: 4.8vw;
+}
+
+.leading-\[7\.5vw\] {
+  line-height: 7.5vw;
+}
+
+.leading-\[\.5vw\] {
+  line-height: .5vw;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2661,6 +2765,11 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
+}
+
+.text-stone-600 {
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3515,6 +3624,14 @@ video {
     height: 9vw;
   }
 
+  .md\:h-\[160px\] {
+    height: 160px;
+  }
+
+  .md\:h-\[550px\] {
+    height: 550px;
+  }
+
   .md\:min-h-\[28vw\] {
     min-height: 28vw;
   }
@@ -3541,6 +3658,14 @@ video {
 
   .md\:min-h-\[750px\] {
     min-height: 750px;
+  }
+
+  .md\:min-h-\[160px\] {
+    min-height: 160px;
+  }
+
+  .md\:min-h-\[550px\] {
+    min-height: 550px;
   }
 
   .md\:w-\[1\.7vw\] {
@@ -3617,6 +3742,10 @@ video {
 
   .md\:w-\[8vw\] {
     width: 8vw;
+  }
+
+  .md\:w-\[72vw\] {
+    width: 72vw;
   }
 
   .md\:justify-end {
@@ -4370,6 +4499,18 @@ video {
     margin-top: 8vw;
   }
 
+  .xl\:mt-\[0\.09vw\] {
+    margin-top: 0.09vw;
+  }
+
+  .xl\:mt-\[5vw\] {
+    margin-top: 5vw;
+  }
+
+  .xl\:mt-\[24vw\] {
+    margin-top: 24vw;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -4482,6 +4623,22 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .xl\:h-\[47vh\] {
+    height: 47vh;
+  }
+
+  .xl\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .xl\:h-\[93vh\] {
+    height: 93vh;
+  }
+
   .xl\:min-h-\[110vh\] {
     min-height: 110vh;
   }
@@ -4512,6 +4669,26 @@ video {
 
   .xl\:min-h-\[75vh\] {
     min-height: 75vh;
+  }
+
+  .xl\:min-h-\[40vh\] {
+    min-height: 40vh;
+  }
+
+  .xl\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .xl\:min-h-\[47vh\] {
+    min-height: 47vh;
+  }
+
+  .xl\:min-h-\[90vh\] {
+    min-height: 90vh;
+  }
+
+  .xl\:min-h-\[93vh\] {
+    min-height: 93vh;
   }
 
   .xl\:w-\[1\.3vw\] {
@@ -4644,6 +4821,22 @@ video {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-\[46vw\] {
+    width: 46vw;
+  }
+
+  .xl\:w-\[20vw\] {
+    width: 20vw;
+  }
+
+  .xl\:w-\[22vw\] {
+    width: 22vw;
+  }
+
+  .xl\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .xl\:items-center {
@@ -4902,6 +5095,10 @@ video {
     font-size: 8vw;
   }
 
+  .xl\:text-\[31vw\] {
+    font-size: 31vw;
+  }
+
   .xl\:leading-\[0\.95vw\] {
     line-height: 0.95vw;
   }
@@ -5012,6 +5209,22 @@ video {
 
   .xl\:leading-normal {
     line-height: 1.5;
+  }
+
+  .xl\:leading-\[31vw\] {
+    line-height: 31vw;
+  }
+
+  .xl\:leading-\[4vw\] {
+    line-height: 4vw;
+  }
+
+  .xl\:leading-\[1\.6vw\] {
+    line-height: 1.6vw;
+  }
+
+  .xl\:leading-\[4\.5vw\] {
+    line-height: 4.5vw;
   }
 
   .xl\:no-underline {
