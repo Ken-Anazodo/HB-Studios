@@ -301,6 +301,7 @@ body::-webkit-scrollbar {
 	background-position: center;
 	background-size: cover;
 	width: 30vw;
+	min-height: 70vh;
 	height: 70vh;
   }
 
@@ -334,6 +335,26 @@ body::-webkit-scrollbar {
 	font-weight: 800;
 }
 
+
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+@media screen and (max-width: 1279px){
+	.swiper-slide {
+		width: 45vw;
+		min-height: 75vw;
+		height: 75vw;
+	  }
+}
+
+@media screen and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+}
 
 @media screen and (max-width: 639px){
 	.btn-orange{
