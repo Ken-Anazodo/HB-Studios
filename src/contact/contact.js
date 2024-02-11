@@ -110,6 +110,29 @@ texts.forEach(text => {
 })
 
 
+
+
+// Instantiate `CircleType` with an HTML element.
+// Small Screen
+const circleType = new CircleType(document.getElementById('myElement'));
+circleType.radius();
+circleType.forceHeight();
+circleType.forceWidth(true);
+circleType.refresh();
+
+
+// Large Screen
+const circleType1 = new CircleType(document.getElementById('myElement1'));
+circleType1.radius();
+circleType1.forceHeight();
+circleType1.forceWidth(true);
+circleType1.refresh();
+
+
+
+
+
+
 // Circle Cursor Change
 circleText.addEventListener("mouseover", () =>{
 	innerCursor.classList.add("grow");
@@ -120,9 +143,6 @@ circleText.addEventListener("mouseleave", () =>{
 	innerCursor.classList.remove("grow");
 	outerCursor.classList.remove("grow");
 })
-
-
-
 
 
 
