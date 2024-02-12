@@ -108,15 +108,16 @@ ${proj.credits
             </div>
           </div>
 
-         ${proj.projectImages.map((img)=>{
-            return`
+          
+
+     
             <div class="flex justify-between items-end mt-[15vw] xl:mt-[4vw]">
             <div>
               <div class="mb-[15vw]">
                 <h1
                   class="ta text-[4.8vw] leading-[4.8vw] xl:text-[2vw] xl:leading-[2vw] uppercase"
                 >
-                  Ta Ta Ta Remix
+                ${artist.Projects[0].projectImages.projectName}
                 </h1>
                 <h1
                   class="film1 text-[3vw] leading-[3vw] xl:text-[1.6vw] xl:leading-[1.6vw] mt-[1.3vw] xl:mt-[0.09vw] uppercase underline"
@@ -130,7 +131,7 @@ ${proj.credits
               >
           
                 <img
-                  src="${img}"
+                  src="${artist.Projects[0].projectImages.imageI}"
                   class="h-full w-full object-cover brightness-50"
                   alt="”left-down"
                   arrow”
@@ -142,7 +143,7 @@ ${proj.credits
             class="h-[76vw] min-h-[76vw] w-[65vw] md:h-[72vw] md:min-h-[72vw] md:w-[72vw] xl:h-screen xl:min-h-screen xl:w-[46vw]"
           >
             <img
-              src="${img}"
+              src="${artist.Projects[0].projectImages.imageII}"
               class="h-full w-full object-cover brightness-50"
               alt="”left-down"
               arrow”
@@ -150,8 +151,8 @@ ${proj.credits
           </div>
 
           </div>
-            `
-         })}
+            
+       
 
           
 
@@ -159,7 +160,7 @@ ${proj.credits
             <div
               class="styl-dir text-[10vw] leading-[10.2vw] xl:text-[6vw] xl:leading-[6vw] uppercase xl:w-[60vw]"
             >
-              <h1>Style direction and costume design for Bayanni</h1>
+              <h1>${artist.Projects[0].ourVisionHead}</h1>
             </div>
 
             <!-- Large Screen -->
@@ -201,10 +202,7 @@ ${proj.credits
                 <div
                   class="xl:text-center leading-6 text-[15px] sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[65vw] xl:w-[27vw] text-stone-300"
                 >
-                  Develop a stage look that enhances performance, leaving a
-                  lasting impression on fans and industry professionals. We
-                  leverage fashion to shape artists' unique identities,
-                  fuelling fan devotion and inspiring subcultures.
+                ${artist.Projects[0].ourVision}
                 </div>
               </div>
             </div>
@@ -216,7 +214,7 @@ ${proj.credits
                 class="blackWhite h-[22vw] min-h-[22vw] w-[19vw] xl:h-[47vh] xl:min-h-[47vh] xl:w-[22vw] mt-[47vw] xl:mt-[24vw] relative"
               >
                 <img
-                  src="../src/assets/img/bayanni/bayanni2.jpg"
+                  src="${artist.Projects[0].ourVisionImages[0]}"
                   class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
                   alt="”left-down"
                   arrow”
@@ -227,7 +225,7 @@ ${proj.credits
                 class="blackWhite h-[70vw] min-h-[70vw] w-[45vw] xl:h-[90vh] xl:min-h-[90vh] xl:w-[44vw] relative"
               >
                 <img
-                  src="../src/assets/img/bayanni/bayanni3.jpg"
+                  src="${artist.Projects[0].ourVisionImages[1]}"
                   class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
                   alt="”left-down"
                   arrow”
@@ -238,7 +236,7 @@ ${proj.credits
                 class="blackWhite h-[22vw] min-h-[22vw] w-[19vw] xl:h-[47vh] xl:min-h-[47vh] xl:w-[22vw] relative"
               >
                 <img
-                  src="../src/assets/img/bayanni/bayanni4.jpg"
+                  src="${artist.Projects[0].ourVisionImages[2]}"
                   class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
                   alt="”left-down"
                   arrow”
@@ -255,10 +253,7 @@ ${proj.credits
                 <div
                   class="integrate text-[7vw] leading-[7.5vw] xl:text-[4vw] xl:leading-[4.5vw] xl:w-[80vw]"
                 >
-                  /We integrate cohesive fashion and style that directly
-                  integrates seamlessly into the personal style and vision
-                  for the music videos and content, reinforcing brand
-                  identity through visuals.
+                  /${artist.Projects[0].ourVisionStatement}
                 </div>
                 <p
                   class="n italic text-[5.5vw] xl:text-[2.5vw] mt-[1.5vw] xl:mt-0"
@@ -299,7 +294,7 @@ ${proj.credits
               class="blackWhite h-[80vw] min-h-[80vw] w-[65vw] sm:w-[60vw] xl:h-[93vh] xl:min-h-[93vh] xl:w-[44vw] relative"
             >
               <img
-                src="../src/assets/img/bayanni/bayanni9.jpg"
+                src="${artist.sliderAttr.imageI}"
                 class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
                 alt="”left-down"
                 arrow”
@@ -341,55 +336,53 @@ ${proj.credits
                 <div
                   class="xl:text-center text-[15px] leading-6 xl:text-[1.1vw] xl:leading-normal w-[70vw] xl:w-[27vw] text-stone-300"
                 >
-                  While staying true to your personal style, being adaptable
-                  to current fashion trends ensures that your visuals remain
-                  relevant and engaging. It allows you to infuse freshness
-                  into your content while retaining the core elements of
-                  your brand identity.
+                ${artist.Projects[0].trendsHead}
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="mt-[15vw] xl:mt-[7vw] mb-[10vw] flex items-center">
-            <div
-              class="xl:flex justify-between items-center w-[58vw] mr-[5vw]"
-            >
-              <div
-                class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] mb-[6vw] relative"
-              >
-                <img
-                  src="../src/assets/img/bayanni/bayanni8.jpg"
-                  class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
-                  alt="”left-down"
-                  arrow”
-                />
-              </div>
 
-              <div>
-                <div
-                  class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] mb-[5vw] relative"
-                >
-                  <img
-                    src="../src/assets/img/bayanni/bayanni.JPEG"
-                    class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
-                    alt="”left-down"
-                    arrow”
-                  />
-                </div>
 
-                <div
-                  class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] relative"
-                >
-                  <img
-                    src="../src/assets/img/bayanni/bayanni10.jpeg"
-                    class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
-                    alt="”left-down"
-                    arrow”
-                  />
-                </div>
-              </div>
-            </div>
+  <div class="mt-[15vw] xl:mt-[7vw] mb-[10vw] flex items-center">
+  <div
+    class="xl:flex justify-between items-center w-[58vw] mr-[5vw]"
+  >
+    <div
+      class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] mb-[6vw] relative"
+    >
+      <img
+        src="${proj.trendsImages[0]}"
+        class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
+        alt="”left-down"
+        arrow”
+      />
+    </div>
+
+    <div>
+      <div
+        class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] mb-[5vw] relative"
+      >
+        <img
+        src="${proj.trendsImages[1]}"
+          class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
+          alt="”left-down"
+          arrow”
+        />
+      </div>
+
+      <div
+        class="blackWhite h-[70vw] min-h-[70vw] w-[55vw] xl:h-[57vh] xl:min-h-[57vh] xl:w-[27vw] relative"
+      >
+        <img
+        src="${proj.trendsImages[2]}"
+          class="bwImg h-full w-full object-cover brightness-50 grayscale absolute top-0 left-0"
+          alt="”left-down"
+          arrow”
+        />
+      </div>
+    </div>
+  </div>
 
             <div class="flex flex-col items-center">
               <div
@@ -419,7 +412,6 @@ ${proj.credits
                 The Film
               </div>
             </div>
-
             <div class="mt-[3vw]">
               <div>
                 <div
@@ -427,7 +419,7 @@ ${proj.credits
                 >
                   <iframe
                     class="h-full w-full aspect-video"
-                    src="https://www.youtube.com/embed/DJ6y5BDVvmo?si=3B2DZS29KM3JXlez"
+                    src="${proj.projectFilm}"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
@@ -520,7 +512,7 @@ ${proj.credits
           </div>
             
             `;
-            })}
+            }).join('')}
 
             
    
