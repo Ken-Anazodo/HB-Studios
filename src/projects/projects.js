@@ -108,7 +108,7 @@ texts.forEach(text => {
 
 
 // EMOJI ANIMATION
-let bayanni = document.querySelector(".bayanni");
+let artisteName = document.querySelector(".artisteName");
 let emoji = document.querySelector(".emoji");
 
 
@@ -124,7 +124,7 @@ window.addEventListener('mousemove', e => {
 
 
 
-bayanni.addEventListener("mouseenter", () => {
+artisteName.addEventListener("mouseenter", () => {
 	gsap.to(emoji, 1, 
 		{ 
 			scale: 1, 
@@ -138,7 +138,7 @@ bayanni.addEventListener("mouseenter", () => {
 		emoji.style.display ='block';
 })
 
-bayanni.addEventListener("mousemove", () => {
+artisteName.addEventListener("mousemove", () => {
 	gsap.to(emoji, 1, 
 		{ 
 			x: mouseX,
@@ -146,7 +146,7 @@ bayanni.addEventListener("mousemove", () => {
 		})
 })
 
-bayanni.addEventListener("mouseleave", () => {
+artisteName.addEventListener("mouseleave", () => {
 	gsap.to(emoji, 0.2, 
 		{ 
 			scale: 0, 

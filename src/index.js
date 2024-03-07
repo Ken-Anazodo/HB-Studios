@@ -1,3 +1,8 @@
+// import  { displayNav } from './nav.js';
+// let navDisplayed = displayNav();
+// document.getElementById("showNav").innerHTML = navDisplayed;
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 // NAVIGATION (Display On Scroll Up)
@@ -145,7 +150,10 @@ let homeIcon = document.querySelector(".iconNav");
 let homeDisplay = document.querySelector(".hmeCont");
 let hbNav = document.querySelector(".hbNav");
 let welcomeToHb = document.querySelector(".welcomeCont");
+let menuIcon = document.querySelector(".menu-icon");
+let navImgDisplay = document.querySelector(".navContt");
 
+// Home Icon
 homeIcon.addEventListener("mouseover", () => {
   gsap.fromTo(
     ".hmeCont",
@@ -165,6 +173,7 @@ homeIcon.addEventListener("mouseleave", () => {
   homeDisplay.style.display = "none";
 });
 
+// HB Studios Icon
 hbNav.addEventListener("mouseover", () => {
   gsap.fromTo(
     ".welcomeCont",
@@ -183,6 +192,27 @@ hbNav.addEventListener("mouseover", () => {
 hbNav.addEventListener("mouseleave", () => {
   welcomeToHb.style.display = "none";
 });
+
+// MENU ICON
+menuIcon.addEventListener("mouseover", () => {
+  gsap.fromTo(
+    ".navContt",
+    { y: "1.5vw" },
+    {
+      y: 0,
+      duration: 0.3,
+      scrollTrigger: {
+        trigger: ".hmeCont",
+      },
+    }
+  );
+  navImgDisplay.style.display = "flex";
+});
+
+menuIcon.addEventListener("mouseleave", () => {
+  navImgDisplay.style.display = "none";
+});
+
 
 // CURSOR ANIMATION
 links.forEach((link) => {

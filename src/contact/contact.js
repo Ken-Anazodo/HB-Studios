@@ -1,3 +1,9 @@
+// import { displayNav } from "../nav";
+
+// let navDisplayed = displayNav();
+// document.getElementById('showNav').innerHTML = navDisplayed;
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 
