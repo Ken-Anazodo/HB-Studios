@@ -15,13 +15,14 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
           "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/Johnny/john1.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 		(N)`,
@@ -40,10 +41,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -56,11 +58,12 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
@@ -81,10 +84,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -113,11 +117,12 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john2.jpg",
         ],
@@ -138,10 +143,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -154,11 +160,12 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
@@ -179,10 +186,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -211,12 +219,13 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
           "../src/assets/img/Johnny/john1.jpg",
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
@@ -236,10 +245,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -252,11 +262,12 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
@@ -277,10 +288,10 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+       projectName: "TA TA TA REMIX",        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -309,11 +320,12 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john2.jpg",
         ],
@@ -334,10 +346,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -350,12 +363,13 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
           "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/Johnny/john.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
@@ -375,10 +389,10 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+       projectName: "TA TA TA REMIX",        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -408,12 +422,13 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
           "../src/assets/img/Johnny/john1.jpg",
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
@@ -433,10 +448,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "Bayani REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -449,11 +465,12 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
@@ -474,10 +491,10 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+       projectName: "TASTE REMIX",        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -507,11 +524,12 @@ var projectAssets = [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
         ourVision: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john2.jpg",
         ],
@@ -532,10 +550,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+          projectName: "TA TA TA REMIX",
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
@@ -548,11 +567,12 @@ var projectAssets = [
       {
         projectNo: "02",
         projectName: "Photo Shoot",
-        projectFilm: `https://youtu.be/DJ6y5BDVvmo`,
+        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
         ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
         ourVision: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
+          "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john2.jpg",
           "../src/assets/img/Johnny/john.jpg",
         ],
@@ -573,10 +593,11 @@ var projectAssets = [
           },
         ],
 
-        projectImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-        ],
+        projectImages: {
+         imageI: "../src/assets/img/Johnny/john.jpg",
+         imageII: "../src/assets/img/Johnny/john1.jpg",
+         projectName: "TA TA TA REMIX",
+        },
 
         trendsHead: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
