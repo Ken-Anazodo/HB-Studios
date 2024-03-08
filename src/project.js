@@ -210,7 +210,7 @@ ${proj.credits
               >
                 <img
                   src="${proj.ourVisionImages[0]}"
-                  class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3? `grayscale` : ` `} absolute top-0 left-0"
+                  class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3 && artist.id !== 5? `grayscale` : ` `} absolute top-0 left-0"
                   alt="”left-down"
                   arrow”
                 />
@@ -221,7 +221,7 @@ ${proj.credits
               >
                 <img
                   src="${proj.ourVisionImages[1]}"
-                  class="bwImg h-full w-full object-cover brightness-50  absolute top-0 left-0 ${artist.id !== 3? `grayscale` : ` `}"
+                  class="bwImg h-full w-full object-cover brightness-50  absolute top-0 left-0 ${artist.id !== 3 && artist.id !== 5 && artist.id !== 6? `grayscale` : ` `}"
                   alt="”left-down"
                   arrow”
                 />
@@ -232,7 +232,7 @@ ${proj.credits
               >
                 <img
                   src="${proj.ourVisionImages[2]}"
-                  class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3? `grayscale` : ` `} absolute top-0 left-0"
+                  class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3 && artist.id !== 5? `grayscale` : ` `} absolute top-0 left-0"
                   alt="”left-down"
                   arrow”
                 />
@@ -286,7 +286,7 @@ ${proj.credits
           >
             <img
               src="${proj.ourVisionImages[3]}"
-              class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3? `grayscale` : ` `} absolute top-0 left-0"
+              class="bwImg h-full w-full object-cover brightness-50 ${artist.id !== 3 && artist.id !== 5 && artist.id !== 6? `grayscale` : ` `} absolute top-0 left-0"
               alt="”left-down"
               arrow”
             />
@@ -354,7 +354,7 @@ ${proj.credits
 
 
 
-        <div class="mt-[20vw] xl:mt-[6vw]">
+        <div class="mt-[20vw] xl:mt-[6vw] ${artist.id !== 4 && artist.id !== 6? `block` : `[display:none]`}">
           <div class="ml-[2vw]">
             <div class="film text-[15vw] leading-[14vw] uppercase">
               The Film
@@ -493,7 +493,7 @@ ${proj.credits
       </div>
       
       
-      ${artist.Projects.length > 2? `
+      ${artist.Projects.length >= 2? `
       <div class="mt-[10vw] xl:mt-0">
         <div class="mb-[5vw]">
           <div
@@ -574,6 +574,18 @@ ${proj.credits
       </div>
     </div>` : ``}
 
+
+
+        <div class="singImgCont flex justify-end mt-[15vw] xl:mt-[7vw] ${artist.Projects.length == 2 || artist.Projects.length == 3? `block` : `[display:none]`}">
+          <div class="singImg blackWhite relative">
+            <img
+              src="${proj.ourVisionImages[4]}"
+              class="bwImg h-full w-full object-cover brightness-50 absolute top-0 left-0"
+              alt="”left-down"
+              arrow”
+            />
+          </div>
+        </div>
       ` 
       
       
@@ -622,7 +634,7 @@ ${proj.credits
 
 
 
-          <div class="flex items-center mt-[10vw] xl:mt-[1vw] ${index == artist.Projects.length - 1?  `[display:none]` : `block`}">
+          <div class="flex items-center mt-[10vw] xl:mt-[3vw] ${index == artist.Projects.length - 1?  `[display:none]` : `block`}">
           <div class="h-[20vw] w-[28vw] xl:w-[31vw]">
             <img
               src="../src/assets/img/longArrow.png"

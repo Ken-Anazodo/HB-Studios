@@ -261,6 +261,8 @@ var projectAssets = [
           "../src/assets/img/bayanni/bayanni19.jpg",
           "../src/assets/img/bayanni/bayanni18.jpg",
           "../src/assets/img/bayanni/bayanni19.jpg",
+          "../src/assets/img/bayanni/bayanni8.jpg",
+          "../src/assets/img/bayanni/bayanni8.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         credits: [
@@ -427,22 +429,23 @@ var projectAssets = [
       arrow: "../src/assets/img/arrow2.png",
       logo: "../src/assets/img/logo.png",
     },
-    nameEmoji: "../src/assets/img/bayanni/bay5.jpg",
-    lastImg: "../src/assets/img/bayanni/bay5.jpg",
+    nameEmoji: "../src/assets/img/remy/remy4.jpg",
+    lastImg: "../src/assets/img/remy/remy4.jpg",
     ProjectNo: ["Project 01", "Project 02"],
 
     Projects: [
       {
         projectNo: "01",
-        projectName: "TA TA TA REMIX",
+        projectName: "Birdie",
         projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
-        ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
+        ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR REMY",
         ourVisionBody: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/remy/remy7.jpg",
+          "../src/assets/img/remy/remy6.jpg",
+          "../src/assets/img/remy/remy7.jpg",
+          "../src/assets/img/remy/remy.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         credits: [
@@ -452,68 +455,21 @@ var projectAssets = [
           },
           {
             creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
-          },
-          {
-            creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
+            creditAns: "Ruby Okoro",
           },
         ],
 
         projectImages: {
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
+         imageI: "../src/assets/img/remy/remy2.jpg",
+         imageII: "../src/assets/img/remy/remy1.jpg",
          projectName: {
-          subName1: "TA TA TA REMIX",
+          subName1: "Birdie",
           subName2: "MUSIC FILM",
          },
         },
 
         trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.
 (N)`,
-        trendsImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-        ],
-      },
-      {
-        projectNo: "02",
-        projectName: "Photo Shoot",
-        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
-        ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
-        ourVisionBody: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
-		`,
-        ourVisionImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john.jpg",
-          "../src/assets/img/Johnny/john.jpg",
-        ],
-        ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
-        credits: [
-          {
-            creditSubhead: "Styling & Costume Designs",
-            creditAns: "HeadBorn Studios",
-          },
-          {
-            creditSubhead: "Hair Stylist",
-            creditAns: "Simi Banjo",
-          },
-          {
-            creditSubhead: "Make Up",
-            creditAns: "Adaora Ike",
-          },
-        ],
-
-        projectImages: {
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
-         projectName: {
-          subName1: "TA TA TA REMIX",
-          subName2: "MUSIC FILM",
-         },       },
-
-        trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         trendsImages: [
           "../src/assets/img/Johnny/john1.jpg",
           "../src/assets/img/Johnny/john2.jpg",
@@ -533,7 +489,7 @@ var projectAssets = [
 
   {
     id: 5,
-    name: "Pretty boydo",
+    name: "Pretty- boydo",
     sliderAttr: {
       imageI: "../src/assets/img/prettyboydo/prettyboydo.jpg",
       imageII: "../src/assets/img/prettyboydo/prettyboydo1.jpg",
@@ -542,22 +498,23 @@ var projectAssets = [
       arrow: "../src/assets/img/arrow2.png",
       logo: "../src/assets/img/logo.png",
     },
-    nameEmoji: "../src/assets/img/bayanni/bay5.jpg",
-    lastImg: "../src/assets/img/bayanni/bay5.jpg",
+    nameEmoji: "../src/assets/img/prettyboydo/pb17.jpg",
+    lastImg: "../src/assets/img/prettyboydo/pb5.jpg",
     ProjectNo: ["Project 01", "Project 02"],
 
     Projects: [
       {
         projectNo: "01",
         projectName: "TA TA TA REMIX",
-        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
-        ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR BAYANNI",
+        projectFilm: `https://player.vimeo.com/video/920618872?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0`,
+        ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR PRETTYBOYDO",
         ourVisionBody: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo1.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo.jpg",
+          "../src/assets/img/prettyboydo/pb5.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         credits: [
@@ -567,28 +524,28 @@ var projectAssets = [
           },
           {
             creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
+            creditAns: "Thompson Ekong",
           },
           {
-            creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
+            creditSubhead: "Directed by",
+            creditAns: "Thompson Ekong & Seyi(ua.x)",
           },
         ],
 
         projectImages: {
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
+         imageI: "../src/assets/img/prettyboydo/pb1.jpg",
+         imageII: "../src/assets/img/prettyboydo/prettyboydo2.jpg",
          projectName: {
-          subName1: "TA TA TA REMIX",
-          subName2: "MUSIC FILM",
+          subName1: "WETIN YOU SMOKE",
+          subName2: "ViSUALIZER",
          },
         },
 
         trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         trendsImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo1.jpg",
+          "../src/assets/img/prettyboydo/prettyboydo.jpg",
         ],
       },
       {
@@ -599,9 +556,11 @@ var projectAssets = [
         ourVisionBody: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
 		`,
         ourVisionImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john.jpg",
+          "../src/assets/img/prettyboydo/pb13.jpg",
+          "../src/assets/img/prettyboydo/pb10.jpg",
+          "../src/assets/img/prettyboydo/pb13.jpg",
+          "../src/assets/img/prettyboydo/pb14.jpg",
+          "../src/assets/img/prettyboydo/pb4.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         credits: [
@@ -610,22 +569,27 @@ var projectAssets = [
             creditAns: "HeadBorn Studios",
           },
           {
-            creditSubhead: "Hair Stylist",
-            creditAns: "Simi Banjo",
+            creditSubhead: "Photography",
+            creditAns: "Thompson Ekong",
           },
           {
-            creditSubhead: "Make Up",
-            creditAns: "Adaora Ike",
+            creditSubhead: "Style Direction",
+            creditAns: "Prettyboydo & Tokyo James",
+          },
+          {
+            creditSubhead: "Directed by",
+            creditAns: "Thompson Ekong & Seyi(ua.x)",
           },
         ],
 
         projectImages: {
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
+         imageI: "../src/assets/img/prettyboydo/pb9.jpg",
+         imageII: "../src/assets/img/prettyboydo/pb11.jpg",
          projectName: {
-          subName1: "TA TA TA REMIX",
-          subName2: "MUSIC FILM",
-         },        },
+          subName1: "LOVE IS WAR",
+          subName2: "ALBUM",
+         },        
+        },
 
         trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         trendsImages: [
@@ -656,8 +620,8 @@ var projectAssets = [
       arrow: "../src/assets/img/arrow2.png",
       logo: "../src/assets/img/logo.png",
     },
-    nameEmoji: "../src/assets/img/bayanni/bay5.jpg",
-    lastImg: "../src/assets/img/bayanni/bay5.jpg",
+    nameEmoji: "../src/assets/img/toniDada/toni9.jpg",
+    lastImg: "../src/assets/img/toniDada/toni6.jpg",
     ProjectNo: ["Project 01", "Project 02"],
 
     Projects: [
@@ -669,9 +633,10 @@ var projectAssets = [
         ourVisionBody: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		`,
         ourVisionImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/toniDada/toni4.jpg",
+          "../src/assets/img/toniDada/toni5.jpg",
+          "../src/assets/img/toniDada/toni4.jpg",
+          "../src/assets/img/toniDada/toni7.jpg",
         ],
         ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         credits: [
@@ -681,69 +646,24 @@ var projectAssets = [
           },
           {
             creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
-          },
-          {
-            creditSubhead: "Photography",
-            creditAns: "Dara Banjo",
+            creditAns: "Ruby Okoro",
           },
         ],
 
         projectImages: {
-          projectName: "TA TA TA REMIX",
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
-        },
-
-        trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
-        trendsImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-        ],
-      },
-      {
-        projectNo: "02",
-        projectName: "Photo Shoot",
-        projectFilm: `https://www.youtube.com/watch?v=DJ6y5BDVvmo&feature=youtu.be`,
-        ourVisionHead: "BRAND REINFORCEMENT AND VISION ALIGNMENT",
-        ourVisionBody: `Fashion serves as a powerful tool for reinforcing brand identity. The consistent use of a specific style or signature fashion elements in visuals helps in creating a strong and recognizable brand image. This, in turn, contributes to audience recall and loyalty. The fashion and style has to align with the artistic vision for the music. Whether it's conveying a specific emotion, storytelling, or creating a particular atmosphere, the wardrobe choices play a vital role in translating vision into a tangible and immersive experience.
-		`,
-        ourVisionImages: [
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john.jpg",
-        ],
-        ourVisionStatement: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
-        credits: [
-          {
-            creditSubhead: "Styling & Costume Designs",
-            creditAns: "HeadBorn Studios",
-          },
-          {
-            creditSubhead: "Hair Stylist",
-            creditAns: "Simi Banjo",
-          },
-          {
-            creditSubhead: "Make Up",
-            creditAns: "Adaora Ike",
-          },
-        ],
-
-        projectImages: {
-         imageI: "../src/assets/img/Johnny/john.jpg",
-         imageII: "../src/assets/img/Johnny/john1.jpg",
+         imageI: "../src/assets/img/toniDada/toni1.jpg",
+         imageII: "../src/assets/img/toniDada/toni3.jpg",
          projectName: {
-          subName1: "TA TA TA REMIX",
-          subName2: "MUSIC FILM",
-         },
+          subName1: "Photo shoot",
+          subName2: "Photoshoot",
+         }, 
         },
 
         trendsBody: `We integrate cohesive fashion and style that directly integrates seamlessly into the personal style and vision for the music videos and content, reinforcing brand identity through visuals.`,
         trendsImages: [
-          "../src/assets/img/Johnny/john1.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
-          "../src/assets/img/Johnny/john2.jpg",
+          "../src/assets/img/toniDada/john1.jpg",
+          "../src/assets/img/toniDada/john2.jpg",
+          "../src/assets/img/toniDada/john2.jpg",
         ],
       },
     ],
