@@ -94,8 +94,10 @@ let homeIcon = document.querySelector(".iconNav");
 let homeDisplay = document.querySelector(".hmeCont");
 let hbNav = document.querySelector(".hbNav");
 let welcomeToHb = document.querySelector(".welcomeCont");
+let menuIcon = document.querySelector(".menu-icon");
+let navImgDisplay = document.querySelector(".navContt");
 
-
+// Home Icon
 homeIcon.addEventListener("mouseover", () =>{
 	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
@@ -110,7 +112,7 @@ homeIcon.addEventListener("mouseleave", () =>{
 })
 
 
-
+// HB Studios Icon
 hbNav.addEventListener("mouseover", () =>{
 	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
@@ -124,6 +126,26 @@ hbNav.addEventListener("mouseleave", () =>{
 	welcomeToHb.style.display = 'none';
 })
 
+// MENU ICON
+menuIcon.addEventListener("mouseover", () => {
+	gsap.fromTo(
+	  ".navContt",
+	  { y: "1.5vw" },
+	  {
+		y: 0,
+		duration: 0.3,
+		scrollTrigger: {
+		  trigger: ".hmeCont",
+		},
+	  }
+	);
+	navImgDisplay.style.display = "flex";
+  });
+  
+  menuIcon.addEventListener("mouseleave", () => {
+	navImgDisplay.style.display = "none";
+  });
+
 
 
 
@@ -131,15 +153,28 @@ hbNav.addEventListener("mouseleave", () =>{
 
 
 // CIRCLE ROTATE TEXT
-let texts = Array.from(document.querySelectorAll(".text p"));
 
-texts.forEach(text => {
-	text.innerHTML = text.innerText.split('').map(
-		(char, i) =>
-		`<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-	).join('');
-})
+// Instantiate `CircleType` with an HTML element.
+// Small Screen
+const circleType = new CircleType(document.getElementById("myElement"));
+circleType.radius();
+circleType.forceHeight();
+circleType.forceWidth(true);
+circleType.refresh();
 
+// Large Screen
+const circleType1 = new CircleType(document.getElementById("myElement1"));
+circleType1.radius();
+circleType1.forceHeight();
+circleType1.forceWidth(true);
+circleType1.refresh();
+
+// Circle Text in body
+const circleType2 = new CircleType(document.getElementById("myElement2"));
+circleType2.radius(100);
+circleType2.forceHeight();
+circleType2.forceWidth(true);
+circleType2.refresh();
 
 
 // Circle Cursor Change

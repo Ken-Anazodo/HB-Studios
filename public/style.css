@@ -2586,6 +2586,10 @@ video {
     margin-top: 9vw;
   }
 
+  .sm\:mt-\[20vw\] {
+    margin-top: 20vw;
+  }
+
   .sm\:block {
     display: block;
   }

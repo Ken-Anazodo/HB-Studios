@@ -23,17 +23,6 @@ ScrollTrigger.create({
 });
 
 // CIRCLE ROTATE TEXT
-let texts = Array.from(document.querySelectorAll(".text p"));
-
-texts.forEach((text) => {
-  text.innerHTML = text.innerText
-    .split("")
-    .map(
-      (char, i) =>
-        `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-    )
-    .join("");
-});
 
 // Instantiate `CircleType` with an HTML element.
 // Small Screen

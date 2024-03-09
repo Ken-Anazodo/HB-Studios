@@ -106,17 +106,6 @@ navConnect.forEach(navConnect => {
 
 
 // CIRCLE ROTATE TEXT
-let texts = Array.from(document.querySelectorAll(".text p"));
-
-texts.forEach(text => {
-	text.innerHTML = text.innerText.split('').map(
-		(char, i) =>
-		`<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-	).join('');
-})
-
-
-
 
 // Instantiate `CircleType` with an HTML element.
 // Small Screen
@@ -160,10 +149,11 @@ let homeIcon = document.querySelector(".iconNav");
 let homeDisplay = document.querySelector(".hmeCont");
 let hbNav = document.querySelector(".hbNav");
 let welcomeToHb = document.querySelector(".welcomeCont");
-let centerPiece = document.querySelector(".centerpiece");
-let about = document.querySelector(".about");
+let menuIcon = document.querySelector(".menu-icon");
+let navImgDisplay = document.querySelector(".navContt");
 
 
+// Home Icon
 homeIcon.addEventListener("mouseover", () =>{
 	gsap.fromTo(".hmeCont", {y: '1.5vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
@@ -178,7 +168,7 @@ homeIcon.addEventListener("mouseleave", () =>{
 })
 
 
-
+// HB Studios Icon
 hbNav.addEventListener("mouseover", () =>{
 	gsap.fromTo(".welcomeCont", {y: '3vw'}, {y: 0, duration: 0.3,
 		scrollTrigger:{
@@ -194,7 +184,26 @@ hbNav.addEventListener("mouseleave", () =>{
 	about.style.opacity = '100%';
 })
 
-
+// MENU ICON
+menuIcon.addEventListener("mouseover", () => {
+	gsap.fromTo(
+	  ".navContt",
+	  { y: "1.5vw" },
+	  {
+		y: 0,
+		duration: 0.3,
+		scrollTrigger: {
+		  trigger: ".hmeCont",
+		},
+	  }
+	);
+	navImgDisplay.style.display = "flex";
+  });
+  
+  menuIcon.addEventListener("mouseleave", () => {
+	navImgDisplay.style.display = "none";
+  });
+  
 
 
 

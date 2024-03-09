@@ -281,14 +281,10 @@ body::-webkit-scrollbar {
 
 }
 
-.text{
-	font-family: 'Bodoni Moda', serif;
-	font-style: normal;
-	font-weight: 800;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	animation: anim 10s linear infinite;
+.circleTextAnim{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+	animation: anim 7s linear infinite;
 }
 
 @keyframes anim {
