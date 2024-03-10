@@ -1,11 +1,11 @@
 let swiper = null;
 let swiper2 = null;
 
-let engine = document.getElementById("engine");
+// let engine = document.getElementById("engine");
 
 
 
-const loadSwipers = () => {
+export const loadSwipers = () => {
   swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -43,7 +43,7 @@ const loadSwipers = () => {
 // document.addEventListener("DOMContentLoaded", () => {
 // });
 
-if( engine.id == 'engine'){
+// if( engine.id == 'engine'){
     
-    loadSwipers();
-}
+    // loadSwipers();
+// }

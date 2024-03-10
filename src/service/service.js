@@ -169,8 +169,15 @@ circleType1.forceHeight();
 circleType1.forceWidth(true);
 circleType1.refresh();
 
-// Circle Text in body
+// Circle Text in body small
 const circleType2 = new CircleType(document.getElementById("myElement2"));
+circleType2.radius(100);
+circleType2.forceHeight();
+circleType2.forceWidth(true);
+circleType2.refresh();
+
+// Circle Text in body small
+const circleType3 = new CircleType(document.getElementById("myElement3"));
 circleType2.radius(100);
 circleType2.forceHeight();
 circleType2.forceWidth(true);

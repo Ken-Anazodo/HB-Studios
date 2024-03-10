@@ -7,9 +7,10 @@
 // console.log(projectAssets);
 
 const loadPage = () => {
-  //   let queryString = window.location.search;
-  //   let params = new URLSearchParams(queryString);
-  //   let id = params.get("id");
+    let queryString = window.location.search;
+    let params = new URLSearchParams(queryString);
+    let id = params.get("id");
+    console.log(id)
 
   let artist = JSON.parse(localStorage.getItem("database"));
   // console.log(artist);
