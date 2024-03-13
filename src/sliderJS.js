@@ -47,7 +47,7 @@ document.head.appendChild(script);
 						  <h1 class="nameProj2 uppercase">Projects</h1>
 					  </div>
 	  
-					  <div class="h-[3vw] w-[3vw] md:h-[1.7vw] md:w-[1.7vw]">
+					  <div class="projArr h-[3vw] w-[3vw] md:h-[1.7vw] md:w-[1.7vw]">
 						  <img src="${item?.sliderAttr?.arrow}" class="h-full w-full object-contain" alt=”left-down arrow”>
 					  </div>
 				  </div>								

@@ -169,19 +169,19 @@ circleType1.forceHeight();
 circleType1.forceWidth(true);
 circleType1.refresh();
 
-// Circle Text in body small
+// Circle Text in body
 const circleType2 = new CircleType(document.getElementById("myElement2"));
 circleType2.radius(100);
 circleType2.forceHeight();
 circleType2.forceWidth(true);
 circleType2.refresh();
 
-// Circle Text in body small
+// Circle Text in body
 const circleType3 = new CircleType(document.getElementById("myElement3"));
-circleType2.radius(100);
-circleType2.forceHeight();
-circleType2.forceWidth(true);
-circleType2.refresh();
+circleType3.radius(100);
+circleType3.forceHeight();
+circleType3.forceWidth(true);
+circleType3.refresh();
 
 
 // Circle Cursor Change

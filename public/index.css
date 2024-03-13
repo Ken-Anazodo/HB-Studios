@@ -370,6 +370,9 @@ body::-webkit-scrollbar {
 	font-family: 'Bodoni Moda', serif;
 }
 
+.text span{
+	font-size: 14px;
+}
 
 
 /* outer slider */
@@ -381,10 +384,10 @@ body::-webkit-scrollbar {
 
 .swiper-slide{
 	width: 31vw;
-	min-height: 70vh;
-	height: 70vh;
+	min-height: 60vh;
+	height: 60vh;
+	border-radius: 2vw;
 	background: rgb(24 24 27);
-	border-radius: 1.5vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -409,23 +412,29 @@ body::-webkit-scrollbar {
 } 
 
 .swiper, .swiper-slide img{
-	border-radius: 1.5vw;
+	border-radius: 2vw;
 }
 
 .nameProj1{
 	font-family: 'Bodoni Moda', serif;	
 	font-weight: 500;
-	font-size: 1vw;
-	line-height: 1.2vw;
+	font-size: 3vw;
+	line-height: 3.2vw;
 	text-transform: uppercase;
 }
 
 .nameProj2{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
-	font-size: 1.2vw;
-	line-height: 1.2vw;
+	font-size: 3.2vw;
+	line-height: 3.2vw;
 }
+
+.projArr{
+	height: 4vw;
+	width: 4vw;
+}
+
 
 /* FOOTER */
 .hbs1{
@@ -448,47 +457,81 @@ body::-webkit-scrollbar {
 }
 
 
-@media all and (max-width: 640px){
-	.text span{
-		font-size: 14px;
-	}
-
-	.swiper-slide{
-		min-height: 55vh;
-		height: 55vh;
-		border-radius: 2vw;
-	}
-
-	.swiper, .swiper-slide img{
-		border-radius: 2vw;
-	}
-
+@media screen and (min-width: 640px) {
 	.nameProj1{
-		font-size: 3vw;
-		line-height: 3.2vw;
+		font-size: 2vw;
+		line-height: 2.2vw;
 	}
 	
 	.nameProj2{
-		font-size: 3.2vw;
-		line-height: 3.2vw;
+		font-size: 2.2vw;
+		line-height: 2.2vw;
+	}
+
+	.projArr{
+		height: 2.5vw;
+		width: 2.5vw;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* .projArr{
+		height: 1.7vw;
+		width: 1.7vw;
+	} */
+}
+
+/* Min width */
+@media screen and (min-width: 1024px){
+	.swiper-slide{
+		min-height: 600px;
+		height: 600px;
+	}
+
+	.nameProj1{
+		font-size: 1.5vw;
+		line-height: 1.7vw;
+	}
+	
+	.nameProj2{
+		font-size: 1.7vw;
+		line-height: 1.7vw;
+	}
+
+	.projArr{
+		height: 1.7vw;
+		width: 1.7vw;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.swiper-slide{
+		min-height: 70vh;
+		height: 70vh;
+		border-radius: 1.5vw;
+	}
+
+	.swiper, .swiper-slide img{
+		border-radius: 1.5vw;
+	}	
+
+	.nameProj1{
+		font-size: 1vw;
+		line-height: 1.2vw;
+	}
+	
+	.nameProj2{
+		font-size: 1.2vw;
+		line-height: 1.2vw;
 	}
 }
 
 
+/* Max width */
 @media all and (max-width: 1024px){
 	.madeBy{
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 	}
 }
-
-@media all and (max-width: 1279px){
-	.swiper-slide{
-		min-height: 600px;
-		height: 600px;
-	}
-}
-
-
-
 

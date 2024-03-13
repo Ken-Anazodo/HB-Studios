@@ -105,6 +105,20 @@ circleType1.forceHeight();
 circleType1.forceWidth(true);
 circleType1.refresh();
 
+// Circle Text in body
+const circleType2 = new CircleType(document.getElementById("myElement2"));
+circleType2.radius(100);
+circleType2.forceHeight();
+circleType2.forceWidth(true);
+circleType2.refresh();
+
+// Circle Text in body
+const circleType3 = new CircleType(document.getElementById("myElement3"));
+circleType3.radius(100);
+circleType3.forceHeight();
+circleType3.forceWidth(true);
+circleType3.refresh();
+
 
 // Circle Cursor Change
 circleText.addEventListener("mouseover", () =>{
@@ -119,9 +133,9 @@ circleText.addEventListener("mouseleave", () =>{
 
 
 // SECTION 2
-gsap.fromTo('.sec2', {x: '50vw'}, {x: 0, duration: 2, transition: 0.2, 
+gsap.fromTo('.sec2Anim', {x: '50vw'}, {x: 0, duration: 2, transition: 0.2, 
 	scrollTrigger:{
-		trigger: '.sec2',
+		trigger: '.sec2Anim',
 		scrub: true
 	}
 }, "0.2")
