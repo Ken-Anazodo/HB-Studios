@@ -1004,6 +1004,10 @@ video {
   margin-left: 10vw;
 }
 
+.mt-\[0vw\] {
+  margin-top: 0vw;
+}
+
 .flex {
   display: flex;
 }
@@ -1946,6 +1950,14 @@ video {
 
 .pt-\[2\.5vw\] {
   padding-top: 2.5vw;
+}
+
+.pt-\[3vw\] {
+  padding-top: 3vw;
+}
+
+.pt-\[7vw\] {
+  padding-top: 7vw;
 }
 
 .text-center {
@@ -3316,6 +3328,10 @@ video {
     margin-top: 9vw;
   }
 
+  .md\:mt-\[18vw\] {
+    margin-top: 18vw;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3514,6 +3530,10 @@ video {
 
   .md\:pt-\[8vw\] {
     padding-top: 8vw;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-center {
@@ -4331,6 +4351,10 @@ video {
     margin-top: 8vw;
   }
 
+  .xl\:mt-\[0vw\] {
+    margin-top: 0vw;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -4761,6 +4785,30 @@ video {
 
   .xl\:pt-\[8vw\] {
     padding-top: 8vw;
+  }
+
+  .xl\:pb-\[35vw\] {
+    padding-bottom: 35vw;
+  }
+
+  .xl\:pb-\[36vw\] {
+    padding-bottom: 36vw;
+  }
+
+  .xl\:pb-\[33vw\] {
+    padding-bottom: 33vw;
+  }
+
+  .xl\:pb-\[34vw\] {
+    padding-bottom: 34vw;
+  }
+
+  .xl\:pb-\[37vw\] {
+    padding-bottom: 37vw;
+  }
+
+  .xl\:pb-\[39vw\] {
+    padding-bottom: 39vw;
   }
 
   .xl\:text-left {
