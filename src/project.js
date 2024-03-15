@@ -4,15 +4,24 @@
 // document.head.appendChild(script);
 // const script = document.querySelectorAll("script");
 // console.log(script.id);
-// console.log(projectAssets);
+
+
+import { test } from "./test.js";
+
+
+
+console.log(test[1])
+
+
 
 const loadPage = () => {
     let queryString = window.location.search;
     let params = new URLSearchParams(queryString);
     let id = params.get("id");
     console.log(id)
+   
 
-  let artist = JSON.parse(localStorage.getItem("database"));
+  let artist = test[id]
   // console.log(artist);
 
   if (artist) {
@@ -242,7 +251,9 @@ ${proj.credits
           </div>
 
 
+     
           <div class="${index == 0? `<div class="w-full">
+
         <div class="flex justify-center items-center">
           <div>
             <div>

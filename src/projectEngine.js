@@ -1,4 +1,4 @@
-var projectAssets = [
+export const  projectAssets = [
   {
     id: 1,
     name: "Johnny Drille",
