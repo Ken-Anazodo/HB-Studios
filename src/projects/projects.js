@@ -125,57 +125,56 @@ circleType1.refresh();
 
 
 // EMOJI ANIMATION
-let artisteName = document.querySelector(".artisteName");
-let emoji = document.querySelector(".emoji");
+	let mouseX;
+	let mouseY;
+
+	window.addEventListener('mousemove', e => {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+
+		gsap.to(cursor, 0.3, {x: mouseX, y: mouseY})
+	})
 
 
-let mouseX;
-let mouseY;
+document.addEventListener("DOMContentLoaded", function() {
+	let artisteName = document.querySelector(".artisteName");
+	let emoji = document.querySelector(".emoji");
+	
+	artisteName.addEventListener("mouseenter", () => {
+		gsap.to(emoji, 1, 
+			{ 
+				scale: 1, 
+				opacity: 1, 
+				top: "-5vw", 
+				left: "-5vw", 
+				rotate: 0,
+				ease: Elastic.easeOut.config(1, 0.3) 
+			})
 
-window.addEventListener('mousemove', e => {
-	mouseX = e.clientX;
-	mouseY = e.clientY;
+			emoji.style.display ='block';
+	})
 
-	gsap.to(cursor, 0.3, {x: mouseX, y: mouseY})
-})
+	artisteName.addEventListener("mousemove", () => {
+		gsap.to(emoji, 1, 
+			{ 
+				x: mouseX,
+				y: mouseY
+			})
+	})
 
+	artisteName.addEventListener("mouseleave", () => {
+		gsap.to(emoji, 0.2, 
+			{ 
+				scale: 0, 
+				opacity: 0, 
+				top: "0.1vw", 
+				left: "-0.5vw", 
+				rotate: 45,
+			})
 
-
-artisteName.addEventListener("mouseenter", () => {
-	gsap.to(emoji, 1, 
-		{ 
-			scale: 1, 
-			opacity: 1, 
-			top: "-5vw", 
-			left: "-5vw", 
-			rotate: 0,
-			ease: Elastic.easeOut.config(1, 0.3) 
-		})
-
-		emoji.style.display ='block';
-})
-
-artisteName.addEventListener("mousemove", () => {
-	gsap.to(emoji, 1, 
-		{ 
-			x: mouseX,
-			y: mouseY
-		})
-})
-
-artisteName.addEventListener("mouseleave", () => {
-	gsap.to(emoji, 0.2, 
-		{ 
-			scale: 0, 
-			opacity: 0, 
-			top: "0.1vw", 
-			left: "-0.5vw", 
-			rotate: 45,
-		})
-
-		emoji.style.display ='none';
-})
-
+			emoji.style.display ='none';
+	})
+});
 
 
 
@@ -190,8 +189,6 @@ let hbNav = document.querySelector(".hbNav");
 let welcomeToHb = document.querySelector(".welcomeCont");
 let menuIcon = document.querySelector(".menu-icon");
 let navImgDisplay = document.querySelector(".navContt");
-// let centerPiece = document.querySelector(".centerpiece");
-// let about = document.querySelector(".about");
 
 
 // Home Icon
