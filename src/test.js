@@ -1,5 +1,6 @@
 export const test = [
 	{
+		// Johnny Drille
 	  id: 1,
 	  name: "Johnny Drille",
 	  sliderAttr: {
@@ -188,6 +189,7 @@ export const test = [
   
   
 	{
+		// Bayanni
 	  id: 2,
 	  name: "Bayanni",
 	  sliderAttr: {
@@ -347,6 +349,7 @@ export const test = [
   
   
 	{
+		// Mr Eazi
 	  id: 3,
 	  name: "Mr Eazi",
 	  sliderAttr: {
@@ -365,7 +368,7 @@ export const test = [
 		{
 		  projectNo: "01",
 		  projectName: "PERSONAL BABY",
-		  projectFilm: `https://www.youtube.com/embed/ommOZ_493yU?si=j9hL2CajFmw2mamH`,
+		  projectFilm: `https://player.cloudinary.com/embed/?cloud_name=dkcbvgmcr&public_id=videos/personalBaby`,
 		  ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR MR EAZI",
 		  ourVisionBody: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		  `,
@@ -419,6 +422,7 @@ export const test = [
   
   
 	{
+		// Remy
 	  id: 4,
 	  name: "Remy",
 	  sliderAttr: {
@@ -488,8 +492,9 @@ export const test = [
   
   
 	{
+		// Prettyboydo
 	  id: 5,
-	  name: "Pretty- boydo",
+	  name: "Pretty-boydo",
 	  sliderAttr: {
 		imageI: "../src/assets/img/prettyboydo/prettyboydo.jpg",
 		imageII: "../src/assets/img/prettyboydo/prettyboydo1.jpg",
@@ -506,7 +511,7 @@ export const test = [
 		{
 		  projectNo: "01",
 		  projectName: "TA TA TA REMIX",
-		  projectFilm: `https://player.vimeo.com/video/920618872?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0`,
+		  projectFilm: `https://player.cloudinary.com/embed/?cloud_name=dkcbvgmcr&public_id=videos/wys`,
 		  ourVisionHead: "STYLE DIRECTION AND COSTUME DESIGN FOR PRETTYBOYDO",
 		  ourVisionBody: `Develop a stage look that enhances performance, leaving a lasting impression on fans and industry professionals. We leverage fashion to shape artists' unique identities, fuelling fan devotion and inspiring subcultures.
 		  `,
@@ -610,6 +615,7 @@ export const test = [
   
   
 	{
+		// Tony Dada
 	  id: 6,
 	  name: "Toni Dada",
 	  sliderAttr: {

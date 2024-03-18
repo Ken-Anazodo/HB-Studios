@@ -49,16 +49,33 @@ circleType2.refresh();
 // OPEN AND CLOSE NAV
 let menu = document.getElementById("menu-wrapper");
 let logoAndCloseMenu = document.getElementById("logoAndClose");
+// let gNav = document.querySelector('.gNav');
+
+// const closeMenu = () => {
+//   menu.style.top = "-150vh";
+//   logoAndCloseMenu.style.display = "none";
+// };
+
+// const openMenu = () => {
+//   menu.style.top = "0";
+//   logoAndCloseMenu.style.display = "flex";
+// };
+
+
+let tl = gsap.timeline()
+
 
 const closeMenu = () => {
-  menu.style.top = "-150vh";
-  logoAndCloseMenu.style.display = "none";
-};
+	tl.fromTo(menu, {top: '0'}, {top: '-150vh', duration: 0.5, ease: "power4.in"},)
+	  .fromTo(".gNav", {opacity:1, y: 0}, {opacity:0, y: '15vw', duration: 0.5, ease: "power4", transition: 1 }, "1")
+	logoAndCloseMenu.style.display = "none";
+}
 
 const openMenu = () => {
-  menu.style.top = "0";
-  logoAndCloseMenu.style.display = "flex";
-};
+	tl.fromTo(menu, {top: '-150vh'}, {top: '0', duration: 0.5, ease: "power4.in"})
+	  .fromTo(".gNav", {opacity:0, y: '15vw'}, {opacity:1, y: 0, duration: 0.5, ease: "power4", transition: 1 }, "1")
+	logoAndCloseMenu.style.display = "flex";
+}
 
 // LOADER ANIMATION AND COUNTER
 const startLoader = () => {

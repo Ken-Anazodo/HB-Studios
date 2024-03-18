@@ -666,8 +666,7 @@ ${proj.credits
         
 
         ${index == artist.Projects.length - 1? `<div class="w-full">
-        <div class="nxtPageSec">
-        <a href="/public/bayanniShoot.html">
+        <div class="nxtPageSec" id="nxtPagee">
           <div class="mr-[3vw]">
             <div
               class="viewProject rounded-full h-[40vw] w-[40vw] sm:h-[35vw] sm:w-[35vw] md:h-[30vw] md:w-[30vw] xl:h-[11vw] xl:w-[11vw] text-center uppercase flex justify-around items-center text-[3.1vw] leading-[3.1vw] sm:text-[2.6vw] sm:leading-[2.6vw] xl:text-[1vw] xl:leading-[1vw] animate-bounce hover:animate-none"
@@ -698,7 +697,6 @@ ${proj.credits
               </div>
             </div>
           </div>
-        </a>
       </div></div>` : ` `}
             `;
             }).join('')}

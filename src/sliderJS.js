@@ -3,14 +3,6 @@ import { test } from "./test.js";
 
 
 
-const script = document.createElement("script");
-script.src = "../src/projectEngine.js";
-script.id = "engine";
-document.head.appendChild(script);
-
-
-// script.onload = () => {
-//   console.log(projectAssets);
 
   const slider = () => {
     const itemDisplay = test.map((item, index) => {
@@ -60,19 +52,10 @@ document.head.appendChild(script);
   };
 
   
-// };
-// if (test) {
+
 	slider();
 	loadSwipers();
-// }
 
-document.getElementById('details').addEventListener('click', ()=>{
-	
-	// const divElement = document.getElementById('details')
-	// console.log('Hi')
-// 	const keyAttributeValue = divElement.getAttribute('key');
-// console.log(keyAttributeValue);
-})
 
 export const itemDetails = (id) => {
  
