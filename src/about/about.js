@@ -21,17 +21,40 @@ const showAnim = gsap.from('.nav-sec-container', {
   // OPEN AND CLOSE NAV
 let menu = document.getElementById('menu-wrapper');
 let logoAndCloseMenu = document.getElementById('logoAndClose');
+// let menubtn = document.querySelector(".menubtn");
+
+// const closeMenu = () => {
+// 	menu.style.top = "-150vh";
+// 	logoAndCloseMenu.style.display = "none";
+// }
+
+// const openMenu = () => {
+// 	menu.style.top = "0";
+// 	logoAndCloseMenu.style.display = "flex";
+// }
+
+
+let tl = gsap.timeline()
+
 
 const closeMenu = () => {
-	menu.style.top = "-150vh";
+	tl.fromTo(menu, {top: '0'}, {top: '-150vh', duration: 0.7, ease: "power4.in"},)
+	  .fromTo(".gNav", {y: 0}, {y: '15vw', duration: 0.5, ease: "power4.in", transition: 1 }, "1")
+      .fromTo(".navReveal", {height: "0%"}, {height: "100%", duration: 2, ease: 'power2.in', transition: 1}, "1")
+    // menubtn.style.display = "block";
 	logoAndCloseMenu.style.display = "none";
 }
 
 const openMenu = () => {
-	menu.style.top = "0";
-	logoAndCloseMenu.style.display = "flex";
+	tl.fromTo(menu, {top: '-150vh'}, {top: '0', duration: 0.5, ease: "power4.in"})
+	  .fromTo(".gNav", {y: '15vw'}, {y: 0, duration: 0.5, ease: "power4.in", transition: 1 }, "1")
+      .fromTo(".navReveal", {height: "100%"}, {height: "0%", duration: 1, ease: 'power4.in'}, "1")
+      .fromTo(".navImgg", {y: '5vw', scale: 2}, {y: 0, scale: 1, transition: 1.5, duration: 1.5,}, "2") 
+	  .fromTo(".navImgg1", {y: '5vw', scale: 2}, {y: 0, scale: 1, transition: 1.5, duration: 1.5,}, "2.3") 
+      .fromTo(".hr", {width: "0"}, {width: '100%', duration: 2, ease: "power4.out"}, "2")  
+    // menubtn.style.display = "none";
+    logoAndCloseMenu.style.display = "flex";
 }
-
 
 
 // CURSOR ANIMATION
@@ -151,8 +174,8 @@ gsap.to('.iframeCont1', {width: '100%', duration: 10, ease: 'power2.easeInOut', 
   }}, .2)
 
 
-let tl= gsap.timeline();
-tl.fromTo('.memorable-brand', {y: '5vw'}, {y: 0, ease: "power3.easeOut", delay: 0.5, transition: 1, duration: 1, 
+let tl1= gsap.timeline();
+tl1.fromTo('.memorable-brand', {y: '5vw'}, {y: 0, ease: "power3.easeOut", delay: 0.5, transition: 1, duration: 1, 
     scrollTrigger:{
     trigger: '.memorable-brand',
     start: "10px 80%",

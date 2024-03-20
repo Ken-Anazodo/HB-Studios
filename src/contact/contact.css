@@ -159,6 +159,10 @@ body::-webkit-scrollbar {
 	transition: 0.6s;
 }
 
+.menuuu{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 .menu-icon{
 	transition: color 0.4s linear;
 }

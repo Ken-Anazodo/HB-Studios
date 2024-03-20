@@ -70,7 +70,7 @@
 	
 						<div>
 							<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
-								<h1 class="[display:none] md:[display:block]">MENU</h1>
+								<h1 class="menubtn [display:none] md:[display:block]">MENU</h1>
 	
 								<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
 									<img src="../src/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
@@ -83,7 +83,7 @@
 				<div class="fixed top-[-150vh] left-0 h-screen w-full overflow-auto bg-black z-20" id="menu-wrapper">
 					<!-- <div class="absolute top-0 left-0 z-30 h-full w-full bg-black bg-opacity-[100%] backdrop-blur-sm"></div> -->
 					<nav class="navbar absolute top-0 left-0 h-full w-full  z-40 text-white px-[2vw]">
-	
+
 						<div class="h-[132vw] w-[87vw] md:h-[92vw] md:w-[67vw] lg:h-[52vw] lg:w-[37vw] xl:h-[42vw] xl:w-[27vw] absolute top-[13vh] left-[-2vw]">
 							<img src="../src/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
 						</div>
@@ -106,21 +106,25 @@
 								<a href="/public/about.html" data-text="about">
 									<div class="navChild1 navigation relative flex">
 										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(01)</h1>
-										<h1>About</h1>
+										<div class="menuuu">
+											<h1 class="gNav">About</h1>
+										</div>
 									</div>
 	
 									<div class="navImage-display1 min-h-[40vh] h-[40vh] w-[30vw] z-[10000000]">
 										<img src="../src/assets/img/nezAndCos/img4.jpg" class="h-full w-full object-cover grayscale" alt=”Image”>
 									</div>
 								</a>
-								<hr>
+								<hr class="hr">
 	
 	
 								<a href="/public/service.html"  data-text="services">
 									<div class="navChild2 flex md:justify-end">
 										<div class="navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
 											<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] md:[display:none]">(02)</h1>
-											<h1>Services</h1>
+											<div class="menuuu">
+												<h1 class="gNav">Services</h1>
+											</div>
 											<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] [display:none] md:block">(02)</h1>
 										</div>
 	
@@ -129,12 +133,14 @@
 										</div>
 									</div>
 								</a>
-								<hr>					
+								<hr class="hr">					
 								
 								<a href="/public/contact.html" data-text="contact">
 									<div class="navChild3 navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
 										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(03)</h1>
-										<h1>Contact</h1>
+										<div class="menuuu">
+											<h1 class="gNav">Contact</h1>
+										</div>									
 									</div>
 	
 									<div class='iframeCont navImage-display3 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
@@ -142,7 +148,7 @@
 										<iframe src="https://player.vimeo.com/video/897032294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</a>
-								<hr>
+								<hr class="hr">
 							</div>
 	
 	
@@ -152,22 +158,24 @@
 	
 								<!-- Circle Texts for Small Screens -->
 								<div class="md:[display:none]">
-									<div class="z-10">
+									<a href="/public/index.html#swiperSec">
+										<div class="z-10">
 	
-										<div class="circle relative">
-											<div class="circleTextAnim text-stone-40 cursor-pointer">
-												<h1 class="myElement text-[11px] xs:text-[3.7vw] sm:text-[20px]" id="myElement"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
-											</div>
+											<div class="circle relative">
+												<div class="circleTextAnim text-stone-40 cursor-pointer">
+													<h1 class="myElement text-[11px] xs:text-[3.7vw] sm:text-[20px]" id="myElement"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+												</div>
 	
 	
-											<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
-												<div class="h-[6.5vw] w-[6.5vw]">
-													<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+													<div class="h-[6.5vw] w-[6.5vw]">
+														<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+													</div>
 												</div>
 											</div>
-										</div>
 	
-									</div>
+										</div>
+									</a>
 								</div>													
 	
 	
@@ -175,13 +183,20 @@
 								<div class="md:flex items-center">
 									<div class="flex items-center">
 										<div class="mr-[2vw] xl:mr-[1.5vw]">
-											<div class="min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
-												<img src="../src/assets/img/odunsi.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+											<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+												<div>
+													<div class="w-full h-full absolute overflow-hidden transition-all">
+														<img src="../src/assets/img/prettyboydo/pb5.jpg" class="navImgg h-full w-full object-cover brightness-[60%]" alt=”Image”>
+													</div>
+													<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+												</div>
 											</div>
 										</div>
 	
 										<div>
-											<div class="exploreHead text-[19px] leading-[21px] w-[23vw] sm:text-[25px] sm:leading-[27px] sm:w-[21vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">Explore HeadBorn Studios</div>
+											<div class="menuu">
+												<div class="gNa exploreHead text-[19px] leading-[21px] w-[23vw] sm:text-[25px] sm:leading-[27px] sm:w-[21vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">Explore HeadBorn Studios</div>
+											</div>
 											<div>
 												<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[14vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
 													<div class="[display:none] md:block">You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.</div>
@@ -194,34 +209,41 @@
 	
 									<!-- Circle Texts for Large Screens -->
 									<div class="[display:none] md:block">
-										<div class="z-10">
-											<div class="circle xl:ml-[1.5vw] mr-[1.5vw] xl:mr-0 relative cursor-pointer">
-												<div class="circleTextAnim text-stone-40">
-													<h1 class="text-[11px] xs:text-[3.7vw] sm:text-[20px] md:text-[1.5vw] xl:text-[1.3vw]" id="myElement1"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
-												</div>
-						
-												<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
-													<div class="md:h-[2.5vw] md:w-[2.5vw]">
-														<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										<a href="/public/index.html#swiperSec">
+											<div class="z-10">
+												<div class="circle xl:ml-[1.5vw] mr-[1.5vw] xl:mr-0 relative cursor-pointer">
+													<div class="circleTextAnim text-stone-40">
+														<h1 class="text-[11px] xs:text-[3.7vw] sm:text-[20px] md:text-[1.5vw] xl:text-[1.3vw]" id="myElement1"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+													</div>
+							
+													<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
+														<div class="md:h-[2.5vw] md:w-[2.5vw]">
+															<img src="../src/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
+										</a>
 									</div>								
 								</div>
 	
 	
 								<div class="flex items-center md:mr-[2vw] xl:mr-[3vw] mt-[3vw] md:mt-0">
 									<div class="mr-[2vw] xl:mr-[1.5vw]">
-										<div class="min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
-											<img src="../src/assets/img/remy/remy.jpg" class="h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+										<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+											<div>
+												<div class="w-full h-full absolute overflow-hidden transition-all">
+													<img src="../src/assets/img/remy/remy.jpg" class="navImgg1 h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+												</div>
+												<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+											</div>
 										</div>
 									</div>
 	
 									<div>
-										<div class="exploreHead text-[19px] leading-[21px] w-[20vw] sm:text-[25px] sm:leading-[27px] sm:w-[16vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">
-											<div class="[display:none] md:block">Forging Artists into Icons</div>
-											<div class="md:[display:none]">Forging Icons</div>
+										<div class="menuu exploreHead text-[19px] leading-[21px] w-[20vw] sm:text-[25px] sm:leading-[27px] sm:w-[16vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">
+											<div class="gNa [display:none] md:block">Forging Artists into Icons</div>
+											<div class="gNa md:[display:none]">Forging Icons</div>
 										</div>
 										<div>
 											<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[15vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
@@ -345,7 +367,7 @@
 
 				<div class="navContt fixed top-[11vh] right-[2vw] [display:none] z-40">
 					<div class="h-[14vw] w-[24vw]">
-						<img src="../src/assets/img/nav.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						<img src="../src/assets/img/nav1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
 					</div>
 				</div>
 

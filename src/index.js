@@ -49,6 +49,7 @@ circleType2.refresh();
 // OPEN AND CLOSE NAV
 let menu = document.getElementById("menu-wrapper");
 let logoAndCloseMenu = document.getElementById("logoAndClose");
+// let menubtn = document.querySelector(".menubtn");
 // let gNav = document.querySelector('.gNav');
 
 // const closeMenu = () => {
@@ -66,15 +67,22 @@ let tl = gsap.timeline()
 
 
 const closeMenu = () => {
-	tl.fromTo(menu, {top: '0'}, {top: '-150vh', duration: 0.5, ease: "power4.in"},)
-	  .fromTo(".gNav", {opacity:1, y: 0}, {opacity:0, y: '15vw', duration: 0.5, ease: "power4", transition: 1 }, "1")
+	tl.fromTo(menu, {top: '0'}, {top: '-150vh', duration: 0.7, ease: "power4.in"},)
+	  .fromTo(".gNav", {y: 0}, {y: '15vw', duration: 0.5, ease: "power4.in", transition: 1 }, "1")
+    .fromTo(".navReveal", {height: "0%"}, {height: "100%", duration: 2, ease: 'power2.in', transition: 1}, "1")
+    // menubtn.style.display = "block";
 	logoAndCloseMenu.style.display = "none";
 }
 
 const openMenu = () => {
 	tl.fromTo(menu, {top: '-150vh'}, {top: '0', duration: 0.5, ease: "power4.in"})
-	  .fromTo(".gNav", {opacity:0, y: '15vw'}, {opacity:1, y: 0, duration: 0.5, ease: "power4", transition: 1 }, "1")
-	logoAndCloseMenu.style.display = "flex";
+	  .fromTo(".gNav", {y: '15vw'}, {y: 0, duration: 0.5, ease: "power4.in", transition: 1 }, "1")
+    .fromTo(".navReveal", {height: "100%"}, {height: "0%", duration: 1, ease: 'power4.in'}, "1")
+    .fromTo(".navImgg", {y: '5vw', scale: 2}, {y: 0, scale: 1, transition: 1.5, duration: 1.5,}, "2") 
+	  .fromTo(".navImgg1", {y: '5vw', scale: 2}, {y: 0, scale: 1, transition: 1.5, duration: 1.5,}, "2.3") 
+    .fromTo(".hr", {width: "0"}, {width: '100%', duration: 2, ease: "power4.out"}, "2")  
+    // menubtn.style.display = "none";
+    logoAndCloseMenu.style.display = "flex";
 }
 
 // LOADER ANIMATION AND COUNTER
