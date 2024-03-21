@@ -1,11 +1,11 @@
 import { loadSwipers } from "./sliderPagination.js";
-import { test } from "./test.js";
+import { database } from "./database.js";
 
 
 
 
   const slider = () => {
-    const itemDisplay = test.map((item, index) => {
+    const itemDisplay = database.map((item, index) => {
       return `
 			  <a href="./projects.html?id=${index}" key="${index}" class="swiper-slide relative block" >
 			  <div class="swiper mySwiper2 swiper-inner" >
@@ -60,7 +60,7 @@ import { test } from "./test.js";
 export const itemDetails = (id) => {
  
 
-//   let artist = test.find((artist)=>{
+//   let artist = database.find((artist)=>{
 //   	return artist.id == id;
 //   })
 

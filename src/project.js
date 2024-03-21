@@ -6,11 +6,11 @@
 // console.log(script.id);
 
 
-import { test } from "./test.js";
+import { database } from "./database.js";
 
 
 
-console.log(test[1])
+console.log(database[1])
 
 
 
@@ -21,7 +21,7 @@ const loadPage = () => {
     console.log(id)
    
 
-  let artist = test[id]
+  let artist = database[id]
   // console.log(artist);
 
   if (artist) {
