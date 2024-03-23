@@ -322,7 +322,7 @@ body::-webkit-scrollbar {
 	font-family: 'Poppins', sans-serif;
 }
 
-/* .newsLet{
+.newsLet{
 	font-family: 'Bodoni Moda', serif; 
     font-weight: 400;
 }
@@ -330,7 +330,7 @@ body::-webkit-scrollbar {
 .newsLet1{
 	font-family: 'Poppins', sans-serif; 
     font-weight: 200;
-} */
+}
 
 .backTop{
 	font-weight: 800;

@@ -425,6 +425,16 @@ body::-webkit-scrollbar {
 	font-family: 'Poppins', sans-serif;
 }
 
+.newsLet{
+	font-family: 'Bodoni Moda', serif; 
+    font-weight: 600;
+}
+
+.newsLet1{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
 .backTop{
 	font-weight: 800;
 }

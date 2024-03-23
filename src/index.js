@@ -67,8 +67,8 @@ const openMenu = () => {
 	tl.fromTo(menu, {top: '-150vh'}, {top: '0', duration: 0.5, ease: "power4.in"})
 	  .fromTo(".gNav", {y: '15vw'}, {y: 0, duration: 0.5, ease: "power4.in", transition: 1 }, "1")
     .fromTo(".navReveal", {height: "100%"}, {height: "0%", duration: 1, ease: 'power4.in'}, "1")
-    .fromTo(".navImgg", {scale: 1.2}, {scale: 1, duration: 7,}, "2") 
-	  .fromTo(".navImgg1", {scale: 1.2}, {scale: 1, duration: 7,}, "2") 
+    .fromTo(".navImgg", {scale: 1.3}, {scale: 1, duration: 2.5,}, "2") 
+	  .fromTo(".navImgg1", {scale: 1.3}, {scale: 1, duration: 2.5,}, "2") 
     .fromTo(".hr", {width: "0"}, {width: '100%', duration: 2, ease: "power4.out"}, "2")  
     // menubtn.style.display = "none";
     logoAndCloseMenu.style.display = "flex";
@@ -389,4 +389,30 @@ navChild3.addEventListener("mouseleave", () => {
 });
 
 
+
+
+
+
+// The Impact of style on Music
+// let impactImgReveal = document.querySelector(".impactReveal");
+
+          gsap.fromTo(".impactReveal", {height: "100%"}, {height: "0%", duration: 6, ease: 'power4.out', 
+          scrollTrigger:{
+          trigger: ".impactReveal",
+          start: "10px 100%",
+          // scrub: true
+          }})
+
+          // gsap.fromTo(".impactReveal", {height: "0%"}, {height: "100%", duration: 4, ease: 'power4.in', 
+          // scrollTrigger:{
+          // trigger: ".impactReveal",
+          // start: "15px 0%",
+          // }}, "2")
+
+          // impactImgReveal.addEventListener("mousemove", () => {
+          //   gsap.fromTo(".impactReveal", {height: "100%"}, {height: "0%", duration: 6, ease: 'power4.out', 
+          //   scrollTrigger:{
+          //   trigger: ".impactReveal",
+          //   }})
+          // });
 
