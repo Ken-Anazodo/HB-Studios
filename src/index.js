@@ -394,25 +394,73 @@ navChild3.addEventListener("mouseleave", () => {
 
 
 // The Impact of style on Music
-// let impactImgReveal = document.querySelector(".impactReveal");
+  // tl1 = gsap.timeline()
+  // let revealImg = document.querySelector(".impactReveal")
 
-          gsap.fromTo(".impactReveal", {height: "100%"}, {height: "0%", duration: 6, ease: 'power4.out', 
+          // const impactReveal = document.querySelector('.impactReveal');
+          // const viewportHeight = window.innerHeight;
+          // const revealTop = impactReveal.getBoundingClientRect().top;
+          
+      
+          const revealElement = (cloak, element) => {
+          gsap.fromTo(cloak, {height: "30%"}, {height: "0%", duration: 8, ease: 'power4.out', 
           scrollTrigger:{
-          trigger: ".impactReveal",
+          trigger: element,
           start: "10px 100%",
-          // scrub: true
+          toggleActions: 'play reverse play reverse',
           }})
+        }
 
-          // gsap.fromTo(".impactReveal", {height: "0%"}, {height: "100%", duration: 4, ease: 'power4.in', 
-          // scrollTrigger:{
-          // trigger: ".impactReveal",
-          // start: "15px 0%",
-          // }}, "2")
 
-          // impactImgReveal.addEventListener("mousemove", () => {
-          //   gsap.fromTo(".impactReveal", {height: "100%"}, {height: "0%", duration: 6, ease: 'power4.out', 
-          //   scrollTrigger:{
-          //   trigger: ".impactReveal",
-          //   }})
-          // });
+          revealElement(".impactReveal", ".impactImg");
+          revealElement(".stylAndMusReveal1", ".stylAndMusImg1");
+          revealElement(".stylAndMusReveal2", ".stylAndMusImg2");
+          revealElement(".revoluReveal", ".revoluImg");
+
+          // Increase height when impactReveal div reaches 0% of viewport after 2 seconds
+          
+          // gsap.fromTo(".impactReveal", {height: "0%"}, { duration: 3, height: '100%', ease: 'power4.in',
+          //     scrollTrigger:{
+          //       trigger: ".impactImg",
+          //       start: "10px 0%",
+          //     }
+          //   }, ".2");
+         
+    
+             // Scroll event listener
+            //  window.addEventListener('scroll', () => {
+            //   const scrollPosition = window.scrollY;
+            
+            //   // Decrease height again when impactReveal div reaches 0% of viewport
+            //   if (revealTop >= viewportHeight * 2) {
+            //     gsap.to(impactReveal, { duration: 3, height: '0%', ease: 'power4.out' });
+            //   }
+            // });
+
+
+
+
+
+
+            
+        
+      // Define the parallax effect function
+      function createParallax(element) {
+        gsap.to(element, {
+            yPercent: -50,
+            ease: "none",
+            scrollTrigger: {
+                trigger: element,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+      }
+
+      // Call the parallax effect function on the image element
+      createParallax(".parallax-image");
+              
+
+
 
