@@ -451,7 +451,7 @@ navChild3.addEventListener("mouseleave", () => {
             ease: "none",
             scrollTrigger: {
                 trigger: element,
-                start: "top bottom",
+                start: "-50% bottom",
                 end: "bottom top",
                 scrub: true
             }
