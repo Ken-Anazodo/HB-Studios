@@ -231,6 +231,21 @@ body::-webkit-scrollbar {
 	font-family: 'Anton', sans-serif;
 }
 
+.subHeader{
+	font-kerning: none;
+}
+
+.line:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transform-origin: 100% 0;
+	background: black;
+}
+
 .infuse{
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: normal;
@@ -268,9 +283,11 @@ body::-webkit-scrollbar {
 	font-weight: 200;
 }
 
-/* .parallax-image {
-    z-index: -1;
-} */
+.parallax-img, .parallax-img1{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 .benson, .dedayo{
 	font-family: 'Bodoni Moda', serif;

@@ -5,6 +5,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 // NAVIGATION (Display On Scroll Up)
 const showAnim = gsap
   .from(".nav-sec-container", {
@@ -393,17 +394,10 @@ navChild3.addEventListener("mouseleave", () => {
 
 
 
-// The Impact of style on Music
-  // tl1 = gsap.timeline()
-  // let revealImg = document.querySelector(".impactReveal")
 
-          // const impactReveal = document.querySelector('.impactReveal');
-          // const viewportHeight = window.innerHeight;
-          // const revealTop = impactReveal.getBoundingClientRect().top;
-          
-      
-          const revealElement = (cloak, element) => {
-          gsap.fromTo(cloak, {height: "30%"}, {height: "0%", duration: 8, ease: 'power4.out', 
+      // Reveal Images
+          const revealElement = (cloak, element, height) => {
+          gsap.fromTo(cloak, {height: height}, {height: "0%", duration: 8, ease: 'power4.out', 
           scrollTrigger:{
           trigger: element,
           start: "10px 100%",
@@ -412,55 +406,149 @@ navChild3.addEventListener("mouseleave", () => {
         }
 
 
-          revealElement(".impactReveal", ".impactImg");
-          revealElement(".stylAndMusReveal1", ".stylAndMusImg1");
-          revealElement(".stylAndMusReveal2", ".stylAndMusImg2");
-          revealElement(".revoluReveal", ".revoluImg");
-
-          // Increase height when impactReveal div reaches 0% of viewport after 2 seconds
-          
-          // gsap.fromTo(".impactReveal", {height: "0%"}, { duration: 3, height: '100%', ease: 'power4.in',
-          //     scrollTrigger:{
-          //       trigger: ".impactImg",
-          //       start: "10px 0%",
-          //     }
-          //   }, ".2");
-         
-    
-             // Scroll event listener
-            //  window.addEventListener('scroll', () => {
-            //   const scrollPosition = window.scrollY;
-            
-            //   // Decrease height again when impactReveal div reaches 0% of viewport
-            //   if (revealTop >= viewportHeight * 2) {
-            //     gsap.to(impactReveal, { duration: 3, height: '0%', ease: 'power4.out' });
-            //   }
-            // });
+          revealElement(".impactReveal", ".impactImg", "30%");
+          revealElement(".impactReveal1", ".impactImg1", "30%");
+          revealElement(".stylAndMusReveal1", ".stylAndMusImg1", "30%");
+          revealElement(".stylAndMusReveal2", ".stylAndMusImg2", "30%");
+          revealElement(".revoluReveal", ".revoluImg", "25%");
+          revealElement(".bnxnReveal", ".bnxn", "35%");
+          revealElement(".bnxnReveal1", ".bnxn1", "30%");
+          revealElement(".bnxnReveal2", ".bnxn2", "40%");
+          revealElement(".masqReveal", ".masq", "50%");
 
 
-
-
-
-
-            
         
-      // Define the parallax effect function
-      function createParallax(element) {
-        gsap.to(element, {
-            yPercent: -50,
-            ease: "none",
-            scrollTrigger: {
-                trigger: element,
-                start: "-50% bottom",
-                end: "bottom top",
-                scrub: true
-            }
+        // Parallax Effect
+        const parallaxEffect = (image) => {
+          const section = document.querySelector(".parallax-container"); // Select the section element
+
+          const bg = section.querySelector(".parallax-img"); // Select the background element within the section
+
+          // Set the path to your image file relative to the project directory
+          const imagePath = image;
+
+          // Set background image for the section
+          bg.style.backgroundImage = `url(${imagePath})`;
+
+          // Function to calculate the ratio between element's height and window's height
+          const getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+          // Define the animation
+          gsap.fromTo(bg, {
+              backgroundPosition: () => imagePath? `50% ${-window.innerHeight * 0.5}px` : `50% 0px`
+          }, {
+              backgroundPosition: () => `50% ${window.innerHeight * 0.03}px`, // Adjust the multiplier for parallax effect
+              ease: "none",
+              scrollTrigger: {
+                  trigger: section,
+                  start: () => imagePath? "top bottom" : "top top", 
+                  end: "bottom top",
+                  scrub: true,
+                  invalidateOnRefresh: true // to make it responsive
+              }
+          });
+        }
+
+        parallaxEffect("../src/assets/img/dedayo1.PNG")
+
+
+
+
+
+
+
+
+
+
+        // Parallax Effect 1
+        const parallaxEffect1 = () => {
+          // Function to calculate the ratio between element's height and window's height
+          const getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+          // Loop through each section
+          document.querySelectorAll(".parallax-container1").forEach((section, i) => {
+          const bg = section.querySelector(".parallax-img1"); // Select the background element within the section
+
+          // Set the path to your image file relative to the project directory
+          const imagePaths = [
+            // "../src/assets/img/dedayo1.PNG", 
+            "../src/assets/img/masq.JPEG", 
+            "../src/assets/img/dedayo3.jpg"
+          ]
+
+       
+          // Set background image for the section
+          bg.style.backgroundImage = `url(${imagePaths[i % imagePaths.length]})`; 
+        
+
+            
+          // Define the animation
+          gsap.fromTo(bg, {
+              backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px"
+          }, {
+              backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(section))}px`,
+              ease: "none",
+              scrollTrigger: {
+                  trigger: section,
+                  start: () => i ? "top bottom" : "top top", 
+                  end: "bottom top",
+                  scrub: true,
+                  invalidateOnRefresh: true // to make it responsive
+              }
+          });
+      });
+    }
+
+    parallaxEffect1();
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Animate Headers
+      const animateHeaders = (headerId, subHeader, start) => {
+      
+        document.addEventListener("DOMContentLoaded", (event) => {
+          gsap.registerPlugin(CSSRulePlugin);
+        
+          const text = new SplitType(headerId, { types: 'lines' })
+          var rule = CSSRulePlugin.getRule(".line:after");
+
+          gsap.fromTo(subHeader, {opacity: 0, y: "-5vw"}, {opacity: 1, duration: 1, y: 0,  
+              scrollTrigger:{
+              trigger: subHeader,
+              start: start,
+            }})
+            
+          gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1,  
+            scrollTrigger:{
+            trigger: subHeader,
+            start: start,
+          }});
         });
+   
       }
 
-      // Call the parallax effect function on the image element
-      createParallax(".parallax-image");
-              
-
-
-
+      animateHeaders('#createLegends', '.cLegends', "5px 100%")
+      animateHeaders('#stratCollab', '.sCollab', "5px 100%");
+      animateHeaders('#empArtists', '.eArtists', "5px 100%");
+      animateHeaders('#ourVision', '.ourVsn', "5px 100%");
+      animateHeaders('#theStyling', '.theStyle', "5px 100%");
+      animateHeaders('#unforgettable', '.unforget', "5px 100%");
+      animateHeaders('#selectedWorks', '.selectWorks', "5px 100%");
