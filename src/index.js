@@ -414,15 +414,15 @@ navChild3.addEventListener("mouseleave", () => {
           revealElement(".bnxnReveal", ".bnxn", "35%");
           revealElement(".bnxnReveal1", ".bnxn1", "30%");
           revealElement(".bnxnReveal2", ".bnxn2", "40%");
-          revealElement(".masqReveal", ".masq", "50%");
+          revealElement(".masqReveal", ".masq", "0%");
 
 
         
         // Parallax Effect
-        const parallaxEffect = (image) => {
-          const section = document.querySelector(".parallax-container"); // Select the section element
+        const parallaxEffect = (image, parallaxContainer, parallaxImg) => {
+          const section = parallaxContainer; // Select the section element
 
-          const bg = section.querySelector(".parallax-img"); // Select the background element within the section
+          const bg = parallaxImg; // Select the background element within the section
 
           // Set the path to your image file relative to the project directory
           const imagePath = image;
@@ -449,7 +449,18 @@ navChild3.addEventListener("mouseleave", () => {
           });
         }
 
-        parallaxEffect("../src/assets/img/dedayo1.PNG")
+        let parallaxCont1 =  document.querySelector(".parallax-container");
+        // let parallaxCont2 =  document.querySelector(".parallaxContainer2");
+        // let parallaxCont3 =  document.querySelector(".parallaxContainer3");
+
+        let parallaxImg1 =  document.querySelector(".parallax-img");
+        // let parallaxImg2 =  document.querySelector(".parallaxImg2");
+        // let parallaxImg3 =  document.querySelector(".parallaxImg3");
+        
+
+        parallaxEffect("../src/assets/img/dedayo1.PNG", parallaxCont1, parallaxImg1 );
+        // parallaxEffect("../src/assets/img/buju.jpg", parallaxCont2, parallaxImg2 );
+        // parallaxEffect("../src/assets/img/buju1.jpg", parallaxCont3, parallaxImg3 )
 
 
 
@@ -471,7 +482,9 @@ navChild3.addEventListener("mouseleave", () => {
 
           // Set the path to your image file relative to the project directory
           const imagePaths = [
-            // "../src/assets/img/dedayo1.PNG", 
+            "../src/assets/img/dedayo.jpg",
+            "../src/assets/img/buju.jpg",
+            "../src/assets/img/buju1.jpg",
             "../src/assets/img/masq.JPEG", 
             "../src/assets/img/dedayo3.jpg"
           ]
@@ -506,19 +519,6 @@ navChild3.addEventListener("mouseleave", () => {
 
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       // Animate Headers
