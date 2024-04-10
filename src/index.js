@@ -390,6 +390,65 @@ navChild3.addEventListener("mouseleave", () => {
 });
 
 
+    // SCROLL
+    gsap.to(".scrollCont", {opacity: 0, duration: 1, transition: 0.5,
+
+    scrollTrigger:{
+      trigger: ".scrollCont",
+      start: "5px 45%",
+      end: "top 35%",
+      scrub: true,
+      }});
+
+
+
+
+    // We Transcend
+    gsap.fromTo(".we-transcend", {opacity: 0}, {opacity: 1, transition: 1,
+      scrollTrigger:{
+        trigger: ".we-transcend",
+        start: "10px 100%",
+        toggleActions: 'play reverse play reverse',
+        }}); 
+
+
+    // Half a decade experience as independent creative professionals. (Section)
+      const tl4 = gsap.timeline({
+        defaults: {
+            duration: 1
+        }
+    });
+    
+    // Add animations to the timeline
+    tl4.fromTo(".decadeHeadP", {
+        y: 300, // Initial position below
+        opacity: 0 // Initial opacity
+    }, {
+        y: 0, // Move to original position
+        opacity: 1, // Fade in
+        duration: 5 // Duration of animation
+    }).fromTo(".subBody", {
+        y: 300, // Initial position above
+        opacity: 0 // Initial opacity
+    }, {
+        y: 0, // Move to original position
+        opacity: 1, // Fade in
+        duration: 5 // Duration of animation
+    }, "-=0.5"); // Delay the start of the subBody animation
+    
+    // Define ScrollTriggers for the animations
+    ScrollTrigger.create({
+        trigger: ".decadeCont", // The container element
+        start: "top bottom", // Start animation when top of container reaches center of viewport
+        end: "top 10%", // End animation when bottom of container reaches center of viewport
+        animation: tl4, // Use the defined timeline for animation
+        scrub: true // Smoothly move through animation as user scrolls
+    });
+     
+
+
+
+
 
 
 
@@ -444,24 +503,18 @@ navChild3.addEventListener("mouseleave", () => {
                   start: () => imagePath? "top bottom" : "top top", 
                   end: "bottom top",
                   scrub: true,
-                  invalidateOnRefresh: true // to make it responsive
+                  invalidateOnRefresh: true, // to make it responsive
+                  duration: 5 // Adjust duration for slower effect (e.g., 2 seconds)
               }
           });
         }
 
         let parallaxCont1 =  document.querySelector(".parallax-container");
-        // let parallaxCont2 =  document.querySelector(".parallaxContainer2");
-        // let parallaxCont3 =  document.querySelector(".parallaxContainer3");
-
         let parallaxImg1 =  document.querySelector(".parallax-img");
-        // let parallaxImg2 =  document.querySelector(".parallaxImg2");
-        // let parallaxImg3 =  document.querySelector(".parallaxImg3");
-        
-
+  
+    
         parallaxEffect("../src/assets/img/dedayo1.PNG", parallaxCont1, parallaxImg1 );
-        // parallaxEffect("../src/assets/img/buju.jpg", parallaxCont2, parallaxImg2 );
-        // parallaxEffect("../src/assets/img/buju1.jpg", parallaxCont3, parallaxImg3 )
-
+       
 
 
 
@@ -506,7 +559,9 @@ navChild3.addEventListener("mouseleave", () => {
                   start: () => i ? "top bottom" : "top top", 
                   end: "bottom top",
                   scrub: true,
-                  invalidateOnRefresh: true // to make it responsive
+                  invalidateOnRefresh: true, // to make it responsive
+                  duration: 5, // Adjust duration for slower effect (e.g., 2 seconds)
+                  delay: i * 25 // Add a delay based on the index of the section (e.g., 0.5 seconds per section)
               }
           });
       });
@@ -546,9 +601,31 @@ navChild3.addEventListener("mouseleave", () => {
       }
 
       animateHeaders('#createLegends', '.cLegends', "5px 100%")
-      animateHeaders('#stratCollab', '.sCollab', "5px 100%");
+      animateHeaders('#stratCollab', '.sCollab', "5px 85%");
       animateHeaders('#empArtists', '.eArtists', "5px 100%");
       animateHeaders('#ourVision', '.ourVsn', "5px 100%");
-      animateHeaders('#theStyling', '.theStyle', "5px 100%");
+      animateHeaders('#theStyling', '.theStyle', "5px 85%");
       animateHeaders('#unforgettable', '.unforget', "5px 100%");
       animateHeaders('#selectedWorks', '.selectWorks', "5px 100%");
+
+
+
+
+      // CREDIT ANSWER Animation
+
+      const  creditAnim = () => {
+        const text1Parent = new SplitType(".credit-ans", { types: 'lines', lineClass: 'lineParent'});
+        const text1Child = new SplitType(".credit-ans", { types: 'lines', lineClass: 'lineChildren'});
+
+        gsap.to(text1Child.lines, {duration: 1, y: 0, opacity: 1, ease: 'power4.easeIn',  
+        scrollTrigger: {
+            trigger: '.creditCont',
+            start: "10px 90%",
+            toggleActions: 'play reverse play reverse'
+        }}, '0.2')
+      }
+      
+
+    
+      creditAnim("#credAnsHb");
+      
