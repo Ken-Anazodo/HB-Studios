@@ -251,6 +251,10 @@ body::-webkit-scrollbar {
     font-weight: 300;
 }
 
+.subHeader{
+	font-kerning: none;
+}
+
 .subBody{
 	font-family: 'Poppins', sans-serif; 
     font-weight: 300;

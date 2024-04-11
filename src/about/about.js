@@ -1,3 +1,4 @@
+import { animateHeaders } from "../animateHeader.js";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -119,6 +120,7 @@ circleType1.forceWidth(true);
 circleType1.refresh();
 
 // Circle Text in body
+// small screen
 const circleType2 = new CircleType(document.getElementById("myElement2"));
 circleType2.radius(100);
 circleType2.forceHeight();
@@ -126,6 +128,7 @@ circleType2.forceWidth(true);
 circleType2.refresh();
 
 // Circle Text in body
+// large screen
 const circleType3 = new CircleType(document.getElementById("myElement3"));
 circleType3.radius(100);
 circleType3.forceHeight();
@@ -581,3 +584,7 @@ callToAction.addEventListener("mouseleave", () => {
 })
 
 
+
+
+
+animateHeaders('#chooseUs', '.choose', "5px 100%");

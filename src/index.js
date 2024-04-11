@@ -477,6 +477,8 @@ navChild3.addEventListener("mouseleave", () => {
 
 
         
+
+
         // Parallax Effect
         const parallaxEffect = (image, parallaxContainer, parallaxImg) => {
           const section = parallaxContainer; // Select the section element
@@ -517,12 +519,7 @@ navChild3.addEventListener("mouseleave", () => {
        
 
 
-
-
-
-
-
-
+        
 
         // Parallax Effect 1
         const parallaxEffect1 = () => {
@@ -542,12 +539,9 @@ navChild3.addEventListener("mouseleave", () => {
             "../src/assets/img/dedayo3.jpg"
           ]
 
-       
           // Set background image for the section
           bg.style.backgroundImage = `url(${imagePaths[i % imagePaths.length]})`; 
-        
-
-            
+                
           // Define the animation
           gsap.fromTo(bg, {
               backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px"
@@ -571,9 +565,6 @@ navChild3.addEventListener("mouseleave", () => {
     
 
 
-
-
-    
 
 
       // Animate Headers
@@ -617,10 +608,10 @@ navChild3.addEventListener("mouseleave", () => {
         const text1Parent = new SplitType(".credit-ans", { types: 'lines', lineClass: 'lineParent'});
         const text1Child = new SplitType(".credit-ans", { types: 'lines', lineClass: 'lineChildren'});
 
-        gsap.to(text1Child.lines, {duration: 1, y: 0, opacity: 1, ease: 'power4.easeIn',  
+        gsap.fromTo(text1Child.lines, {y: '11vw', opacity: 0}, {duration: 1, y: 0, opacity: 1, ease: 'power4.easeIn',  
         scrollTrigger: {
             trigger: '.creditCont',
-            start: "10px 90%",
+            start: "10px bottom",
             toggleActions: 'play reverse play reverse'
         }}, '0.2')
       }

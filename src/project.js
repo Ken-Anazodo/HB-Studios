@@ -10,7 +10,7 @@ import { database } from "./database.js";
 
 
 
-console.log(database[1])
+// console.log(database[1])
 
 
 
