@@ -1,4 +1,4 @@
-import { animateHeaders } from "../animateHeader.js";
+// import { animateHeaders } from "../animateHeader.js";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -587,4 +587,4 @@ callToAction.addEventListener("mouseleave", () => {
 
 
 
-animateHeaders('#chooseUs', '.choose', "5px 100%");
+// animateHeaders('#chooseUs', '.choose', "5px 100%");

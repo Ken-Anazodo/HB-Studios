@@ -1256,6 +1256,10 @@ video {
   height: 500px;
 }
 
+.h-\[370px\] {
+  height: 370px;
+}
+
 .min-h-\[12vh\] {
   min-height: 12vh;
 }
@@ -1362,6 +1366,10 @@ video {
 
 .min-h-\[500px\] {
   min-height: 500px;
+}
+
+.min-h-\[370px\] {
+  min-height: 370px;
 }
 
 .w-0 {
@@ -4397,6 +4405,14 @@ video {
 
   .xl\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .xl\:mt-\[5vw\] {
+    margin-top: 5vw;
+  }
+
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .xl\:block {

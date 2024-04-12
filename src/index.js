@@ -471,8 +471,8 @@ navChild3.addEventListener("mouseleave", () => {
           revealElement(".stylAndMusReveal2", ".stylAndMusImg2", "30%");
           revealElement(".revoluReveal", ".revoluImg", "25%");
           revealElement(".bnxnReveal", ".bnxn", "35%");
-          revealElement(".bnxnReveal1", ".bnxn1", "30%");
-          revealElement(".bnxnReveal2", ".bnxn2", "40%");
+          revealElement(".bnxnReveal1", ".bnxn1", "60%");
+          revealElement(".bnxnReveal2", ".bnxn2", "80%");
           revealElement(".masqReveal", ".masq", "0%");
 
 
@@ -513,9 +513,12 @@ navChild3.addEventListener("mouseleave", () => {
 
         let parallaxCont1 =  document.querySelector(".parallax-container");
         let parallaxImg1 =  document.querySelector(".parallax-img");
+        let parallaxCont2 =  document.querySelector(".parallax-containerr");
+        let parallaxImg2 =  document.querySelector(".parallax-imgg");
   
     
         parallaxEffect("../src/assets/img/dedayo1.PNG", parallaxCont1, parallaxImg1 );
+        parallaxEffect("../src/assets/img/dedayo.jpg", parallaxCont2, parallaxImg2 );
        
 
 
@@ -531,10 +534,7 @@ navChild3.addEventListener("mouseleave", () => {
           const bg = section.querySelector(".parallax-img1"); // Select the background element within the section
 
           // Set the path to your image file relative to the project directory
-          const imagePaths = [
-            "../src/assets/img/dedayo.jpg",
-            "../src/assets/img/buju.jpg",
-            "../src/assets/img/buju1.jpg",
+          const imagePaths = [       
             "../src/assets/img/masq.JPEG", 
             "../src/assets/img/dedayo3.jpg"
           ]
@@ -550,12 +550,12 @@ navChild3.addEventListener("mouseleave", () => {
               ease: "none",
               scrollTrigger: {
                   trigger: section,
-                  start: () => i ? "top bottom" : "top top", 
+                  start: "top bottom", 
                   end: "bottom top",
                   scrub: true,
                   invalidateOnRefresh: true, // to make it responsive
-                  duration: 5, // Adjust duration for slower effect (e.g., 2 seconds)
-                  delay: i * 25 // Add a delay based on the index of the section (e.g., 0.5 seconds per section)
+                  // duration: 5, // Adjust duration for slower effect (e.g., 2 seconds)
+                  // delay: i * 25 // Add a delay based on the index of the section (e.g., 0.5 seconds per section)
               }
           });
       });
