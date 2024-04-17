@@ -520,6 +520,19 @@ body::-webkit-scrollbar {
     font-weight: 300;
 }
 
+.loadCont1{
+	background: white;
+}
+
+.sentCont1{
+	background: blue;
+}
+
+.load, .sent{
+	font-family: 'Bodoni Moda', serif; 
+    font-weight: 400;
+}
+
 .backTop{
 	font-weight: 800;
 }
