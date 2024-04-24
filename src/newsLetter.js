@@ -6,7 +6,14 @@ const showLoading =(params)=>{
 	console.log(params)
 		if(params == true){
 			console.log('loading.......')
+
 			const displayLoading = () => {
+				gsap.registerPlugin(ScrollTrigger);
+
+				document.addEventListener("DOMContentLoaded", (event) => {
+					gsap.fromTo(".loadCont1", {width: "0%"}, {width: "100%", duration: 4, ease: 'power4.out'})
+					// gsap.fromTo(".sentCont1", {width: "0%"}, {width: "100%", duration: 4, ease: 'power4.out'})
+				  })
 			return `
 				<div class='loadCont1 absolute top-0 left-0 w-full h-full flex justify-center items-center text-[1.3vw] z-10'>
 					<div class="load text-black">Loading ....</div>
@@ -15,7 +22,14 @@ const showLoading =(params)=>{
 			document.querySelector(".inputCont").innerHTML = displayLoading();
 		}else{
 			console.log('Message sent')
+			
 			const differentMessageSent = () => {
+				gsap.registerPlugin(ScrollTrigger);
+
+				document.addEventListener("DOMContentLoaded", (event) => {
+					// gsap.fromTo(".loadCont1", {width: "0%"}, {width: "100%", duration: 4, ease: 'power4.out'})
+					gsap.fromTo(".sentCont1", {width: "0%"}, {width: "100%", duration: 4, ease: 'power4.out'})
+				  })
 			return `
 				<div class='sentCont1 absolute top-0 left-0 w-full h-full flex justify-center items-center text-[1.3vw]  z-20'>
 					<div class="sent text-black">Message Sent</div>

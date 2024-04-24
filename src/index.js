@@ -414,8 +414,8 @@ navChild3.addEventListener("mouseleave", () => {
 
         // NewsLetter
         // document.addEventListener("DOMContentLoaded", (event) => {
-        //   gsap.fromTo(".load", {width: "0%"}, {width: "100%", duration: 3, ease: 'power4.out'})
-        //   gsap.fromTo(".sent", {width: "0%"}, {width: "100%", duration: 3, ease: 'power4.out'})
+        //   gsap.fromTo(".loadCont1", {x: '-20vw'}, {x: 0, duration: 0.5, ease: "power4.in", transition: 1 })
+        //   gsap.fromTo(".sentCont1", {x: '30vw'}, {x: 0, duration: 0.5, ease: "power4.in", transition: 1 })
         // })
 
 
